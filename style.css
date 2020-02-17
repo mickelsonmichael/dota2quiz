@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    background-color: #333;
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #333399;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 700px;
+    height: 400px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 0 black;
+}
+
+.target-item-container,
+.selected-items,
+.option-items {
+    padding: 2rem;
+}
+
+.selected-items {
+
+}
+
+.selected-item,
+.target-item,
+.option {
+    width: 70px;
+    height: 50px;
+    background-color: #444;
+    border: 2px solid #222;
+    display: inline-block;
+    margin: 0 0.5rem;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 black;
+    cursor: pointer;
+}
+
+.selected-item::after,
+.target-item::after,
+.option::after {
+    content: '?';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    z-index: 1;
+}
+
+.selected-item > img,
+.target-item > img,
+.option > img {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.option.recipe {
+    margin-left: 2rem;
+}
+
+.option.selected::after {
+    display: none;
+}
+
+.option.selected > img {
+    opacity: 0.5;
+}
