@@ -1,33 +1,177 @@
 {
-  "Items" : [
+  "Items": [
     {
-      "Id": "ironwood_branch",
-      "Name": "Ironwood Branch",
-      "FileName": "branches_lg.png",
-      "RequiresRecipe" :  false,
-      "ComponentNames": []
-    },
-    {
-      "Id": "headdress",
-      "Name": "Headdress",
-      "FileName": "headdress_lg.png",
-      "RequiresRecipe" :  true,
-      "ComponentNames": [
-        "ironwood_branch",
-        "ring_of_regen"
-      ]
-    },
-    {
-      "Id": "ring_of_regen",
-      "Name": "Ring of Regen",
-      "FileName": "ring_of_regen_lg.png",
+      "Id": "tp_scroll",
+      "Name": "Teleportation Scroll",
+      "FileName": "tpscroll_lg.png",
       "RequiresRecipe": false,
       "ComponentNames": []
     },
     {
-      "Id": "chainmail",
-      "Name": "Chainmail",
-      "FileName": "chainmail_lg.png",
+      "Id": "clarity",
+      "Name": "Potion of Clarity",
+      "FileName": "clarity_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "faerie_fire",
+      "Name": "Faerie Fire",
+      "FileName": "faerie_fire_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "smoke",
+      "Name": "Smoke of Deceit",
+      "FileName": "smoke_of_deceit_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "observer_ward",
+      "Name": "Observer Ward",
+      "FileName": "ward_observer_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "sentry_ward",
+      "Name": "Sentry Ward",
+      "FileName": "ward_sentry_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "tp_scroll",
+      "Name": "Teleportation Scroll",
+      "FileName": "tpscroll_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "mango",
+      "Name": "Enchanted Mango",
+      "FileName": "enchanted_mango_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "salve",
+      "Name": "Healing Salve",
+      "FileName": "flask_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "tango",
+      "Name": "Tango",
+      "FileName": "tango_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "tome",
+      "Name": "Tome of Knowledge",
+      "FileName": "tome_of_knowledge_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "dust",
+      "Name": "Dust of Appearance",
+      "FileName": "dust_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "courier",
+      "Name": "Animal Courier",
+      "FileName": "courier_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "bottle",
+      "Name": "Bottle",
+      "FileName": "bottle_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "branch",
+      "Name": "Iron Branch",
+      "FileName": "branches_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "gauntlet",
+      "Name": "Gauntlets of Strength",
+      "FileName": "gauntlets_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "slippers",
+      "Name": "Slippers of Agility",
+      "FileName": "slippers_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "mantle",
+      "Name": "Mantle of Intelligence",
+      "FileName": "mantle_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "circlet",
+      "Name": "Circlet",
+      "FileName": "circlet_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "belt",
+      "Name": "Belt of Strength",
+      "FileName": "belt_of_strength_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "band",
+      "Name": "Band of Elvenskin",
+      "FileName": "boots_of_elves_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "robe",
+      "Name": "Robe of the Magi",
+      "FileName": "robe_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "crown",
+      "Name": "Crown",
+      "FileName": "crown_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "ogre_axe",
+      "Name": "Ogre Axe",
+      "FileName": "ogre_axe_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "blade_of_alacrity",
+      "Name": "Blade of Alacrity",
+      "FileName": "blade_of_alacrity_lg.png",
       "RequiresRecipe": false,
       "ComponentNames": []
     },
@@ -39,11 +183,112 @@
       "ComponentNames": []
     },
     {
-      "Id": "blade_of_alacrity",
-      "Name": "Blad of Alacrity",
-      "FileName": "blade_of_alacrity_lg.png",
+      "Id": "ring_of_protection",
+      "Name": "Ring of Protection",
+      "FileName": "ring_of_protection_lg.png",
       "RequiresRecipe": false,
       "ComponentNames": []
+    },
+    {
+      "Id": "quelling_blade",
+      "Name": "Quelling Blade",
+      "FileName": "quelling_blade_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "raindrop",
+      "Name": "Infused Raindrop",
+      "FileName": "infused_raindrop_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "orb_of_venom",
+      "Name": "Orb of Venom",
+      "FileName": "orb_of_venom_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "blight_stone",
+      "Name": "Blight Stone",
+      "FileName": "blight_stone_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "blades_of_attack",
+      "Name": "Blades of Attack",
+      "FileName": "blades_of_attack_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "chainmail",
+      "Name": "Chainmail",
+      "FileName": "chainmail_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "quarterstaff",
+      "Name": "Quarterstaff",
+      "FileName": "quarterstaff_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "helm_of_iron_will",
+      "Name": "Helm of Iron Will",
+      "FileName": "helm_of_iron_will_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "javelin",
+      "Name": "Javelin",
+      "FileName": "javelin_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "broadsword",
+      "Name": "Broadsword",
+      "FileName": "broadsword_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "claymore",
+      "Name": "Claymore",
+      "FileName": "claymore_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "mithril_hammer",
+      "Name": "Mithril Hammer",
+      "FileName": "mithril_hammer_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "ring_of_regen",
+      "Name": "Ring of Regen",
+      "FileName": "ring_of_regen_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "headdress",
+      "Name": "Headdress",
+      "FileName": "headdress_lg.png",
+      "RequiresRecipe": true,
+      "ComponentNames": [
+        "ironwood_branch",
+        "ring_of_regen"
+      ]
     }
   ]
 }
