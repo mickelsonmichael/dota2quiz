@@ -8,6 +8,11 @@
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Shopkeeper.Data\Shopkeeper.Data.csproj" />
+    <ProjectReference Include="..\Shopkeeper.Services\Shopkeeper.Services.csproj" />
+  </ItemGroup>
+
 
 
 </Project>

@@ -3,6 +3,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Shopkeeper.Business;
+using Shopkeeper.Data;
+using Shopkeeper.Data.Interfaces;
+using Shopkeeper.Services;
+using Shopkeeper.Services.Interfaces;
 
 namespace Shopkeeper
 {
@@ -19,6 +24,12 @@ namespace Shopkeeper
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.Configure<QuizOptions>(Configuration);
+            services.Configure<QuizItems>(Configuration);
+
+            services.AddSingleton<IItemRepository, ItemRepository>();
+            services.AddTransient<IItemService, ItemService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

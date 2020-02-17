@@ -1,44 +1,49 @@
 {
-  "items" : [
+  "Items" : [
     {
-      "id": "ironwood_branch",
-      "name": "Ironwood Branch",
-      "url": "http://cdn.dota2.com/apps/dota2/images/items/branches_lg.png",
-      "components": []
+      "Id": "ironwood_branch",
+      "Name": "Ironwood Branch",
+      "FileName": "branches_lg.png",
+      "RequiresRecipe" :  false,
+      "ComponentNames": []
     },
     {
-      "id": "headdress",
-      "name": "Headdress",
-      "url": "http://cdn.dota2.com/apps/dota2/images/items/headdress_lg.png",
-      "components": [
+      "Id": "headdress",
+      "Name": "Headdress",
+      "FileName": "headdress_lg.png",
+      "RequiresRecipe" :  true,
+      "ComponentNames": [
         "ironwood_branch",
-        "ring_of_regen",
-        "recipe"
+        "ring_of_regen"
       ]
     },
     {
-      "id": "ring_of_regen",
-      "name": "Ring of Regen",
-      "url": "http://cdn.dota2.com/apps/dota2/images/items/ring_of_regen_lg.png",
-      "components": []
+      "Id": "ring_of_regen",
+      "Name": "Ring of Regen",
+      "FileName": "ring_of_regen_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
     },
     {
-      "id": "chainmail",
-      "name": "Chainmail",
-      "url": "http://cdn.dota2.com/apps/dota2/images/items/chainmail_lg.png",
-      "components": []
+      "Id": "chainmail",
+      "Name": "Chainmail",
+      "FileName": "chainmail_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
     },
     {
-      "id": "staff_of_wizardry",
-      "name": "Staff of Wizardry",
-      "url": "http://cdn.dota2.com/apps/dota2/images/items/staff_of_wizardry_lg.png",
-      "components": []
+      "Id": "staff_of_wizardry",
+      "Name": "Staff of Wizardry",
+      "FileName": "staff_of_wizardry_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
     },
     {
-      "id": "blade_of_alacrity",
-      "name": "Blad of Alacrity",
-      "url": "http://cdn.dota2.com/apps/dota2/images/items/blade_of_alacrity_lg.png",
-      "components": []
+      "Id": "blade_of_alacrity",
+      "Name": "Blad of Alacrity",
+      "FileName": "blade_of_alacrity_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
     }
   ]
 }

@@ -1,28 +1,29 @@
-﻿
+﻿@model Question
+
 <div class="quiz-container">
     <div class="box">
         <div class="target-item-container">
             <span class="target-item">
-                <img id="target-item" src="" alt="" />
+                <img id="target-item" src="@Model.GetUrl(Model.Item)" alt="@Model.Item.Name" />
             </span>
         </div>
 
         <div class="selected-items">
-            <span class="selected-item">
-                <img src="http://cdn.dota2.com/apps/dota2/images/items/branches_lg.png" />
-            </span>
-            <span class="selected-item"></span>
-            <span class="selected-item"></span>
+            @foreach (var _ in Model.Item.Components)
+            {
+                <span class="selected-item"></span>
+            }
         </div>
 
         <div id="option-items" class="option-items">
-            <span class="option selected">
-                <img src="http://cdn.dota2.com/apps/dota2/images/items/branches_lg.png" />
-            </span>
-            <span class="option"></span>
-            <span class="option"></span>
+            @foreach (var item in Model.Item.Components)
+            {
+                <span class="option">
+                    <img src="@Model.GetUrl(item)" alt="@item.Name" />
+                </span>
+            }
             <span class="option recipe">
-                <img src="http://cdn.dota2.com/apps/dota2/images/items/recipe_lg.png" alt="Recipe" />
+                <img src="@Model.RecipeUrl" alt="Recipe" />
             </span>
         </div>
     </div>

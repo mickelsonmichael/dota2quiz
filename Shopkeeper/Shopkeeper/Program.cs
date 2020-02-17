@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
 namespace Shopkeeper
@@ -12,6 +13,13 @@ namespace Shopkeeper
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
+            .ConfigureAppConfiguration(config =>
+            {
+                config.AddJsonFile("items.json", optional: false, reloadOnChange: true);
+                config.AddCommandLine(args);
+
+                config.Build();
+            })
+            .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
     }
 }
