@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ html, body {
     height: 100%;
 }
 
-.container {
+.quiz-container {
     background-color: #333;
     position: absolute;
     display: flex;
@@ -44,7 +44,6 @@ html, body {
 }
 
 .selected-items {
-
 }
 
 .selected-item,
@@ -61,39 +60,39 @@ html, body {
     cursor: pointer;
 }
 
-.selected-item::after,
-.target-item::after,
-.option::after {
-    content: '?';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    font-size: xx-large;
-    color: white;
-    z-index: 1;
-}
+    .selected-item::after,
+    .target-item::after,
+    .option::after {
+        content: '?';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        font-size: xx-large;
+        color: white;
+        z-index: 1;
+    }
 
-.selected-item > img,
-.target-item > img,
-.option > img {
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    position: relative;
-}
+    .selected-item > img,
+    .target-item > img,
+    .option > img {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        position: relative;
+    }
 
-.option.recipe {
-    margin-left: 2rem;
-}
+    .option.recipe {
+        margin-left: 2rem;
+    }
 
-.option.selected::after {
-    display: none;
-}
+    .option.selected::after {
+        display: none;
+    }
 
-.option.selected > img {
-    opacity: 0.5;
-}
+    .option.selected > img {
+        opacity: 0.5;
+    }
