@@ -43,13 +43,6 @@
       "ComponentNames": []
     },
     {
-      "Id": "tp_scroll",
-      "Name": "Teleportation Scroll",
-      "FileName": "tpscroll_lg.png",
-      "RequiresRecipe": false,
-      "ComponentNames": []
-    },
-    {
       "Id": "mango",
       "Name": "Enchanted Mango",
       "FileName": "enchanted_mango_lg.png",
@@ -274,11 +267,172 @@
       "ComponentNames": []
     },
     {
+      "Id": "stick",
+      "Name": "Magic Stick",
+      "FileName": "magic_stick_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "wind_lace",
+      "Name": "Wind Lace",
+      "FileName": "wind_lace_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
       "Id": "ring_of_regen",
       "Name": "Ring of Regen",
       "FileName": "ring_of_regen_lg.png",
       "RequiresRecipe": false,
       "ComponentNames": []
+    },
+    {
+      "Id": "sages_mask",
+      "Name": "Sage's Mask",
+      "FileName": "sobi_mask_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "boots_of_speed",
+      "Name": "Boots of Speed",
+      "FileName": "boots_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "gloves_of_haste",
+      "Name": "Gloves of Haste",
+      "FileName": "gloves_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "cloak",
+      "Name": "Cloak",
+      "FileName": "cloak_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "ring_of_tarrasque",
+      "Name": "Ring of Tarrasque",
+      "FileName": "ring_of_tarrasque_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "ring_of_health",
+      "Name": "Ring of Health",
+      "FileName": "ring_of_health_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "void_stone",
+      "Name": "Void Stone",
+      "FileName": "void_stone_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "gem",
+      "Name": "Gem of True Sight",
+      "FileName": "gem_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "morbid_mask",
+      "Name": "Morbid Mask",
+      "FileName": "lifesteal_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "shadow_amulet",
+      "Name": "Shadow Amulet",
+      "FileName": "shadow_amulet_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "ghost_scepter",
+      "Name": "Ghost Scepter",
+      "FileName": "ghost_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "blink",
+      "Name": "Blink Dagger",
+      "FileName": "blink_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": []
+    },
+    {
+      "Id": "wand",
+      "Name": "Magic Wand",
+      "FileName": "magic_wand_lg.png",
+      "RequiresRecipe": true,
+      "ComponentNames": [
+        "branch",
+        "branch",
+        "stick"
+      ]
+    },
+    {
+      "Id": "null_talisman",
+      "Name": "Null Talisman",
+      "FileName": "null_talisman_lg.png",
+      "RequiresRecipe": true,
+      "ComponentNames": [
+        "circlet",
+        "mantle"
+      ]
+    },
+    {
+      "Id": "wraith_band",
+      "Name": "Wraith Band",
+      "FileName": "wraith_band_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": [
+        "slippers",
+        "circlet"
+      ]
+    },
+    {
+      "Id": "bracer",
+      "Name": "Bracer",
+      "FileName": "bracer_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": [
+        "circlet",
+        "slippers"
+      ]
+    },
+    {
+      "Id": "soul_ring",
+      "Name": "Soul Ring",
+      "FileName": "soul_ring_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": [
+        "ring_of_regen",
+        "gauntlet",
+        "gauntlet"
+      ]
+    },
+    {
+      "Id": "phase_boots",
+      "Name": "Phase Boots",
+      "FileName": "phase_boots_lg.png",
+      "RequiresRecipe": false,
+      "ComponentNames": [
+        "boots_of_speed",
+        "chainmail",
+        "blades_of_attack"
+      ]
     },
     {
       "Id": "headdress",
