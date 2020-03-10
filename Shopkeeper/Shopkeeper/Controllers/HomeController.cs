@@ -5,6 +5,7 @@ using Shopkeeper.Business;
 using Shopkeeper.Models;
 using Shopkeeper.Services.Interfaces;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Shopkeeper.Controllers
 {
@@ -29,6 +30,16 @@ namespace Shopkeeper.Controllers
                 BaseUrl = quizOptions.RootCdnUrl,
                 RecipeUrl = quizOptions.GetRecipeUrl()
             };
+
+            var exclude = model.Item.Components
+                            .Select(x => x.Id)
+                            .Append(model.Item.Id);
+
+            int numberOfFillers = 7 - model.Item.Components.Count();
+
+            var fillerItems = itemService.GetFillerItems(numberOfFillers, exclude.ToArray());
+
+            model.Options = model.Item.Components.Union(fillerItems);
 
             logger.LogDebug($"New Question: {model.Item.Id}");
 

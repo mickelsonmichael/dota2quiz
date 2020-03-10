@@ -20,7 +20,7 @@
         </div>
 
         <div id="option-items" class="option-items">
-            @foreach (var item in Model.Item.Components)
+            @foreach (var item in Model.Options)
             {
                 <span class="option">
                     <img src="@Model.GetUrl(item)" alt="@item.Name" />
