@@ -2,6 +2,7 @@
 using Shopkeeper.Data.Interfaces;
 using Shopkeeper.Services.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Shopkeeper.Services
@@ -30,6 +31,17 @@ namespace Shopkeeper.Services
             var index = Random.Next(items.Count());
 
             return items.ElementAt(index);
+        }
+
+        public IEnumerable<Item> GetFillerItems(int numberOfItems, params string[] exclude)
+        {
+            var items = GetAll()
+                .Where(x => !exclude.Contains(x.Id));
+
+            for (int i = 0; i < numberOfItems; i++)
+            {
+                yield return items.ElementAt(Random.Next(items.Count()));
+            }
         }
     }
 }
