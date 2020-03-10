@@ -1,0 +1,30 @@
+@model Question
+
+<div class="target-item-container">
+    <span class="target-item">
+        <img id="target-item" src="@Model.GetUrl(Model.Item)" alt="@Model.Item.Name" />
+    </span>
+</div>
+
+<div class="selected-items">
+    @foreach (var _ in Model.Item.Components)
+    {
+        <span class="selected-item"></span>
+    }
+    @if (Model.Item.RequiresRecipe)
+    {
+        <span class="selected-item"></span>
+    }
+</div>
+
+<div id="option-items" class="option-items">
+    @foreach (var item in Model.Options)
+    {
+        <span class="option">
+            <img src="@Model.GetUrl(item)" alt="@item.Name" />
+        </span>
+    }
+    <span class="option recipe">
+        <img src="@Model.RecipeUrl" alt="Recipe" />
+    </span>
+</div>

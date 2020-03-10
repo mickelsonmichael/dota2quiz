@@ -1,4 +1,12 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const questionUrl = document.querySelector("#question-url").value;
 
-// Write your JavaScript code.
+function newQuestion() {
+    fetch(questionUrl)
+    .then((response) => response.text())
+    .then((html) => {
+        document.querySelector(".box").innerHTML = html;
+    })
+    .catch((error) => console.warn(error));
+}
+
+newQuestion();
