@@ -24,6 +24,11 @@ namespace Shopkeeper.Controllers
 
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult Question()
+        {
             var model = new Question
             {
                 Item = itemService.GetRandom(),
@@ -43,7 +48,7 @@ namespace Shopkeeper.Controllers
 
             logger.LogDebug($"New Question: {model.Item.Id}");
 
-            return View(model);
+            return PartialView("_Question", model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
