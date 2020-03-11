@@ -43,9 +43,6 @@ html, body {
     padding: 2rem;
 }
 
-.selected-items {
-}
-
 .selected-item,
 .target-item,
 .option {
@@ -61,8 +58,7 @@ html, body {
 }
 
     .selected-item::after,
-    .target-item::after,
-    .option::after {
+    .target-item::after {
         content: '?';
         display: block;
         position: absolute;
@@ -93,6 +89,36 @@ html, body {
         display: none;
     }
 
-    .option.selected > img {
+    .option-img.selected {
         opacity: 0.5;
+        cursor: default;
     }
+
+.correct {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    background-color: purple;
+    border: 2px solid gray;
+    padding: 2rem;
+    z-index: 11;
+}
+
+.correct.show {
+    display: block;
+}
+
+#incorrect-display {
+    color: red;
+    display: none;
+    font-weight: 900;
+    text-align: center;
+    text-transform: capitalize;
+    margin: .5rem 0 0 0;
+}
+
+#incorrect-display.show {
+    display: block;
+}

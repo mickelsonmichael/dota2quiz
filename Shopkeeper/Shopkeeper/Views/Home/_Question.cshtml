@@ -1,9 +1,19 @@
 @model Question
+@{
+    var answer = Model.Item.ComponentNames.ToList();
+
+    if (Model.Item.RequiresRecipe) {
+        answer.Add("recipe");
+    }
+}
+
+<input type="hidden" id="answer" value="@string.Join(",", answer)" />
 
 <div class="target-item-container">
     <span class="target-item">
         <img id="target-item" src="@Model.GetUrl(Model.Item)" alt="@Model.Item.Name" />
     </span>
+    <span id="incorrect-display">Incorrect</span>
 </div>
 
 <div class="selected-items">
@@ -21,10 +31,14 @@
     @foreach (var item in Model.Options)
     {
         <span class="option">
-            <img src="@Model.GetUrl(item)" alt="@item.Name" />
+            <img class="option-img" src="@Model.GetUrl(item)" alt="@item.Name" data-id="@item.Id" />
         </span>
     }
     <span class="option recipe">
-        <img src="@Model.RecipeUrl" alt="Recipe" />
+        <img class="option-img" src="@Model.RecipeUrl" alt="Recipe" data-id="recipe" />
     </span>
+</div>
+
+<div id="incorrect-display">
+    Incorrect
 </div>
