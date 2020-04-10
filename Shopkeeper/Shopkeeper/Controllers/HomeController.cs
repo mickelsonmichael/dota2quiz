@@ -28,13 +28,14 @@ namespace Shopkeeper.Controllers
             return View();
         }
 
-        public IActionResult Question(string previous = null)
+        public IActionResult Question(string previous = null, int streak = 0)
         {
             logger.LogInformation("New question requested");
             
             var model = new Question(itemService.GetRandom(previous), 
                                 quizOptions.GetRecipeUrl(), 
-                                quizOptions.RootCdnUrl);;
+                                quizOptions.RootCdnUrl,
+                                streak);
             
             var exclude = model.Item.Components
                             .Select(x => x.Id)

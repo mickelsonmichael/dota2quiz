@@ -61,7 +61,6 @@ html, body {
     margin: 0 0.5rem;
     position: relative;
     box-shadow: 1px 1px 4px 0 black;
-    cursor: pointer;
     box-sizing: content-box;
 }
 
@@ -91,6 +90,7 @@ html, body {
         width: 100%;
         z-index: 2;
         position: relative;
+        cursor: pointer;
     }
 
     .option.selected::after {
@@ -120,17 +120,22 @@ html, body {
 
 .messages {
     margin-bottom: 2em;
+    font-size: x-large;
+    text-align: center;
+}
+
+#streak-message {
+    color: #eee;
+    display: none;
 }
 
 #incorrect-display {
     display: none;
     color: red;
-    text-align: center;
     text-transform: capitalize;
-    font-size: x-large;
-    margin: .5rem 0 0 0;
 }
 
-#incorrect-display.show {
+#incorrect-display.show,
+#streak-message.show {
     display: block;
 }
