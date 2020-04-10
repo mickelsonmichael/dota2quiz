@@ -31,11 +31,11 @@
     @foreach (var item in Model.Options.Randomize())
     {
         <span class="option">
-            <img class="option-img" src="@Model.GetUrl(item)" alt="@item.Name" data-id="@item.Id" />
+            <img class="option-img" src="@Model.GetUrl(item)" alt="@item.Name" data-id="@item.Id" draggable="false" />
         </span>
     }
     <span class="option recipe">
-        <img class="option-img" src="@Model.RecipeUrl" alt="Recipe" data-id="recipe" />
+        <img class="option-img" src="@Model.RecipeUrl" alt="Recipe" data-id="recipe" draggable="false" />
     </span>
 </div>
 
