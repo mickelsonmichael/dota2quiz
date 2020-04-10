@@ -4,13 +4,19 @@ const correctDisplay = document.getElementById("correct-display");
 
 function newQuestion() {
     correctDisplay.classList.remove("show");
+    let qUrl = questionUrl;
+    let currentQ = document.getElementById("question");
+    
+    if (currentQ) {
+        qUrl += "?previous=" + currentQ.value;
+    }
 
-    fetch(questionUrl)
-    .then((response) => response.text())
-    .then((html) => {
-        document.querySelector(".box").innerHTML = html;
-    })
-    .catch((error) => console.warn(error));
+    fetch(qUrl)
+        .then((response) => response.text())
+        .then((html) => {
+            document.querySelector(".box").innerHTML = html;
+        })
+        .catch((error) => console.warn(error));
 }
 
 newQuestion();
