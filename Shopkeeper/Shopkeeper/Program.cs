@@ -21,9 +21,6 @@ namespace Shopkeeper
 
                 config.Build();
             })
-            .ConfigureLogging(loggingConfig => {
-                loggingConfig.AddConsole();
-            })
             .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
     }
 }

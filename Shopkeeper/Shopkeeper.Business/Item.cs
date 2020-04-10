@@ -12,5 +12,7 @@ namespace Shopkeeper.Business
         public IEnumerable<Item> Components { get; set; }
         public bool HasComponents => Components?.Any() == true;
         public bool RequiresRecipe { get; set; }
+
+        public override string ToString() => $"{Name} <{Id}>";
     }
 }

@@ -30,6 +30,8 @@ namespace Shopkeeper.Controllers
 
         public IActionResult Question()
         {
+            logger.LogInformation("New question requested");
+            
             var model = new Question
             {
                 Item = itemService.GetRandom(),
