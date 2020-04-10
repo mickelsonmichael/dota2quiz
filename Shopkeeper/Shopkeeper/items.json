@@ -408,7 +408,7 @@
       "FileName": "bracer_lg.png",
       "RequiresRecipe": true,
       "ComponentNames": [
-        "circlet",
+        "gauntlet",
         "slippers"
       ]
     },
