@@ -32,13 +32,11 @@ namespace Shopkeeper.Controllers
         {
             logger.LogInformation("New question requested");
             
-            var model = new Question
-            {
-                Item = itemService.GetRandom(),
-                BaseUrl = quizOptions.RootCdnUrl,
-                RecipeUrl = quizOptions.GetRecipeUrl()
-            };
+            var model = new Question(itemService.GetRandom(), 
+                                quizOptions.GetRecipeUrl(), 
+                                quizOptions.RootCdnUrl);;
 
+            
             var exclude = model.Item.Components
                             .Select(x => x.Id)
                             .Append(model.Item.Id);
@@ -47,9 +45,11 @@ namespace Shopkeeper.Controllers
 
             var fillerItems = itemService.GetFillerItems(numberOfFillers, exclude);
 
-            model.Options = model.Item.Components.Union(fillerItems);
+            model.Options.AddRange(fillerItems);
 
-            logger.LogDebug($"New Question: {model.Item.Id}");
+            logger.LogDebug("New Question for <{0}>\nAnswers: {1}", 
+                model.Item.Name, 
+                string.Join(',', model.Item.ComponentNames));
 
             return PartialView("_Question", model);
         }

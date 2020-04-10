@@ -440,7 +440,7 @@
       "FileName": "headdress_lg.png",
       "RequiresRecipe": true,
       "ComponentNames": [
-        "ironwood_branch",
+        "branch",
         "ring_of_regen"
       ]
     }

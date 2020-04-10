@@ -30,7 +30,9 @@ namespace Shopkeeper.Data
             {
                 logger.LogDebug("Populating Components for {0}: {1}", item.Name, string.Join(',', item.ComponentNames));
 
-                item.Components = configItems.Items.Where(x => item.ComponentNames.Contains(x.Id));
+                item.Components = item.ComponentNames
+                    .Select(itemId => configItems.Items.Single(i => i.Id == itemId))
+                    .ToList(); // eager load for easier logging
             }
 
             logger.LogDebug("{0} Items Found", configItems.Items.Count());
@@ -41,7 +43,7 @@ namespace Shopkeeper.Data
 
         public IQueryable<Item> GetAll()
         {
-            logger.LogDebug("Retrieving All Items");
+            logger.LogDebug("Retrieving All Items...");
 
             return Items
                 .Select(x => x.Value)
@@ -52,7 +54,7 @@ namespace Shopkeeper.Data
         {
             if (string.IsNullOrWhiteSpace(itemId)) throw new ArgumentNullException(nameof(itemId));
 
-            logger.LogInformation("Getting Item {0}", itemId);
+            logger.LogInformation("Getting Item <{0}>", itemId);
             
             return Items[itemId];
         }
