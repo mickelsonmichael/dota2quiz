@@ -4,19 +4,22 @@ using Shopkeeper.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Extensions.Logging;
 
 namespace Shopkeeper.Services
 {
     public class ItemService : IItemService
     {
         private readonly IItemRepository itemRepository;
+        private readonly ILogger<ItemService> logger;
         private Random _random;
 
         private Random Random => _random ?? (_random = new Random());
 
-        public ItemService(IItemRepository itemRepository)
+        public ItemService(IItemRepository itemRepository, ILogger<ItemService> logger)
         {
             this.itemRepository = itemRepository;
+            this.logger = logger;
         }
 
         public Item Get(string itemId) => itemRepository.Get(itemId);
@@ -25,10 +28,15 @@ namespace Shopkeeper.Services
 
         public Item GetRandom(params string[] exclude)
         {
+            logger.LogInformation("Getting Random Item");
+            logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
+
             var items = GetAll()
                 .Where(x => x.HasComponents && !exclude.Contains(x.Id));
 
             var index = Random.Next(items.Count());
+
+            logger.LogInformation("Random Item: {0}", items.ElementAt(index));
 
             return items.ElementAt(index);
         }
@@ -40,7 +48,11 @@ namespace Shopkeeper.Services
 
             for (int i = 0; i < numberOfItems; i++)
             {
-                yield return items.ElementAt(Random.Next(items.Count()));
+                var item = items.ElementAt(Random.Next(items.Count()));
+
+                logger.LogDebug("Filler Item {0} Added", item);
+
+                yield return item;
             }
         }
     }
