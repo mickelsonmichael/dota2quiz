@@ -31,8 +31,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
-    width: 700px;
-    height: 400px;
+    width: 80%;
     border-radius: 3px;
     box-shadow: 2px 2px 5px 0 black;
 }
@@ -41,6 +40,7 @@ html, body {
 .selected-items,
 .option-items {
     padding: 2rem;
+    text-align: center;
 }
 
 .selected-item,
@@ -55,6 +55,10 @@ html, body {
     position: relative;
     box-shadow: 1px 1px 4px 0 black;
     cursor: pointer;
+}
+
+.option {
+    margin-bottom: .5rem;
 }
 
     .selected-item::after,
@@ -79,10 +83,6 @@ html, body {
         width: 100%;
         z-index: 2;
         position: relative;
-    }
-
-    .option.recipe {
-        margin-left: 2rem;
     }
 
     .option.selected::after {
