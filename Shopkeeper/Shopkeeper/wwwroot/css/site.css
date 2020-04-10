@@ -10,6 +10,9 @@ html, body {
 }
 
 .quiz-container {
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
     background-color: #333;
     position: absolute;
     display: flex;
@@ -25,13 +28,16 @@ html, body {
 }
 
 .box {
-    background-color: #333399;
+    background-color: #444;
+    border: 1px solid #eee;
     margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
     width: 80%;
+    max-width: 690px;
+    box-sizing: content-box;
     border-radius: 3px;
     box-shadow: 2px 2px 5px 0 black;
 }
@@ -46,15 +52,16 @@ html, body {
 .selected-item,
 .target-item,
 .option {
-    width: 70px;
-    height: 50px;
-    background-color: #444;
-    border: 2px solid #222;
+    width: 66px;
+    height: 46px;
+    background-color: #222;
+    border: 2px solid #888;
     display: inline-block;
     margin: 0 0.5rem;
     position: relative;
     box-shadow: 1px 1px 4px 0 black;
     cursor: pointer;
+    box-sizing: content-box;
 }
 
 .option {
