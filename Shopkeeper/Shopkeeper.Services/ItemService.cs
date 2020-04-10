@@ -33,7 +33,7 @@ namespace Shopkeeper.Services
             return items.ElementAt(index);
         }
 
-        public IEnumerable<Item> GetFillerItems(int numberOfItems, params string[] exclude)
+        public IEnumerable<Item> GetFillerItems(int numberOfItems, IEnumerable<string> exclude)
         {
             var items = GetAll()
                 .Where(x => !exclude.Contains(x.Id));

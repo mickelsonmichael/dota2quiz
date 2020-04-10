@@ -11,6 +11,7 @@ namespace Shopkeeper.Controllers
 {
     public class HomeController : Controller
     {
+        private const int NumberOfOptions = 11;
         private readonly ILogger<HomeController> logger;
         private readonly IItemService itemService;
         private readonly QuizOptions quizOptions;
@@ -40,9 +41,9 @@ namespace Shopkeeper.Controllers
                             .Select(x => x.Id)
                             .Append(model.Item.Id);
 
-            int numberOfFillers = 7 - model.Item.Components.Count();
+            int numberOfFillers = NumberOfOptions - model.Item.Components.Count();
 
-            var fillerItems = itemService.GetFillerItems(numberOfFillers, exclude.ToArray());
+            var fillerItems = itemService.GetFillerItems(numberOfFillers, exclude);
 
             model.Options = model.Item.Components.Union(fillerItems);
 
