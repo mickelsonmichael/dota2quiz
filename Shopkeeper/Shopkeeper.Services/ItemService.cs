@@ -48,15 +48,20 @@ namespace Shopkeeper.Services
         public IEnumerable<Item> GetFillerItems(int numberOfItems, IEnumerable<string> exclude)
         {
             var items = GetAll()
-                .Where(x => !exclude.Contains(x.Id));
+                .Where(x => !exclude.Contains(x.Id))
+                .ToArray();
 
             for (int i = 0; i < numberOfItems; i++)
             {
-                var item = items.ElementAt(Random.Next(items.Count()));
+                int randomIndex;
+                lock (Random)
+                {
+                    randomIndex = Random.Next(items.Length);
+                }
 
-                logger.LogDebug("Filler Item {0} Added", item);
+                logger.LogDebug("Filler Item {0} Added", items[randomIndex]);
 
-                yield return item;
+                yield return items[randomIndex];
             }
         }
     }
