@@ -1,5 +1,8 @@
 name: Deploy to Amazon
-on: release
+on: 
+  push:
+    branches:
+      - "GithubActions"
   
 jobs:
   deploy:
