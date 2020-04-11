@@ -28,8 +28,6 @@ namespace Shopkeeper.Services
 
         public Item GetRandom(params string[] exclude)
         {
-            if (exclude == null) exclude = Array.Empty<string>();
-
             logger.LogInformation("Getting Random Item");
             logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
 
