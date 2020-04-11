@@ -4,6 +4,6 @@ namespace Shopkeeper.Business
 {
     public class QuizItems
     {
-        public IEnumerable<Item> Items { get; set; }
+        public List<Item> Items { get; set; }
     }
 }

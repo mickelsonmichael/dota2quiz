@@ -7,13 +7,13 @@
     }
 }
 
+<input type="hidden" id="question" value="@Model.Item.Id" />
 <input type="hidden" id="answer" value="@string.Join(",", answer)" />
 
 <div class="target-item-container">
     <span class="target-item">
         <img id="target-item" src="@Model.GetUrl(Model.Item)" alt="@Model.Item.Name" />
     </span>
-    <span id="incorrect-display">Incorrect</span>
 </div>
 
 <div class="selected-items">
@@ -28,17 +28,22 @@
 </div>
 
 <div id="option-items" class="option-items">
-    @foreach (var item in Model.Options)
+    @foreach (var item in Model.Options.Randomize())
     {
         <span class="option">
-            <img class="option-img" src="@Model.GetUrl(item)" alt="@item.Name" data-id="@item.Id" />
+            <img class="option-img" src="@Model.GetUrl(item)" alt="@item.Name" data-id="@item.Id" draggable="false" />
         </span>
     }
     <span class="option recipe">
-        <img class="option-img" src="@Model.RecipeUrl" alt="Recipe" data-id="recipe" />
+        <img class="option-img" src="@Model.RecipeUrl" alt="Recipe" data-id="recipe" draggable="false" />
     </span>
 </div>
 
-<div id="incorrect-display">
-    Incorrect
+<div class="messages">
+    <div id="streak-message" class="show">
+        Current Streak: <span id="streak">@Model.Streak</span>
+    </div>
+    <div id="incorrect-display">
+        Incorrect! Streak Reset
+    </div>
 </div>

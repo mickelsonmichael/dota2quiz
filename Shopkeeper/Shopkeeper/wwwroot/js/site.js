@@ -4,13 +4,29 @@ const correctDisplay = document.getElementById("correct-display");
 
 function newQuestion() {
     correctDisplay.classList.remove("show");
+    let qUrl = questionUrl;
 
-    fetch(questionUrl)
-    .then((response) => response.text())
-    .then((html) => {
-        document.querySelector(".box").innerHTML = html;
-    })
-    .catch((error) => console.warn(error));
+    // record the current streak
+    let streak = document.getElementById("streak");
+    if (streak) {
+        qUrl += "?streak=" + streak.innerText;
+    }
+    else {
+        qUrl += "?streak=" + 0;
+    }
+
+    // pass the current question
+    let currentQ = document.getElementById("question");
+    if (currentQ) {
+        qUrl += "&previous=" + currentQ.value;
+    }
+
+    fetch(qUrl)
+        .then((response) => response.text())
+        .then((html) => {
+            document.querySelector(".box").innerHTML = html;
+        })
+        .catch((error) => console.warn(error));
 }
 
 newQuestion();
@@ -74,6 +90,8 @@ function validateAnswer() {
 
 function correct() {
     correctDisplay.classList.add("show");
+    
+    incrementStreak();
 
     setTimeout(() => {
         newQuestion();
@@ -83,9 +101,24 @@ function correct() {
 function incorrect() {
     document.getElementById("incorrect-display")
         .classList.add("show");
+
+    document.getElementById("streak-message")
+        .classList.remove("show");
+
+    document.getElementById("streak")
+        .innerText = "0";
 }
 
 function notIncorrect() {
     document.getElementById("incorrect-display")
         .classList.remove("show");
+
+    document.getElementById("streak-message")
+        .classList.add("show");
+}
+
+function incrementStreak() {
+    let counter = document.getElementById("streak");
+
+    counter.innerText = (Number(counter.innerText) + 1)
 }

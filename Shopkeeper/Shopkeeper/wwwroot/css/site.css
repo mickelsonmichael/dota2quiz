@@ -2,14 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html, body {
     height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none; 
+    user-drag: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -o-user-select: none; 
+    user-select: none; 
 }
 
 .quiz-container {
+    background: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
     background-color: #333;
     position: absolute;
     display: flex;
@@ -25,36 +41,45 @@ html, body {
 }
 
 .box {
-    background-color: #333399;
+    background-color: #443a2d;
+    border: 1px solid #eee;
     margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
-    width: 700px;
-    height: 400px;
+    width: 80%;
+    max-width: 690px;
+    box-sizing: content-box;
     border-radius: 3px;
     box-shadow: 2px 2px 5px 0 black;
 }
 
 .target-item-container,
 .selected-items,
-.option-items {
-    padding: 2rem;
+.option-items,
+.messages {
+    margin: 1rem 2rem;
+    text-align: center;
+    user-select: none;
 }
 
 .selected-item,
 .target-item,
 .option {
-    width: 70px;
-    height: 50px;
-    background-color: #444;
-    border: 2px solid #222;
+    width: 66px;
+    height: 46px;
+    background-color: #222;
+    border: 2px solid #888;
     display: inline-block;
     margin: 0 0.5rem;
     position: relative;
     box-shadow: 1px 1px 4px 0 black;
-    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.option {
+    margin-bottom: .5rem;
 }
 
     .selected-item::after,
@@ -79,10 +104,7 @@ html, body {
         width: 100%;
         z-index: 2;
         position: relative;
-    }
-
-    .option.recipe {
-        margin-left: 2rem;
+        cursor: pointer;
     }
 
     .option.selected::after {
@@ -110,15 +132,24 @@ html, body {
     display: block;
 }
 
-#incorrect-display {
-    color: red;
-    display: none;
-    font-weight: 900;
+.messages {
+    margin-bottom: 2em;
+    font-size: x-large;
     text-align: center;
-    text-transform: capitalize;
-    margin: .5rem 0 0 0;
 }
 
-#incorrect-display.show {
+#streak-message {
+    color: #eee;
+    display: none;
+}
+
+#incorrect-display {
+    display: none;
+    color: red;
+    text-transform: capitalize;
+}
+
+#incorrect-display.show,
+#streak-message.show {
     display: block;
 }

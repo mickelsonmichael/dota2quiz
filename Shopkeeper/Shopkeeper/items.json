@@ -396,7 +396,7 @@
       "Id": "wraith_band",
       "Name": "Wraith Band",
       "FileName": "wraith_band_lg.png",
-      "RequiresRecipe": false,
+      "RequiresRecipe": true,
       "ComponentNames": [
         "slippers",
         "circlet"
@@ -406,17 +406,17 @@
       "Id": "bracer",
       "Name": "Bracer",
       "FileName": "bracer_lg.png",
-      "RequiresRecipe": false,
+      "RequiresRecipe": true,
       "ComponentNames": [
-        "circlet",
-        "slippers"
+        "gauntlet",
+        "circlet"
       ]
     },
     {
       "Id": "soul_ring",
       "Name": "Soul Ring",
       "FileName": "soul_ring_lg.png",
-      "RequiresRecipe": false,
+      "RequiresRecipe": true,
       "ComponentNames": [
         "ring_of_regen",
         "gauntlet",
@@ -440,7 +440,7 @@
       "FileName": "headdress_lg.png",
       "RequiresRecipe": true,
       "ComponentNames": [
-        "ironwood_branch",
+        "branch",
         "ring_of_regen"
       ]
     }

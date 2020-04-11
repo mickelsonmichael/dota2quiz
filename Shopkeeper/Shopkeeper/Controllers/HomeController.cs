@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using Shopkeeper.Business;
 using Shopkeeper.Models;
 using Shopkeeper.Services.Interfaces;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -11,15 +12,16 @@ namespace Shopkeeper.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> logger;
-        private readonly IItemService itemService;
-        private readonly QuizOptions quizOptions;
+        private const int NumberOfOptions = 11;
+        private readonly ILogger<HomeController> _logger;
+        private readonly IItemService _itemService;
+        private readonly QuizOptions _quizOptions;
 
         public HomeController(ILogger<HomeController> logger, IItemService itemService, IOptionsMonitor<QuizOptions> quizOptions)
         {
-            this.logger = logger;
-            this.itemService = itemService;
-            this.quizOptions = quizOptions.CurrentValue;
+            _logger = logger;
+            _itemService = itemService;
+            _quizOptions = quizOptions.CurrentValue;
         }
 
         public IActionResult Index()
@@ -27,26 +29,30 @@ namespace Shopkeeper.Controllers
             return View();
         }
 
-        public IActionResult Question()
+        public IActionResult Question(string previous = null, int streak = 0)
         {
-            var model = new Question
-            {
-                Item = itemService.GetRandom(),
-                BaseUrl = quizOptions.RootCdnUrl,
-                RecipeUrl = quizOptions.GetRecipeUrl()
-            };
-
+            _logger.LogInformation("New question requested");
+            
+            var model = new Question(
+                                _itemService.GetRandom(new HashSet<string> { previous }), 
+                                _quizOptions.GetRecipeUrl(), 
+                                _quizOptions.RootCdnUrl,
+                                streak);
+            
             var exclude = model.Item.Components
                             .Select(x => x.Id)
-                            .Append(model.Item.Id);
+                            .Append(model.Item.Id)
+                            .ToHashSet();
 
-            int numberOfFillers = 7 - model.Item.Components.Count();
+            int numberOfFillers = NumberOfOptions - model.Item.Components.Count();
 
-            var fillerItems = itemService.GetFillerItems(numberOfFillers, exclude.ToArray());
+            var fillerItems = _itemService.GetFillerItems(numberOfFillers, exclude);
 
-            model.Options = model.Item.Components.Union(fillerItems);
+            model.Options.AddRange(fillerItems);
 
-            logger.LogDebug($"New Question: {model.Item.Id}");
+            _logger.LogDebug("New Question for <{0}>\nAnswers: {1}", 
+                model.Item.Name, 
+                string.Join(',', model.Item.ComponentNames));
 
             return PartialView("_Question", model);
         }
