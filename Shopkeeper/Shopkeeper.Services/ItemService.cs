@@ -34,7 +34,11 @@ namespace Shopkeeper.Services
             var items = GetAll()
                 .Where(x => x.HasComponents && !exclude.Contains(x.Id));
 
-            var index = Random.Next(items.Count());
+            int index;
+            lock (Random)
+            {
+                index = Random.Next(items.Count());
+            }
 
             logger.LogInformation("Random Item: {0}", items.ElementAt(index));
 
