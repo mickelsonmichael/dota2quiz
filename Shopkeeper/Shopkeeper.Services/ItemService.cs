@@ -24,7 +24,7 @@ namespace Shopkeeper.Services
 
         public Item Get(string itemId) => itemRepository.Get(itemId);
 
-        public IQueryable<Item> GetAll() => itemRepository.GetAll();
+        public IEnumerable<Item> GetAll() => itemRepository.GetAll();
 
         public Item GetRandom(params string[] exclude)
         {

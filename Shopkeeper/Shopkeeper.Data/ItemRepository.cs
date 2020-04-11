@@ -41,13 +41,12 @@ namespace Shopkeeper.Data
                 .ToDictionary(x => x.Id, y => y);
         }
 
-        public IQueryable<Item> GetAll()
+        public IEnumerable<Item> GetAll()
         {
             logger.LogDebug("Retrieving All Items...");
 
             return Items
-                .Select(x => x.Value)
-                .AsQueryable();
+                .Select(x => x.Value);
         }
 
         public Item Get(string itemId)
