@@ -1,0 +1,11 @@
+name: Deploy to Amazon
+on: release
+  
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Test
+      run: aws --help | echo
