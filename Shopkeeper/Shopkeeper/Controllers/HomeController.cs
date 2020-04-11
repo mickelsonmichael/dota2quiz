@@ -32,7 +32,8 @@ namespace Shopkeeper.Controllers
         {
             logger.LogInformation("New question requested");
             
-            var model = new Question(itemService.GetRandom(previous), 
+            var model = new Question(
+                                itemService.GetRandom(previous), 
                                 quizOptions.GetRecipeUrl(), 
                                 quizOptions.RootCdnUrl,
                                 streak);
