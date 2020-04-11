@@ -6,9 +6,10 @@ on:
   
 jobs:
   deploy:
+    name: "Deploy to AWS"
 
     runs-on: ubuntu-latest
 
     steps:
     - name: Test
-      run: aws --help | echo
+      run: aws --help | echof
