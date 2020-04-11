@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using Shopkeeper.Business;
 using Shopkeeper.Models;
 using Shopkeeper.Services.Interfaces;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -33,14 +34,15 @@ namespace Shopkeeper.Controllers
             logger.LogInformation("New question requested");
             
             var model = new Question(
-                                itemService.GetRandom(previous), 
+                                itemService.GetRandom(new HashSet<string> { previous }), 
                                 quizOptions.GetRecipeUrl(), 
                                 quizOptions.RootCdnUrl,
                                 streak);
             
             var exclude = model.Item.Components
                             .Select(x => x.Id)
-                            .Append(model.Item.Id);
+                            .Append(model.Item.Id)
+                            .ToHashSet();
 
             int numberOfFillers = NumberOfOptions - model.Item.Components.Count();
 

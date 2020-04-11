@@ -26,7 +26,7 @@ namespace Shopkeeper.Services
 
         public IEnumerable<Item> GetAll() => itemRepository.GetAll();
 
-        public Item GetRandom(params string[] exclude)
+        public Item GetRandom(ISet<string> exclude)
         {
             logger.LogInformation("Getting Random Item");
             logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
@@ -45,7 +45,7 @@ namespace Shopkeeper.Services
             return items.ElementAt(index);
         }
 
-        public IEnumerable<Item> GetFillerItems(int numberOfItems, IEnumerable<string> exclude)
+        public IEnumerable<Item> GetFillerItems(int numberOfItems, ISet<string> exclude)
         {
             var items = GetAll()
                 .Where(x => !exclude.Contains(x.Id))
