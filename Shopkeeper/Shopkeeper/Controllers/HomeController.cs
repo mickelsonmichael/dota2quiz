@@ -13,15 +13,15 @@ namespace Shopkeeper.Controllers
     public class HomeController : Controller
     {
         private const int NumberOfOptions = 11;
-        private readonly ILogger<HomeController> logger;
-        private readonly IItemService itemService;
-        private readonly QuizOptions quizOptions;
+        private readonly ILogger<HomeController> _logger;
+        private readonly IItemService _itemService;
+        private readonly QuizOptions _quizOptions;
 
         public HomeController(ILogger<HomeController> logger, IItemService itemService, IOptionsMonitor<QuizOptions> quizOptions)
         {
-            this.logger = logger;
-            this.itemService = itemService;
-            this.quizOptions = quizOptions.CurrentValue;
+            _logger = logger;
+            _itemService = itemService;
+            _quizOptions = quizOptions.CurrentValue;
         }
 
         public IActionResult Index()
@@ -31,12 +31,12 @@ namespace Shopkeeper.Controllers
 
         public IActionResult Question(string previous = null, int streak = 0)
         {
-            logger.LogInformation("New question requested");
+            _logger.LogInformation("New question requested");
             
             var model = new Question(
-                                itemService.GetRandom(new HashSet<string> { previous }), 
-                                quizOptions.GetRecipeUrl(), 
-                                quizOptions.RootCdnUrl,
+                                _itemService.GetRandom(new HashSet<string> { previous }), 
+                                _quizOptions.GetRecipeUrl(), 
+                                _quizOptions.RootCdnUrl,
                                 streak);
             
             var exclude = model.Item.Components
@@ -46,11 +46,11 @@ namespace Shopkeeper.Controllers
 
             int numberOfFillers = NumberOfOptions - model.Item.Components.Count();
 
-            var fillerItems = itemService.GetFillerItems(numberOfFillers, exclude);
+            var fillerItems = _itemService.GetFillerItems(numberOfFillers, exclude);
 
             model.Options.AddRange(fillerItems);
 
-            logger.LogDebug("New Question for <{0}>\nAnswers: {1}", 
+            _logger.LogDebug("New Question for <{0}>\nAnswers: {1}", 
                 model.Item.Name, 
                 string.Join(',', model.Item.ComponentNames));
 

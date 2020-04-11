@@ -10,42 +10,42 @@ namespace Shopkeeper.Data
 {
     public class ItemRepository : IItemRepository
     {
-        private readonly IReadOnlyDictionary<string, Item> Items;
-        private readonly QuizItems configItems;
-        private readonly ILogger<ItemRepository> logger;
+        private readonly IReadOnlyDictionary<string, Item> _items;
+        private readonly QuizItems _configItems;
+        private readonly ILogger<ItemRepository> _logger;
 
         public ItemRepository(IOptionsMonitor<QuizItems> itemsConfig, ILogger<ItemRepository> logger)
         {
-            configItems = itemsConfig.CurrentValue;
-            this.logger = logger;
+            _configItems = itemsConfig.CurrentValue;
+            _logger = logger;
 
-            Items = LoadJson();
+            _items = LoadJson();
         }
 
         private Dictionary<string, Item> LoadJson()
         {
-            logger.LogInformation("Parsing Item Json");
+            _logger.LogInformation("Parsing Item Json");
 
-            foreach (var item in configItems.Items.Where(x => x.ComponentNames != null))
+            foreach (var item in _configItems.Items.Where(x => x.ComponentNames != null))
             {
-                logger.LogDebug("Populating Components for {0}: {1}", item.Name, string.Join(',', item.ComponentNames));
+                _logger.LogDebug("Populating Components for {0}: {1}", item.Name, string.Join(',', item.ComponentNames));
 
                 item.Components = item.ComponentNames
-                    .Select(itemId => configItems.Items.Single(i => i.Id == itemId))
+                    .Select(itemId => _configItems.Items.Single(i => i.Id == itemId))
                     .ToList(); // eager load for easier logging
             }
 
-            logger.LogDebug("{0} Items Found", configItems.Items.Count);
+            _logger.LogDebug("{0} Items Found", _configItems.Items.Count);
 
-            return configItems.Items
+            return _configItems.Items
                 .ToDictionary(x => x.Id, y => y);
         }
 
         public IEnumerable<Item> GetAll()
         {
-            logger.LogDebug("Retrieving All Items...");
+            _logger.LogDebug("Retrieving All Items...");
 
-            return Items
+            return _items
                 .Select(x => x.Value);
         }
 
@@ -53,9 +53,9 @@ namespace Shopkeeper.Data
         {
             if (string.IsNullOrWhiteSpace(itemId)) throw new ArgumentNullException(nameof(itemId));
 
-            logger.LogInformation("Getting Item <{0}>", itemId);
+            _logger.LogInformation("Getting Item <{0}>", itemId);
             
-            return Items[itemId];
+            return _items[itemId];
         }
     }
 }

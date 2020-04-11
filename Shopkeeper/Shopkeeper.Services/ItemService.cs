@@ -10,26 +10,26 @@ namespace Shopkeeper.Services
 {
     public class ItemService : IItemService
     {
-        private readonly IItemRepository itemRepository;
-        private readonly ILogger<ItemService> logger;
+        private readonly IItemRepository _itemRepository;
+        private readonly ILogger<ItemService> _logger;
         private Random _random;
 
         private Random Random => _random ?? (_random = new Random());
 
         public ItemService(IItemRepository itemRepository, ILogger<ItemService> logger)
         {
-            this.itemRepository = itemRepository;
-            this.logger = logger;
+            _itemRepository = itemRepository;
+            _logger = logger;
         }
 
-        public Item Get(string itemId) => itemRepository.Get(itemId);
+        public Item Get(string itemId) => _itemRepository.Get(itemId);
 
-        public IEnumerable<Item> GetAll() => itemRepository.GetAll();
+        public IEnumerable<Item> GetAll() => _itemRepository.GetAll();
 
         public Item GetRandom(ISet<string> exclude)
         {
-            logger.LogInformation("Getting Random Item");
-            logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
+            _logger.LogInformation("Getting Random Item");
+            _logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
 
             var items = GetAll()
                 .Where(x => x.HasComponents && !exclude.Contains(x.Id));
@@ -40,7 +40,7 @@ namespace Shopkeeper.Services
                 index = Random.Next(items.Count());
             }
 
-            logger.LogInformation("Random Item: {0}", items.ElementAt(index));
+            _logger.LogInformation("Random Item: {0}", items.ElementAt(index));
 
             return items.ElementAt(index);
         }
@@ -59,7 +59,7 @@ namespace Shopkeeper.Services
                     randomIndex = Random.Next(items.Length);
                 }
 
-                logger.LogDebug("Filler Item {0} Added", items[randomIndex]);
+                _logger.LogDebug("Filler Item {0} Added", items[randomIndex]);
 
                 yield return items[randomIndex];
             }
