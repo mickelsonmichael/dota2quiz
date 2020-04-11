@@ -35,7 +35,7 @@ namespace Shopkeeper.Data
                     .ToList(); // eager load for easier logging
             }
 
-            logger.LogDebug("{0} Items Found", configItems.Items.Count());
+            logger.LogDebug("{0} Items Found", configItems.Items.Count);
 
             return configItems.Items
                 .ToDictionary(x => x.Id, y => y);
