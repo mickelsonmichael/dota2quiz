@@ -9,14 +9,16 @@ using System.Linq;
 
 namespace Shopkeeper.Controllers
 {
-    public class HomeController : Controller
+    public class QuestionController : Controller
     {
         private const int NumberOfOptions = 11;
-        private readonly ILogger<HomeController> logger;
+        private readonly ILogger<QuestionController> logger;
         private readonly IItemService itemService;
         private readonly QuizOptions quizOptions;
 
-        public HomeController(ILogger<HomeController> logger, IItemService itemService, IOptionsMonitor<QuizOptions> quizOptions)
+        public QuestionController(ILogger<QuestionController> logger, 
+            IItemService itemService, 
+            IOptionsMonitor<QuizOptions> quizOptions)
         {
             this.logger = logger;
             this.itemService = itemService;
