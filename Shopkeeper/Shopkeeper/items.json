@@ -1149,7 +1149,7 @@
     {
       "Id": "monkey_king_bar",
       "Name": "Monkey King Bar",
-      "FileName": "monkey_king_bar.png",
+      "FileName": "monkey_king_bar_lg.png",
       "RequiresRecipe": false,
       "Gold": 4175,
       "ComponentNames": [
