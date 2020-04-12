@@ -127,21 +127,21 @@
       "ComponentNames": []
     },
     {
-      "Id": "belt",
+      "Id": "belt_of_strength",
       "Name": "Belt of Strength",
       "FileName": "belt_of_strength_lg.png",
       "RequiresRecipe": false,
       "ComponentNames": []
     },
     {
-      "Id": "band",
+      "Id": "band_of_elvenskin",
       "Name": "Band of Elvenskin",
       "FileName": "boots_of_elves_lg.png",
       "RequiresRecipe": false,
       "ComponentNames": []
     },
     {
-      "Id": "robe",
+      "Id": "robe_of_the_magi",
       "Name": "Robe of the Magi",
       "FileName": "robe_lg.png",
       "RequiresRecipe": false,
@@ -454,7 +454,7 @@
       "ComponentNames": [
         "quarterstaff",
         "sages_mask",
-        "robe_of_magi"
+        "robe_of_the_magi"
       ]
     },
     {
@@ -654,9 +654,9 @@
       "RequiresRecipe": true,
       "Gold": 2500,
       "ComponentNames": [
-        "ring_of_terrasque",
+        "ring_of_tarrasque",
         "energy_booster",
-        "magic_wand"
+        "wand"
       ]
     },
     {
@@ -680,6 +680,50 @@
         "mekansm",
         "arcane_boots"
       ]
+    },
+    {
+      "Id": "hood_of_defiance",
+      "Name": "Hood of Defiance",
+      "FileName": "hood_of_defiance_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1600,
+      "ComponentNames": [
+        "cloak",
+        "ring_of_health",
+        "ring_of_regen"
+      ]
+    },
+    {
+      "Id": "energy_booster",
+      "Name": "Energy Booster",
+      "FileName": "energy_booster_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 900,
+      "ComponentNames": []
+    },
+    {
+      "Id": "vitality_booster",
+      "Name": "Vitality Booster",
+      "FileName": "vitality_booster_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1100,
+      "ComponentNames": []
+    },
+    {
+      "Id": "point_booster",
+      "Name": "Point Booster",
+      "FileName": "point_booster_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1200,
+      "ComponentNames": []
+    },
+    {
+      "Id": "hyperstone",
+      "Name": "Hyperstone",
+      "FileName": "hyperstone_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2000,
+      "ComponentNames": []
     }
   ]
 }
