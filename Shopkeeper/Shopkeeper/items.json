@@ -1024,6 +1024,177 @@
       ]
     },
     {
+      "Id": "crystalys",
+      "Name": "Crystalys",
+      "FileName": "lesser_crit_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2130,
+      "ComponentNames": [
+        "broadsword",
+        "blades_of_attack"
+      ]
+    },
+    {
+      "Id": "armlet",
+      "Name": "Armlet of Mordiggian",
+      "FileName": "armlet_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2405,
+      "ComponentNames": [
+        "helm_of_iron_will",
+        "gloves_of_haste",
+        "blades_of_attack"
+      ]
+    },
+    {
+      "Id": "meteor_hammer",
+      "Name": "Meteor Hammer",
+      "FileName": "meteor_hammer_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2450,
+      "ComponentNames": [
+        "ogre_axe",
+        "staff_of_wizardry",
+        "ring_of_regen",
+        "sages_mask"
+      ]
+    },
+    {
+      "Id": "shadow_blade",
+      "Name": "Shadow Blade",
+      "FileName": "invis_sword_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2800,
+      "ComponentNames": [
+        "shadow_amulet",
+        "claymore"
+      ]
+    },
+    {
+      "Id": "skull_basher",
+      "Name": "Skull Basher",
+      "FileName": "basher_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2950,
+      "ComponentNames": [
+        "mithril_hammer",
+        "belt_of_strength"
+      ]
+    },
+    {
+      "Id": "battle_fury",
+      "Name": "Battle Fury",
+      "FileName": "bfury_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4400,
+      "ComponentNames": [
+        "broadsword",
+        "mithril_hammer",
+        "perserverance",
+        "quelling_blade"
+      ]
+    },
+    {
+      "Id": "monkey_king_bar",
+      "Name": "Monkey King Bar",
+      "FileName": "monkey_king_bar.png",
+      "RequiresRecipe": false,
+      "Gold": 4175,
+      "ComponentNames": [
+        "demon_edge",
+        "javelin",
+        "quarterstaff"
+      ]
+    },
+    {
+      "Id": "ethereal_blade",
+      "Name": "Ethereal Blade",
+      "FileName": "ethereal_blade_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4500,
+      "ComponentNames": [
+        "eaglesong",
+        "ghost_scepter"
+      ]
+    },
+    {
+      "Id": "radiance",
+      "Name": "Radiance",
+      "FileName": "radiance_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5150,
+      "ComponentNames": [
+        "relic"
+      ]
+    },
+    {
+      "Id": "daedalus",
+      "Name": "Daedalus",
+      "FileName": "greater_crit_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5330,
+      "ComponentNames": [
+        "crystalys",
+        "demon_edge"
+      ]
+    },
+    {
+      "Id": "butterfly",
+      "Name": "Butterfly",
+      "FileName": "butterfly_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 5275,
+      "ComponentNames": [
+        "eaglesong",
+        "talisman_of_evasion",
+        "quarterstaff"
+      ]
+    },
+    {
+      "Id": "silver_edge",
+      "Name": "Silver Edge",
+      "FileName": "silver_edge_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5550,
+      "ComponentNames": [
+        "shadow_blade",
+        "ultimate_orb"
+      ]
+    },
+    {
+      "Id": "divine_rapier",
+      "Name": "Divine Rapier",
+      "FileName": "rapier_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 6000,
+      "ComponentNames": [
+        "relic",
+        "demon_edge"
+      ]
+    },
+    {
+      "Id": "abyssal_blade",
+      "Name": "Abyssal Blade",
+      "FileName": "abyssal_blade.png",
+      "RequiresRecipe": true,
+      "Gold": 6625,
+      "ComponentNames": [
+        "skull_basher",
+        "vanguard"
+      ]
+    },
+    {
+      "Id": "bloodthorn",
+      "Name": "Bloodthorn",
+      "FileName": "bloodthorn_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 6875,
+      "ComponentNames": [
+        "orchid",
+        "hyperstone"
+      ]
+    },
+    {
       "Id": "dragon_lance",
       "Name": "Dragon Lance",
       "FileName": "dragon_lance_lg.png",
@@ -1101,6 +1272,14 @@
       "ComponentNames": []
     },
     {
+      "Id": "talisman_of_evasion",
+      "Name": "Talisman of Evasion",
+      "FileName": "talisman_of_evasion_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1400,
+      "ComponentNames": []
+    },
+    {
       "Id": "hyperstone",
       "Name": "Hyperstone",
       "FileName": "hyperstone_lg.png",
@@ -1117,6 +1296,14 @@
       "ComponentNames": []
     },
     {
+      "Id": "demon_edge",
+      "Name": "Demon Edge",
+      "FileName": "demon_edge_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2200,
+      "ComponentNames": []
+    },
+    {
       "Id": "mystic_staff",
       "Name": "Mystic Staff",
       "FileName": "mystic_staff_lg.png",
@@ -1128,6 +1315,14 @@
       "Id": "reaver",
       "Name": "Reaver",
       "FileName": "reaver_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3000,
+      "ComponentNames": []
+    },
+    {
+      "Id": "eaglesong",
+      "Name": "Eagleson",
+      "FileName": "eagle_lg.png",
       "RequiresRecipe": false,
       "Gold": 3000,
       "ComponentNames": []
