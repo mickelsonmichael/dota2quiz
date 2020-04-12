@@ -865,6 +865,29 @@
       ]
     },
     {
+      "Id": "vanguard",
+      "Name": "Vanguard",
+      "FileName": "vanguard_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1925,
+      "ComponentNames": [
+        "ring_of_health",
+        "vitality_booster"
+      ]
+    },
+    {
+      "Id": "blade_mail",
+      "Name": "Blade Mail",
+      "FileName": "blade_mail_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2000,
+      "ComponentNames": [
+        "broadsword",
+        "chainmail",
+        "robe_of_the_magi"
+      ]
+    },
+    {
       "Id": "soul_booster",
       "Name": "Soul Booster",
       "FileName": "soul_booster_lg.png",
@@ -874,6 +897,175 @@
         "point_booster",
         "energy_booster",
         "vitality_booster"
+      ]
+    },
+    {
+      "Id": "crimson_guard",
+      "Name": "Crimson Guard",
+      "FileName": "crimson_guard_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 3800,
+      "ComponentNames": [
+        "vanguard",
+        "helm_of_iron_will"
+      ]
+    },
+    {
+      "Id": "aeon_disk",
+      "Name": "Aeon Disk",
+      "FileName": "aeon_disk_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 3100,
+      "ComponentNames": [
+        "vitality_booster",
+        "energy_booster"
+      ]
+    },
+    {
+      "Id": "black_king_bar",
+      "Name": "Black King Bar",
+      "FileName": "black_king_bar_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 4050,
+      "ComponentNames": [
+        "ogre_axe",
+        "mithril_hammer"
+      ]
+    },
+    {
+      "Id": "lotus_orb",
+      "Name": "Lotus Orb",
+      "FileName": "lotus_orb_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3950,
+      "ComponentNames": [
+        "perserverance",
+        "platemail",
+        "energy_booster"
+      ]
+    },
+    {
+      "Id": "shivas",
+      "Name": "Shiva's Guard",
+      "FileName": "shivas_guard_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 4750,
+      "ComponentNames": [
+        "platemail",
+        "mystic_staff"
+      ]
+    },
+    {
+      "Id": "hurricane_pike",
+      "Name": "Hurricane Pike",
+      "FileName": "hurricane_pike_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 4575,
+      "ComponentNames": [
+        "force_staff",
+        "dragon_lance"
+      ]
+    },
+    {
+      "Id": "linkens",
+      "Name": "Linken's Sphere",
+      "FileName": "sphere_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5000,
+      "ComponentNames": [
+        "ultimate_orb",
+        "perserverance"
+      ]
+    },
+    {
+      "Id": "bloodstone",
+      "Name": "Bloodstone",
+      "FileName": "bloodstone_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 5250,
+      "ComponentNames": [
+        "kaya",
+        "soul_booster"
+      ]
+    },
+    {
+      "Id": "manta",
+      "Name": "Manta Style",
+      "FileName": "manta_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 4700,
+      "ComponentNames": [
+        "yasha",
+        "ultimate_orb"
+      ]
+    },
+    {
+      "Id": "heart",
+      "Name": "Heart of Tarrasque",
+      "FileName": "heart_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5150,
+      "ComponentNames": [
+        "ring_of_tarrasque",
+        "vitality_booster",
+        "reaver"
+      ]
+    },
+    {
+      "Id": "assault_cuirass",
+      "Name": "Assault Cuirass",
+      "FileName": "assault_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5075,
+      "ComponentNames": [
+        "platemail",
+        "hyperstone",
+        "buckler"
+      ]
+    },
+    {
+      "Id": "dragon_lance",
+      "Name": "Dragon Lance",
+      "FileName": "dragon_lance_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1900,
+      "ComponentNames": [
+        "ogre_axe",
+        "band_of_elvenskin",
+        "band_of_elvenskin"
+      ]
+    },
+    {
+      "Id": "sange",
+      "Name": "Sange",
+      "FileName": "sange_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2050,
+      "ComponentNames": [
+        "ogre_axe",
+        "belt_of_strength"
+      ]
+    },
+    {
+      "Id": "yasha",
+      "Name": "Yasha",
+      "FileName": "yasha_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2050,
+      "ComponentNames": [
+        "blade_of_alacrity",
+        "band_of_elvenskin"
+      ]
+    },
+    {
+      "Id": "kaya",
+      "Name": "kaya",
+      "FileName": "kaya_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2050,
+      "ComponentNames": [
+        "staff_of_wizardry",
+        "robe_of_the_magi"
       ]
     },
     {
@@ -901,6 +1093,14 @@
       "ComponentNames": []
     },
     {
+      "Id": "platemail",
+      "Name": "Platemail",
+      "FileName": "platemail_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1400,
+      "ComponentNames": []
+    },
+    {
       "Id": "hyperstone",
       "Name": "Hyperstone",
       "FileName": "hyperstone_lg.png",
@@ -922,6 +1122,14 @@
       "FileName": "mystic_staff_lg.png",
       "RequiresRecipe": false,
       "Gold": 2700,
+      "ComponentNames": []
+    },
+    {
+      "Id": "reaver",
+      "Name": "Reaver",
+      "FileName": "reaver_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3000,
       "ComponentNames": []
     },
     {
