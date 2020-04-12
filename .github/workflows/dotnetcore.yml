@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.100
-    - name: Build with dotnet
+    - name: Build Shopkeeper
       run: dotnet build --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj
-    - name: Test with dotnet
-      run: dotnet test --no-restore --verbosity normal
+    - name: Integration Tests for Data
+      run: dotnet test --no-restore --verbosity normal Shopkeeper/Tests/Shopkeeper.Data.Test.Integration/Shopkeeper.Data.Test.Integration
