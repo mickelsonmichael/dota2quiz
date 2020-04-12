@@ -7,8 +7,8 @@ namespace Shopkeeper.Services.Interfaces
     public interface IItemService
     {
         Item Get(string itemId);
-        IQueryable<Item> GetAll();
-        IEnumerable<Item> GetFillerItems(int numberOfItems, IEnumerable<string> exclude);
-        Item GetRandom(params string[] exclude);
+        IEnumerable<Item> GetAll();
+        IEnumerable<Item> GetFillerItems(int numberOfItems, ISet<string> exclude);
+        Item GetRandom(ISet<string> exclude);
     }
 }
