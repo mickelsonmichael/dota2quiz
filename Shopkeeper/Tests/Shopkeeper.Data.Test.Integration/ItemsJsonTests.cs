@@ -1,10 +1,11 @@
-using System;
 using Xunit;
 using Shopkeeper.Business;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using System.Linq;
+using System.Dynamic;
+using System.Net;
 
 namespace Shopkeeper.Data.Test.Integration
 {
@@ -34,6 +35,25 @@ namespace Shopkeeper.Data.Test.Integration
         public void AllComponents_Unique()
         {
             Assert.True(_itemIds.Distinct().Count() == _itemIds.Count);
+        }
+
+        [Fact]
+        public void AllUrls_AreValid()
+        {
+            var config = File.ReadAllText("appsettings.json");
+            dynamic elem = JsonConvert.DeserializeObject<ExpandoObject>(config);
+            string cdnRoot = elem.RootCdnUrl;
+            
+
+            using var client = new WebClient();
+            
+            foreach(var item in _items)
+            {
+                var request = (HttpWebRequest)HttpWebRequest.Create($"{cdnRoot}{item.FileName}");
+                var response = (HttpWebResponse)request.GetResponse();
+
+                Assert.True(response.StatusCode == HttpStatusCode.OK);
+            }
         }
     }
 }
