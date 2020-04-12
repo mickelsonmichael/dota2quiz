@@ -435,14 +435,253 @@
       ]
     },
     {
+      "Id": "treads_strength",
+      "Name": "Power Treads (Strength)",
+      "FileName": "power_treads_lg.png",
+      "RequiresRecipe": true,
+      "ComponentNames": [
+        "gloves_of_haste",
+        "belt_of_strength",
+        "boots_of_speed"
+      ]
+    },
+    {
+      "Id": "oblivion_staff",
+      "Name": "Oblivion Staff",
+      "FileName": "oblivion_staff_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1550,
+      "ComponentNames": [
+        "quarterstaff",
+        "sages_mask",
+        "robe_of_magi"
+      ]
+    },
+    {
+      "Id": "perserverance",
+      "Name": "Perserverance",
+      "FileName": "pers_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1650,
+      "ComponentNames": [
+        "ring_of_health",
+        "void_stone"
+      ]
+    },
+    {
+      "Id": "midas",
+      "Name": "Hand of Midas",
+      "FileName": "hand_of_midas_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2250,
+      "ComponentNames": [
+        "gloves_of_haste"
+      ]
+    },
+    {
+      "Id": "mask_of_madness",
+      "Name": "Mas of Madness",
+      "FileName": "mask_of_madness_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1775,
+      "ComponentNames": [
+        "morbid_mask",
+        "quarterstaff"
+      ]
+    },
+    {
+      "Id": "helm_of_the_deminator",
+      "Name": "Helm of the Dominator",
+      "FileName": "helm_of_the_dominator_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2125,
+      "ComponentNames": [
+        "broadsword",
+        "headdress",
+        "crown"
+      ]
+    },
+    {
+      "Id": "boots_of_travel",
+      "Name": "Boots of Travel",
+      "FileName": "travel_boots_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2500,
+      "ComponentNames": [
+        "boots_of_speed"
+      ]
+    },
+    {
+      "Id": "moon_shard",
+      "Name": "Moon Shard",
+      "FileName": "moon_shard_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4000,
+      "ComponentNames": [
+        "hyperstone",
+        "hyperstone"
+      ]
+    },
+    {
+      "Id": "ring_of_basilius",
+      "Name": "Ring of Basilius",
+      "FileName": "ring_of_basilius_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 375,
+      "ComponentNames": [
+        "sages_mask"
+      ]
+    },
+    {
       "Id": "headdress",
       "Name": "Headdress",
       "FileName": "headdress_lg.png",
       "RequiresRecipe": true,
+      "Gold": 375,
       "ComponentNames": [
         "branch",
         "ring_of_regen"
       ]
+    },
+    {
+      "Id": "buckler",
+      "Name": "Buckler",
+      "FileName": "buckler_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 375,
+      "ComponentNames": [
+        "ring_of_protection"
+      ]
+    },
+    {
+      "Id": "urn_of_shadows",
+      "Name": "Urn of Shadows",
+      "FileName": "urn_of_shadows_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 840,
+      "ComponentNames": [
+        "sages_mask",
+        "circlet",
+        "ring_of_protection"
+      ]
+    },
+    {
+      "Id": "trangquil_boots",
+      "Name": "Tranquil Boots",
+      "FileName": "tranquil_boots_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 975,
+      "ComponentNames": [
+        "boots_of_speed",
+        "wind_lace",
+        "ring_of_regen"
+      ]
+    },
+    {
+      "Id": "medallion",
+      "Name": "Medallion of Courage",
+      "FileName": "medallion_of_courage_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1075,
+      "ComponentNames": [
+        "chainmail",
+        "sages_mask",
+        "blight_stone"
+      ]
+    },
+    {
+      "Id": "arcane_boots",
+      "Name": "Arcane Boots",
+      "FileName": "arcane_boots_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1400,
+      "ComponentNames": [
+        "boots_of_speed",
+        "energy_booster"
+      ]
+    },
+    {
+      "Id": "drums",
+      "Name": "Drum of Endurance",
+      "FileName": "ancient_janggo_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 1900,
+      "ComponentNames": [
+        "gloves_of_haste",
+        "crown",
+        "wind_lace"
+      ]
+    },
+    {
+      "Id": "vlads",
+      "Name": "Vladimir's Offering",
+      "FileName": "vladimir_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2200,
+      "ComponentNames": [
+        "ring_of_basilius",
+        "buckler",
+        "morbid_mask"
+      ]
+    },
+    {
+      "Id": "mekansm",
+      "Name": "Mekansm",
+      "FileName": "mekansm_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 1875,
+      "ComponentNames": [
+        "headdress",
+        "chainmail"
+      ]
+    },
+    {
+      "Id": "spirit_vessel",
+      "Name": "Spirit Vessel",
+      "FileName": "spirit_vessel_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2940,
+      "ComponentNames": [
+        "urn_of_shadows",
+        "vitality_booster",
+        "wind_lace"
+      ]
+    },
+    {
+      "Id": "holy_locket",
+      "Name": "Holy Locket",
+      "FileName": "holy_locket_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2500,
+      "ComponentNames": [
+        "ring_of_terrasque",
+        "energy_booster",
+        "magic_wand"
+      ]
+    },
+    {
+      "Id": "pipe_of_insight",
+      "Name": "Pipe of Insight",
+      "FileName": "pipe_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2975,
+      "ComponentNames": [
+        "hood_of_defiance",
+        "headdress"
+      ]
+    },
+    {
+      "Id": "guardian_greaves",
+      "Name": "Guardian Greaves",
+      "FileName": "guardian_greaves.lg.png",
+      "RequiresRecipe": true,
+      "Gold": 4875,
+      "ComponentNames": [
+        "mekansm",
+        "arcane_boots"
+      ]
     }
   ]
 }
+
+
