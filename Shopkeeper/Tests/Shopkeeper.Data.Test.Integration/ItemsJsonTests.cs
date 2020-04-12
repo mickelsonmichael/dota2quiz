@@ -29,5 +29,11 @@ namespace Shopkeeper.Data.Test.Integration
                 Assert.True(item.ComponentNames.All(x => _itemIds.Contains(x)));
             }
         }
+
+        [Fact]
+        public void AllComponents_Unique()
+        {
+            Assert.True(_itemIds.Distinct().Count() == _itemIds.Count);
+        }
     }
 }
