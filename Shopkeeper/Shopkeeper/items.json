@@ -666,8 +666,8 @@
     },
     {
       "Id": "vlads",
-      "Name": "Vladimir's Offering",
-      "FileName": "vladimir_lg.png",
+      "Name": "Vladmir's Offering",
+      "FileName": "vladmir_lg.png",
       "RequiresRecipe": true,
       "Gold": 2200,
       "ComponentNames": [
@@ -1227,7 +1227,7 @@
     {
       "Id": "abyssal_blade",
       "Name": "Abyssal Blade",
-      "FileName": "abyssal_blade.png",
+      "FileName": "abyssal_blade_lg.png",
       "RequiresRecipe": true,
       "Gold": 6625,
       "ComponentNames": [
