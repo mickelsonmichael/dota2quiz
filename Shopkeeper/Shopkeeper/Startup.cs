@@ -33,7 +33,7 @@ namespace Shopkeeper
             services.Configure<QuizOptions>(Configuration);
             services.Configure<QuizItems>(Configuration);
 
-            services.AddSingleton<IItemRepository, ItemRepository>();
+            services.AddSingleton<IItemRepository, JsonItemRepository>();
             services.AddTransient<IItemService, ItemService>();
         }
 
