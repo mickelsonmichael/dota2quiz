@@ -20,4 +20,4 @@ jobs:
     - name: Build Shopkeeper
       run: dotnet build --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj
     - name: Integration Tests for Data
-      run: dotnet test --no-restore --verbosity normal Shopkeeper/Tests/Shopkeeper.Data.Test.Integration/Shopkeeper.Data.Test.Integration
+      run: dotnet test --no-restore --verbosity normal Shopkeeper/Shopkeeper.sln
