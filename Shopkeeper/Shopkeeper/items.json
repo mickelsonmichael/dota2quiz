@@ -1230,13 +1230,138 @@
     },
     {
       "Id": "kaya",
-      "Name": "kaya",
+      "Name": "Kaya",
       "FileName": "kaya_lg.png",
       "RequiresRecipe": true,
       "Gold": 2050,
       "ComponentNames": [
         "staff_of_wizardry",
         "robe_of_the_magi"
+      ]
+    },
+    {
+      "Id": "echo_sabre",
+      "Name": "Echo Sabre",
+      "FileName": "echo_sabre_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2550,
+      "ComponentNames": [
+        "ogre_axe",
+        "oblivion_staff"
+      ]
+    },
+    {
+      "Id": "maelstrom",
+      "Name": "maelstrom",
+      "FileName": "maelstrom_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2700,
+      "ComponentNames": [
+        "mithril_hammer",
+        "javelin"
+      ]
+    },
+    {
+      "Id": "diffusal_blade",
+      "Name": "Diffusal Blade",
+      "FileName": "diffusal_blade_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 3150,
+      "ComponentNames": [
+        "blade_of_alacrity",
+        "blade_of_alacrity",
+        "robe_of_the_magi"
+      ]
+    },
+    {
+      "Id": "heavens_halberd",
+      "Name": "Heaven's Halberd",
+      "FileName": "heavens_halberd_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3450,
+      "ComponentNames": [
+        "sange",
+        "talisman_of_evasion"
+      ]
+    },
+    {
+      "Id": "desolator",
+      "Name": "Desolator",
+      "FileName": "desolator_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3500,
+      "ComponentNames": [
+        "mithril_hammer",
+        "mithril_hammer",
+        "blight_stone"
+      ]
+    },
+    {
+      "Id": "kaya_and_sange",
+      "Name": "Kaya and Sange",
+      "FileName": "kaya_and_sange_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4100,
+      "ComponentNames": [
+        "kaya",
+        "sange"
+      ]
+    },
+    {
+      "Id": "sange_and_yasha",
+      "Name": "Sange and Yasha",
+      "FileName": "sange_and_yasha_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4100,
+      "ComponentNames": [
+        "yasha",
+        "sange"
+      ]
+    },
+    {
+      "Id": "yasha_and_kaya",
+      "Name": "Yasha and Kaya",
+      "FileName": "yasha_and_kaya_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4100,
+      "ComponentNames": [
+        "kaya",
+        "yasha"
+      ]
+    },
+    {
+      "Id": "eye_of_skadi",
+      "Name": "Eye of Skadi",
+      "FileName": "skadi_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 5500,
+      "ComponentNames": [
+        "ultimate_orb",
+        "ultimate_orb",
+        "point_booster"
+      ]
+    },
+    {
+      "Id": "satanic",
+      "Name": "Satanic",
+      "FileName": "satanic_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 5300,
+      "ComponentNames": [
+        "morbid_mask",
+        "claymore",
+        "reaver"
+      ]
+    },
+    {
+      "Id": "mjollnir",
+      "Name": "Mjollnir",
+      "FileName": "mjollnir_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5600,
+      "ComponentNames": [
+        "maelstrom",
+        "hyperstone"
       ]
     },
     {
