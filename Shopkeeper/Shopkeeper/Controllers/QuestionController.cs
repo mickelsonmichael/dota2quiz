@@ -34,7 +34,8 @@ namespace Shopkeeper.Controllers
         {
             logger.LogInformation("New question requested");
             
-            var model = new Question(itemService.GetRandom(previous), 
+            var model = new Question(
+                                itemService.GetRandom(previous), 
                                 quizOptions.GetRecipeUrl(), 
                                 quizOptions.RootCdnUrl,
                                 streak);
@@ -54,6 +55,16 @@ namespace Shopkeeper.Controllers
                 string.Join(',', model.Item.ComponentNames));
 
             return PartialView("_Question", model);
+        }
+
+        public IActionResult Answer(string itemId)
+        {
+            var answer = new Answer(
+                            itemService.Get(itemId),
+                            quizOptions.RootCdnUrl,
+                            quizOptions.GetRecipeUrl());
+
+            return PartialView("_Answer", answer);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
