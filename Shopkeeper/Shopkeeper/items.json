@@ -588,7 +588,7 @@
       "Id": "headdress",
       "Name": "Headdress",
       "FileName": "headdress_lg.png",
-      "RequiresRecipe": true,
+      "RequiresRecipe": false,
       "Gold": 375,
       "ComponentNames": [
         "branch",
