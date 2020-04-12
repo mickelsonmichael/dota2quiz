@@ -578,7 +578,7 @@
       ]
     },
     {
-      "Id": "medallion",
+      "Id": "medallion_of_courage",
       "Name": "Medallion of Courage",
       "FileName": "medallion_of_courage_lg.png",
       "RequiresRecipe": false,
@@ -673,12 +673,183 @@
     {
       "Id": "guardian_greaves",
       "Name": "Guardian Greaves",
-      "FileName": "guardian_greaves.lg.png",
+      "FileName": "guardian_greaves_lg.png",
       "RequiresRecipe": true,
       "Gold": 4875,
       "ComponentNames": [
         "mekansm",
         "arcane_boots"
+      ]
+    },
+    {
+      "Id": "glimmer_cape",
+      "Name": "Glimmer Cape",
+      "FileName": "glimmer_cape_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 1950,
+      "ComponentNames": [
+        "shadow_amulet",
+        "cloak"
+      ]
+    },
+    {
+      "Id": "veil_of_discord",
+      "Name": "Veil of Discord",
+      "FileName": "veil_of_discord_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 1975,
+      "ComponentNames": [
+        "ring_of_basilius",
+        "crown"
+      ]
+    },
+    {
+      "Id": "aether_lens",
+      "Name": "Aether Lens",
+      "FileName": "aether_lens_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2325,
+      "ComponentNames": [
+        "energy_booster",
+        "void_stone"
+      ]
+    },
+    {
+      "Id": "force_staff",
+      "Name": "Force Staff",
+      "FileName": "force_staff_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2225,
+      "ComponentNames": [
+        "ring_of_regen",
+        "staff_of_wizardry"
+      ]
+    },
+    {
+      "Id": "necronomicon",
+      "Name": "Necronomicon",
+      "FileName": "necronomicon_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2150,
+      "ComponentNames": [
+        "sages_mask",
+        "sages_mask"
+      ]
+    },
+    {
+      "Id": "solar_crest",
+      "Name": "Solar Crest",
+      "FileName": "solar_crest_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 3875,
+      "ComponentNames": [
+        "medallion_of_courage",
+        "ultimate_orb",
+        "wind_lace"
+      ]
+    },
+    {
+      "Id": "dagon",
+      "Name": "Dagon",
+      "FileName": "dagon_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2700,
+      "ComponentNames": [
+        "staff_of_wizardry",
+        "crown"
+      ]
+    },
+    {
+      "Id": "euls_scepter",
+      "Name": "Eul's Scepter of Divinity",
+      "FileName": "cyclone_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2725,
+      "ComponentNames": [
+        "staff_of_wizardry",
+        "void_stone",
+        "wind_lace"
+      ]
+    },
+    {
+      "Id": "rod_of_atos",
+      "Name": "Rod of Atos",
+      "FileName": "rod_of_atos_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 2750,
+      "ComponentNames": [
+        "staff_of_wizardry",
+        "crown",
+        "crown"
+      ]
+    },
+    {
+      "Id": "orchid",
+      "Name": "Orchid Malevolence",
+      "FileName": "orchid_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 3875,
+      "ComponentNames": [
+        "oblivion_staff",
+        "oblivion_staff"
+      ]
+    },
+    {
+      "Id": "aghanims_scepter",
+      "Name": "Aghanim's Scepter",
+      "FileName": "ultimate_scepter_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4200,
+      "ComponentNames": [
+        "point_booster",
+        "staff_of_wizardry",
+        "ogre_axe",
+        "blade_of_alacrity"
+      ]
+    },
+    {
+      "Id": "nullifier",
+      "Name": "Nullifier",
+      "FileName": "nullifier_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 4725,
+      "ComponentNames": [
+        "relic",
+        "helm_of_iron_will"
+      ]
+    },
+    {
+      "Id": "refresher",
+      "Name": "Refresher Orb",
+      "FileName": "refresher_lg.png",
+      "RequiresRecipe": true,
+      "Gold": 5000,
+      "ComponentNames": [
+        "perserverance",
+        "perserverance"
+      ]
+    },
+    {
+      "Id": "scythe",
+      "Name": "Scythe of Vyse",
+      "FileName": "sheepstick_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 5675,
+      "ComponentNames": [
+        "mystic_staff",
+        "ultimate_orb",
+        "void_stone"
+      ]
+    },
+    {
+      "Id": "octarine_core",
+      "Name": "Octarine Core",
+      "FileName": "octarine_core_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 5900,
+      "ComponentNames": [
+        "mystic_staff",
+        "soul_booster"
       ]
     },
     {
@@ -691,6 +862,18 @@
         "cloak",
         "ring_of_health",
         "ring_of_regen"
+      ]
+    },
+    {
+      "Id": "soul_booster",
+      "Name": "Soul Booster",
+      "FileName": "soul_booster_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3200,
+      "ComponentNames": [
+        "point_booster",
+        "energy_booster",
+        "vitality_booster"
       ]
     },
     {
@@ -723,6 +906,30 @@
       "FileName": "hyperstone_lg.png",
       "RequiresRecipe": false,
       "Gold": 2000,
+      "ComponentNames": []
+    },
+    {
+      "Id": "ultimate_orb",
+      "Name": "Ultimate Orb",
+      "FileName": "ultimate_orb_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2150,
+      "ComponentNames": []
+    },
+    {
+      "Id": "mystic_staff",
+      "Name": "Mystic Staff",
+      "FileName": "mystic_staff_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 2700,
+      "ComponentNames": []
+    },
+    {
+      "Id": "relic",
+      "Name": "Sacred Relic",
+      "FileName": "relic_lg.png",
+      "RequiresRecipe": false,
+      "Gold": 3800,
       "ComponentNames": []
     }
   ]
