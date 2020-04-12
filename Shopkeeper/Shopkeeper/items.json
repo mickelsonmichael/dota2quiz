@@ -438,7 +438,7 @@
       "Id": "headdress",
       "Name": "Headdress",
       "FileName": "headdress_lg.png",
-      "RequiresRecipe": true,
+      "RequiresRecipe": false,
       "ComponentNames": [
         "branch",
         "ring_of_regen"
