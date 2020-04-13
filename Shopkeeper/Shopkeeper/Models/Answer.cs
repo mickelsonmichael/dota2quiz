@@ -21,7 +21,8 @@ namespace Shopkeeper.Models
                             .Select(x => (x.Name, $"{rootUrl}{x.FileName}"))
                             .ToList();
 
-            Components.Add(("Recipe", recipeUrl));
+            if (item.RequiresRecipe)
+                Components.Add(("Recipe", recipeUrl));
         }
     }
 }
