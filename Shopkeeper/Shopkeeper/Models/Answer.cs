@@ -9,22 +9,19 @@ namespace Shopkeeper.Models
         public string ItemName { get; }
         public string ItemId { get; }
         public string ItemUrl { get; }
-        public string RootUrl { get; }
-        public string RecipeUrl { get; }
-        public bool ItemRequiresRecipe { get; }
         public List<(string itemName, string itemUrl)> Components { get; }
 
         public Answer(Item item, string rootUrl, string recipeUrl)
         {
             ItemName = item.Name;
             ItemId = item.Id;
-            ItemUrl = $"{RootUrl}{item.FileName}";
-            RecipeUrl = $"{RootUrl}{recipeUrl}";
-            ItemRequiresRecipe = item.RequiresRecipe;
+            ItemUrl = $"{rootUrl}{item.FileName}";
             
             Components = item.Components
-                            .Select(x => (x.Name, $"{RootUrl}{x.FileName}"))
+                            .Select(x => (x.Name, $"{rootUrl}{x.FileName}"))
                             .ToList();
+
+            Components.Add(("Recipe", recipeUrl));
         }
     }
 }

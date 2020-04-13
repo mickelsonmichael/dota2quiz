@@ -59,6 +59,8 @@ namespace Shopkeeper.Controllers
 
         public IActionResult Answer(string itemId)
         {
+            logger.LogDebug($"Root Cdn Url: {quizOptions.RootCdnUrl}");
+
             var answer = new Answer(
                             itemService.Get(itemId),
                             quizOptions.RootCdnUrl,
