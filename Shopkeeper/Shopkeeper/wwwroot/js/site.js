@@ -3,6 +3,18 @@ const questionUrl = document.getElementById("question-url").value;
 const answerUrl = document.getElementById("answer-url").value;
 const nextQuestionBtn = document.getElementById("next-question");
 
+function loadImages() {
+    let images = Array .from(stage.querySelectorAll("img"));
+
+    images.map((thisImage) => {
+        thisImage.onload = () => {
+            if (images.every((otherImage) => { return otherImage.complete; })) {
+                stage.querySelector(".loading").classList.add("hide");
+            }  
+        };
+    });
+}
+
 function newQuestion() {
     let qUrl = questionUrl;
 
@@ -25,6 +37,8 @@ function newQuestion() {
         .then((response) => response.text())
         .then((html) => {
             stage.innerHTML = html;
+
+            loadImages();
         })
         .catch((error) => console.warn(error));
 }
