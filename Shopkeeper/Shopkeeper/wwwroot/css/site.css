@@ -40,7 +40,7 @@ img {
     justify-content: center;
 }
 
-.box {
+#stage {
     background-color: #443a2d;
     border: 1px solid #eee;
     margin: 2rem;
@@ -118,19 +118,6 @@ img {
         cursor: default;
     }
 
-.correct {
-    display: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    background-color: purple;
-    border: 2px solid gray;
-    padding: 2rem;
-    z-index: 11;
-}
-
-.correct.show,
 #answer-container.show {
     display: block;
 }

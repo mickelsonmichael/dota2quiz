@@ -1,11 +1,9 @@
 ﻿const stage = document.getElementById("stage");
 const questionUrl = document.getElementById("question-url").value;
 const answerUrl = document.getElementById("answer-url").value;
-const correctDisplay = document.getElementById("correct-display");
 const nextQuestionBtn = document.getElementById("next-question");
 
 function newQuestion() {
-    correctDisplay.classList.remove("show");
     let qUrl = questionUrl;
 
     // record the current streak
@@ -26,7 +24,7 @@ function newQuestion() {
     fetch(qUrl)
         .then((response) => response.text())
         .then((html) => {
-            document.querySelector(".box").innerHTML = html;
+            stage.innerHTML = html;
         })
         .catch((error) => console.warn(error));
 }
@@ -97,13 +95,8 @@ function validateAnswer() {
 }
 
 function correct() {
-    correctDisplay.classList.add("show");
-    
     incrementStreak();
-
-    setTimeout(() => {
-        newQuestion();
-    }, 2000);
+    newQuestion();
 }
 
 function incorrect() {
