@@ -486,18 +486,6 @@
       ]
     },
     {
-      "Id": "treads_strength",
-      "Name": "Power Treads (Strength)",
-      "FileName": "power_treads_lg.png",
-      "RequiresRecipe": true,
-      "Gold": 1350,
-      "ComponentNames": [
-        "gloves_of_haste",
-        "belt_of_strength",
-        "boots_of_speed"
-      ]
-    },
-    {
       "Id": "oblivion_staff",
       "Name": "Oblivion Staff",
       "FileName": "oblivion_staff_lg.png",
