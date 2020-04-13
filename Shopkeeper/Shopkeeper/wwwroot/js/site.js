@@ -2,6 +2,7 @@
 const questionUrl = document.getElementById("question-url").value;
 const answerUrl = document.getElementById("answer-url").value;
 const nextQuestionBtn = document.getElementById("next-question");
+const attempts = 3;
 
 function loadImages() {
     let images = Array .from(stage.querySelectorAll("img"));
@@ -114,14 +115,24 @@ function correct() {
 }
 
 function incorrect() {
+
     document.getElementById("incorrect-display")
         .classList.add("show");
 
-    document.getElementById("streak-message")
-        .classList.remove("show");
+    let attemptsLeft = document.getElementById("attempts-left");
+    let attemptsLeftNum = Number(attemptsLeft.innerText);
 
-    document.getElementById("streak")
-        .innerText = "0";
+    if (attemptsLeftNum === 1) {
+        document.getElementById("streak")
+            .innerText = "0";
+
+        document.getElementById("incorrect-message-reset")
+            .classList.add("show");
+    }
+    
+    if (attemptsLeftNum > 0) {
+        attemptsLeft.innerText = attemptsLeftNum - 1;
+    }
 }
 
 function notIncorrect() {
