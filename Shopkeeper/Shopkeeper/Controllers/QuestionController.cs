@@ -10,14 +10,16 @@ using System.Linq;
 
 namespace Shopkeeper.Controllers
 {
-    public class HomeController : Controller
+    public class QuestionController : Controller
     {
         private const int NumberOfOptions = 11;
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<QuestionController> _logger;
         private readonly IItemService _itemService;
         private readonly QuizOptions _quizOptions;
 
-        public HomeController(ILogger<HomeController> logger, IItemService itemService, IOptionsMonitor<QuizOptions> quizOptions)
+        public QuestionController(ILogger<QuestionController> logger, 
+            IItemService itemService, 
+            IOptionsMonitor<QuizOptions> quizOptions)
         {
             _logger = logger;
             _itemService = itemService;
@@ -55,6 +57,18 @@ namespace Shopkeeper.Controllers
                 string.Join(',', model.Item.ComponentNames));
 
             return PartialView("_Question", model);
+        }
+
+        public IActionResult Answer(string itemId)
+        {
+            _logger.LogDebug($"Root Cdn Url: {_quizOptions.RootCdnUrl}");
+
+            var answer = new Answer(
+                            _itemService.Get(itemId),
+                            _quizOptions.RootCdnUrl,
+                            _quizOptions.GetRecipeUrl());
+
+            return PartialView("_Answer", answer);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

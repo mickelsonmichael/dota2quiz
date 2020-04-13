@@ -1,4 +1,9 @@
-﻿* {
+﻿:root {
+    --stage-color: #111;
+    --border-color: #aaa;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,9 +45,9 @@ img {
     justify-content: center;
 }
 
-.box {
-    background-color: #443a2d;
-    border: 1px solid #eee;
+#stage {
+    background-color: var(--stage-color);
+    border: 2px solid var(--border-color);
     margin: 2rem;
     display: flex;
     flex-direction: column;
@@ -52,7 +57,25 @@ img {
     max-width: 690px;
     box-sizing: content-box;
     border-radius: 3px;
-    box-shadow: 2px 2px 5px 0 black;
+    box-shadow: 0 0 3px 1px black;
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: var(--stage-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading.hide {
+    display: none;
 }
 
 .target-item-container,
@@ -66,11 +89,12 @@ img {
 
 .selected-item,
 .target-item,
-.option {
+.option,
+.answer-component {
     width: 66px;
     height: 46px;
     background-color: #222;
-    border: 2px solid #888;
+    border: 2px solid var(--border-color);
     display: inline-block;
     margin: 0 0.5rem;
     position: relative;
@@ -93,13 +117,14 @@ img {
         bottom: 0;
         text-align: center;
         font-size: xx-large;
-        color: white;
+        color: var(--border-color);
         z-index: 1;
     }
 
     .selected-item > img,
     .target-item > img,
-    .option > img {
+    .option > img,
+    .answer-component > img {
         height: 100%;
         width: 100%;
         z-index: 2;
@@ -116,19 +141,7 @@ img {
         cursor: default;
     }
 
-.correct {
-    display: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    background-color: purple;
-    border: 2px solid gray;
-    padding: 2rem;
-    z-index: 11;
-}
-
-.correct.show {
+#answer-container.show {
     display: block;
 }
 
@@ -139,12 +152,15 @@ img {
 }
 
 #streak-message {
-    color: #eee;
+    color: var(--border-color);
     display: none;
 }
 
 #incorrect-display {
     display: none;
+}
+
+.incorrect-message {
     color: red;
     text-transform: capitalize;
 }
@@ -153,3 +169,112 @@ img {
 #streak-message.show {
     display: block;
 }
+
+#answer-container {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+
+.answer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: #333;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 3px 3px black;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.answer-components {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.answer-plus,
+.answer-equals
+{
+    font-size: x-large;
+    color: var(--border-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+#next-question,
+#incorrect-answer-link {
+    display: inline-block;
+    color: #aaa;
+    cursor: pointer;
+    margin-top: .5rem;
+    font-size: medium;
+}
+
+/* Loading Icon from https://loading.io/css/ */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--border-color);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
