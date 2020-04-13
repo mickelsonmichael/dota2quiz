@@ -1,6 +1,7 @@
 ﻿@model Question
 
 <input type="hidden" id="question-url" value="@Url.Action("Question")" />
+<input type="hidden" id="answer-url" value="@Url.Action("Answer")" />
 
 <div class="quiz-container">
     <div id="stage" class="box">
@@ -10,6 +11,10 @@
     <div id="correct-display" class="correct">
         Correct!
         <p class="countdown">New Question in 2...</p>
+    </div>
+
+    <div id="answer-container">
+        
     </div>
 </div>
 

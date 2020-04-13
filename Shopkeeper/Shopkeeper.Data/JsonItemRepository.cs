@@ -8,13 +8,13 @@ using Microsoft.Extensions.Logging;
 
 namespace Shopkeeper.Data
 {
-    public class ItemRepository : IItemRepository
+    public class JsonItemRepository : IItemRepository
     {
         private readonly IReadOnlyDictionary<string, Item> _items;
         private readonly QuizItems _configItems;
-        private readonly ILogger<ItemRepository> _logger;
+        private readonly ILogger<JsonItemRepository> _logger;
 
-        public ItemRepository(IOptionsMonitor<QuizItems> itemsConfig, ILogger<ItemRepository> logger)
+        public JsonItemRepository(IOptionsMonitor<QuizItems> itemsConfig, ILogger<JsonItemRepository> logger)
         {
             _configItems = itemsConfig.CurrentValue;
             _logger = logger;
