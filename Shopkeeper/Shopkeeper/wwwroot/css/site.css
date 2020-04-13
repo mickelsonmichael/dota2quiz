@@ -1,5 +1,6 @@
 ﻿:root {
-    --stage-color: #443a2d;
+    --stage-color: #111;
+    --border-color: #aaa;
 }
 
 * {
@@ -46,7 +47,7 @@ img {
 
 #stage {
     background-color: var(--stage-color);
-    border: 1px solid #eee;
+    border: 2px solid var(--border-color);
     margin: 2rem;
     display: flex;
     flex-direction: column;
@@ -56,7 +57,7 @@ img {
     max-width: 690px;
     box-sizing: content-box;
     border-radius: 3px;
-    box-shadow: 2px 2px 5px 0 black;
+    box-shadow: 0 0 3px 1px black;
     position: relative;
 }
 
@@ -93,7 +94,7 @@ img {
     width: 66px;
     height: 46px;
     background-color: #222;
-    border: 2px solid #888;
+    border: 2px solid var(--border-color);
     display: inline-block;
     margin: 0 0.5rem;
     position: relative;
@@ -116,7 +117,7 @@ img {
         bottom: 0;
         text-align: center;
         font-size: xx-large;
-        color: white;
+        color: var(--border-color);
         z-index: 1;
     }
 
@@ -151,7 +152,7 @@ img {
 }
 
 #streak-message {
-    color: #eee;
+    color: var(--border-color);
     display: none;
 }
 
@@ -187,7 +188,7 @@ img {
     transform: translate(-50%, -50%);
     padding: 2rem;
     background-color: #333;
-    border: 2px solid #aaa;
+    border: 2px solid var(--border-color);
     box-shadow: 0 0 3px 3px black;
     max-width: 90%;
     display: flex;
@@ -205,7 +206,7 @@ img {
 .answer-equals
 {
     font-size: x-large;
-    color: #eee;
+    color: var(--border-color);
     font-weight: bold;
     text-align: center;
 }
@@ -233,7 +234,7 @@ img {
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #fff;
+    background: var(--border-color);
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
   .lds-ellipsis div:nth-child(1) {
