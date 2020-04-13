@@ -477,7 +477,7 @@
       "Id": "phase_boots",
       "Name": "Phase Boots",
       "FileName": "phase_boots_lg.png",
-      "RequiresRecipe": true,
+      "RequiresRecipe": false,
       "Gold": 1480,
       "ComponentNames": [
         "boots_of_speed",
