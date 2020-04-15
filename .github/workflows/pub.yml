@@ -36,8 +36,8 @@ jobs:
        run: dotnet publish --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj -o publish
      - name: Create deployment package
        run: zip -j deploy.zip aws-windows-deployment-manifest.json publish/*
-     - name: Deploy to S3
-       run: aws s3 ls
+     - name: Deploy to EB
+       run: eb deploy
        env:
          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
