@@ -15,9 +15,9 @@ jobs:
     steps:
      - name: Publish with .NET
        run: |
-            cd Shopkeeper/Shopkeeper
-            dotnet publish -c Release -o ../../package
-            ls ../../package
+            ls -a
+            #dotnet publish -c Release -o package
+            #ls ../../package
      - name: Init env
        uses: hmanzur/actions-aws-eb@v1.0.0
        with:
