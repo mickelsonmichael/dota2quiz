@@ -16,6 +16,7 @@ jobs:
      - name: Publish with .NET
        run: |
             ls -a
+            dotnet public --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj -o publish
             #dotnet publish -c Release -o package
             #ls ../../package
      - name: Init env
