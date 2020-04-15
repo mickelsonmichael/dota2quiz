@@ -25,6 +25,8 @@ jobs:
          python-version: '3.x'
      - name: Install dependencies
        run: python -m pip install --upgrade pip awsebcli
+     - name: Test eb
+       run: eb --help
      #- uses: actions/checkout@v2
      #- name: Setup .NET Core
      #  uses: actions/setup-dotnet@v1
