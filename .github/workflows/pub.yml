@@ -19,17 +19,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Set up EB CLI
-       run: |
-         git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
-         ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
-     - name: Add EB to path
-       run: |
-         echo 'export PATH="/home/runner/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile 
-         echo 'export PATH=/home/runner/.pyenv/versions/3.7.2/bin:$PATH' >> /home/runner/.bash_profile && source /home/runner/.bash_profile
-         exec bash
-     - name: Test eb cli
-       run: eb --help
+     - name: Set up Python
+       uses: actions/setup-python@v1
+       with:
+         python-version: '3.x'
+     - name: Install dependencies
+       run: python -m pip install --upgrade pip awsebcli
      #- uses: actions/checkout@v2
      #- name: Setup .NET Core
      #  uses: actions/setup-dotnet@v1
