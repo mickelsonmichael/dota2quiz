@@ -23,7 +23,8 @@ jobs:
        run: |
          git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
          ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
-         echo "installation completed"
+     - name: Add EB to path
+       run: |
          echo 'export PATH="/home/runner/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile 
          echo 'export PATH=/home/runner/.pyenv/versions/3.7.2/bin:$PATH' >> /home/runner/.bash_profile && source /home/runner/.bash_profile
      - name: Test eb cli
