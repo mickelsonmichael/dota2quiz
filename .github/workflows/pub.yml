@@ -1,5 +1,11 @@
  #${{ secrets.ENVIRONMENT_NAME }}
-
+##   - name: Install aws cli
+ #      run: |
+  #      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    #    unzip awscliv2.zip
+   #     sudo ./aws/install
+   #     aws --help
+   
 name: Deploy to Amazon
 on: 
   push:
@@ -13,27 +19,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - uses: actions/checkout@v2
-     - name: Setup .NET Core
-       uses: actions/setup-dotnet@v1
-       with:
-         dotnet-version: 3.1.100
-     - name: Publish with .NET
-       run: dotnet publish --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj -o publish
-     - name: Init env
-       uses: hmanzur/actions-aws-eb@v1.0.0
-       with:
-           command: init --region us-east-2 dota2quiz
-       env:
-         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         AWS_DEFAULT_REGION: "us-east-2"
-     - name: Status
-       uses: hmanzur/actions-aws-eb@v1.0.0
-       with:
-           command: status Dota2quiz-env
-       env:
-         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         AWS_DEFAULT_REGION: "us-east-2"
+     - name: Set up EB CLI
+       run: |
+         git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
+         ./aws-elastic-beanstalk-cli-setup/scripts/bundled_installer
+     - name: Test eb cli
+       run: eb --help
+     #- uses: actions/checkout@v2
+     #- name: Setup .NET Core
+     #  uses: actions/setup-dotnet@v1
+     #  with:
+     #    dotnet-version: 3.1.100
+     #- name: Publish with .NET
+     #  run: dotnet publish --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj -o publish
+     #- name: Init env
+     #  uses: hmanzur/actions-aws-eb@v1.0.0
+     #  with:
+     #      command: init --region us-east-2 dota2quiz
+     #  env:
+     #    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+     #    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+     #    AWS_DEFAULT_REGION: "us-east-2"
+     #- name: Status
+     #  uses: hmanzur/actions-aws-eb@v1.0.0
+     #  with:
+     #      command: status Dota2quiz-env
+     #  env:
+     #    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+     #    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+     #    AWS_DEFAULT_REGION: "us-east-2"
 
