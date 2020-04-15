@@ -27,6 +27,7 @@ jobs:
        run: |
          echo 'export PATH="/home/runner/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile 
          echo 'export PATH=/home/runner/.pyenv/versions/3.7.2/bin:$PATH' >> /home/runner/.bash_profile && source /home/runner/.bash_profile
+         exec bash
      - name: Test eb cli
        run: eb --help
      #- uses: actions/checkout@v2
