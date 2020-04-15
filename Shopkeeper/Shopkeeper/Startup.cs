@@ -24,7 +24,8 @@ namespace Shopkeeper
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddLogging(config => {
+            services.AddLogging(config => 
+            {
                 config.AddConsole();
             });
 
@@ -33,7 +34,7 @@ namespace Shopkeeper
             services.Configure<QuizOptions>(Configuration);
             services.Configure<QuizItems>(Configuration);
 
-            services.AddSingleton<IItemRepository, ItemRepository>();
+            services.AddSingleton<IItemRepository, JsonItemRepository>();
             services.AddTransient<IItemService, ItemService>();
         }
 
@@ -46,7 +47,7 @@ namespace Shopkeeper
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Question/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -61,7 +62,7 @@ namespace Shopkeeper
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Question}/{action=Index}/{id?}");
             });
         }
     }

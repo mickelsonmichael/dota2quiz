@@ -1,9 +1,22 @@
 ﻿const stage = document.getElementById("stage");
 const questionUrl = document.getElementById("question-url").value;
-const correctDisplay = document.getElementById("correct-display");
+const answerUrl = document.getElementById("answer-url").value;
+const nextQuestionBtn = document.getElementById("next-question");
+const attempts = 3;
+
+function loadImages() {
+    let images = Array .from(stage.querySelectorAll("img"));
+
+    images.map((thisImage) => {
+        thisImage.onload = () => {
+            if (images.every((otherImage) => { return otherImage.complete; })) {
+                stage.querySelector(".loading").classList.add("hide");
+            }  
+        };
+    });
+}
 
 function newQuestion() {
-    correctDisplay.classList.remove("show");
     let qUrl = questionUrl;
 
     // record the current streak
@@ -24,7 +37,9 @@ function newQuestion() {
     fetch(qUrl)
         .then((response) => response.text())
         .then((html) => {
-            document.querySelector(".box").innerHTML = html;
+            stage.innerHTML = html;
+
+            loadImages();
         })
         .catch((error) => console.warn(error));
 }
@@ -35,11 +50,12 @@ stage.addEventListener("click", (event) => {
     let elem = event.srcElement;
 
     if (elem.classList.contains("option-img") && !elem.classList.contains("selected")) {
-        notIncorrect();
+        
 
         let empty = document.querySelectorAll(".selected-item:empty");
         
         if (empty.length > 0) {
+            
             elem.classList.add("selected");
 
             let cloned = elem.cloneNode();
@@ -48,7 +64,7 @@ stage.addEventListener("click", (event) => {
             empty[0].appendChild(cloned);
         }
 
-        if (empty.length == 1) {
+        if (empty.length === 1) {
             validateAnswer();
         }
     }
@@ -60,9 +76,14 @@ stage.addEventListener("click", (event) => {
         opt.classList.remove("selected");
         elem.remove();
     }
+    else if (elem.id === "incorrect-answer-link")  {
+        showAnswer();
+    }
 });
 
 function validateAnswer() {
+    notIncorrect();
+
     let answer = document.getElementById("answer")
                         .value
                         .split(",");
@@ -89,24 +110,29 @@ function validateAnswer() {
 }
 
 function correct() {
-    correctDisplay.classList.add("show");
-    
     incrementStreak();
-
-    setTimeout(() => {
-        newQuestion();
-    }, 2000);
+    newQuestion();
 }
 
 function incorrect() {
+
     document.getElementById("incorrect-display")
         .classList.add("show");
 
-    document.getElementById("streak-message")
-        .classList.remove("show");
+    let attemptsLeft = document.getElementById("attempts-left");
+    let attemptsLeftNum = Number(attemptsLeft.innerText);
 
-    document.getElementById("streak")
-        .innerText = "0";
+    if (attemptsLeftNum === 1) {
+        document.getElementById("streak")
+            .innerText = "0";
+
+        document.getElementById("incorrect-message-reset")
+            .classList.add("show");
+    }
+    
+    if (attemptsLeftNum > 0) {
+        attemptsLeft.innerText = attemptsLeftNum - 1;
+    }
 }
 
 function notIncorrect() {
@@ -121,4 +147,23 @@ function incrementStreak() {
     let counter = document.getElementById("streak");
 
     counter.innerText = (Number(counter.innerText) + 1)
+}
+
+function showAnswer() {
+    let aUrl = answerUrl + "?itemId=" + document.getElementById("question").value;
+
+    fetch(aUrl)
+        .then((response) => response.text())
+        .then((html) => {
+            let ansContainer = document.getElementById("answer-container");
+            ansContainer.innerHTML = html;
+            ansContainer.classList.add("show");
+
+            document.getElementById("next-question").addEventListener("click", (event) => {
+                document.getElementById("answer-container").classList.remove("show");
+            
+                newQuestion();
+            });
+        })
+        .catch((error) => console.warn(error));
 }

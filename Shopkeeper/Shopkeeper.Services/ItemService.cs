@@ -10,51 +10,58 @@ namespace Shopkeeper.Services
 {
     public class ItemService : IItemService
     {
-        private readonly IItemRepository itemRepository;
-        private readonly ILogger<ItemService> logger;
+        private readonly IItemRepository _itemRepository;
+        private readonly ILogger<ItemService> _logger;
         private Random _random;
 
         private Random Random => _random ?? (_random = new Random());
 
         public ItemService(IItemRepository itemRepository, ILogger<ItemService> logger)
         {
-            this.itemRepository = itemRepository;
-            this.logger = logger;
+            _itemRepository = itemRepository;
+            _logger = logger;
         }
 
-        public Item Get(string itemId) => itemRepository.Get(itemId);
+        public Item Get(string itemId) => _itemRepository.Get(itemId);
 
-        public IQueryable<Item> GetAll() => itemRepository.GetAll();
+        public IEnumerable<Item> GetAll() => _itemRepository.GetAll();
 
-        public Item GetRandom(params string[] exclude)
+        public Item GetRandom(ISet<string> exclude)
         {
-            if (exclude == null) exclude = Array.Empty<string>();
-
-            logger.LogInformation("Getting Random Item");
-            logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
+            _logger.LogInformation("Getting Random Item");
+            _logger.LogDebug("Excluding: {0}", string.Join(',', exclude));
 
             var items = GetAll()
                 .Where(x => x.HasComponents && !exclude.Contains(x.Id));
 
-            var index = Random.Next(items.Count());
+            int index;
+            lock (Random)
+            {
+                index = Random.Next(items.Count());
+            }
 
-            logger.LogInformation("Random Item: {0}", items.ElementAt(index));
+            _logger.LogInformation("Random Item: {0}", items.ElementAt(index));
 
             return items.ElementAt(index);
         }
 
-        public IEnumerable<Item> GetFillerItems(int numberOfItems, IEnumerable<string> exclude)
+        public IEnumerable<Item> GetFillerItems(int numberOfItems, ISet<string> exclude)
         {
             var items = GetAll()
-                .Where(x => !exclude.Contains(x.Id));
+                .Where(x => !exclude.Contains(x.Id))
+                .ToArray();
 
             for (int i = 0; i < numberOfItems; i++)
             {
-                var item = items.ElementAt(Random.Next(items.Count()));
+                int randomIndex;
+                lock (Random)
+                {
+                    randomIndex = Random.Next(items.Length);
+                }
 
-                logger.LogDebug("Filler Item {0} Added", item);
+                _logger.LogDebug("Filler Item {0} Added", items[randomIndex]);
 
-                yield return item;
+                yield return items[randomIndex];
             }
         }
     }

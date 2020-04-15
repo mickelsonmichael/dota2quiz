@@ -1,0 +1,36 @@
+@model Answer
+
+<div class="answer">
+    <div class="answer-components">
+        @for (int i = 0; i < Model.Components.Count; i++)
+        {
+            var comp = Model.Components.ElementAt(i);
+
+            <div class="answer-component">
+                <img class="answer-component-img" alt="@comp.itemName"
+                        src="@comp.itemUrl" />
+            </div>
+
+            @if (i < Model.Components.Count - 1)
+            {
+                <div class="answer-plus">
+                    +
+                </div>
+            }
+        }
+    </div>
+    <div class="answer-result">
+        <div class="answer-equals">
+            =
+        </div>
+
+        <div class="answer-component">
+            <img class="answer-component-img" alt="@Model.ItemName"
+            src="@Model.ItemUrl" />
+        </div>
+    </div>
+
+    <a href="javascript:void();" id="next-question">
+        Next Question
+    </a>
+</div>

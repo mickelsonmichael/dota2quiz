@@ -1,11 +1,11 @@
 ﻿using Shopkeeper.Business;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace Shopkeeper.Data.Interfaces
 {
     public interface IItemRepository
     {
         Item Get(string itemId);
-        IQueryable<Item> GetAll();
+        IEnumerable<Item> GetAll();
     }
 }
