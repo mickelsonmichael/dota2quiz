@@ -34,8 +34,11 @@ jobs:
      
      - name: Deploy to EB
        run: |
+          cp aws-windows-deployment-manifest.json publish
+          cd publish
           echo 'n' | eb init --region us-east-2 dota2quiz
           ls -a
+          eb deploy --region us-east-2
        env:
          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
