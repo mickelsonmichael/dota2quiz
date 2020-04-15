@@ -5,7 +5,7 @@
       {
         "name": "app",
         "parameters": {
-          "appBundle": "publish",
+          "appBundle": ".",
           "iisPath": "/",
           "iisWebSite": "Default Web Site"
         }
