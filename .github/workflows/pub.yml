@@ -13,12 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+     - uses: actions/checkout@v2
+     - name: Setup .NET Core
+       uses: actions/setup-dotnet@v1
+       with:
+         dotnet-version: 3.1.100
      - name: Publish with .NET
        run: |
             ls -a
             dotnet public --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj -o publish
-            #dotnet publish -c Release -o package
-            #ls ../../package
      - name: Init env
        uses: hmanzur/actions-aws-eb@v1.0.0
        with:
