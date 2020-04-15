@@ -18,26 +18,24 @@ jobs:
      - name: Install dependencies
        run: python -m pip install --upgrade pip awsebcli
        
-     - name: Initialize local environment
-       run: |
-          eb init --region us-east-2 dota2quiz
-          n
-       env:
-         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-         AWS_DEFAULT_REGION: "us-east-2"
-       
      - uses: actions/checkout@v2
+       
      - name: Setup .NET Core
        uses: actions/setup-dotnet@v1
        with:
          dotnet-version: 3.1.100
+     
      - name: Publish with .NET
        run: dotnet publish --configuration Release Shopkeeper/Shopkeeper/Shopkeeper.csproj -o publish
+     
      - name: Create deployment package
        run: zip -j deploy.zip aws-windows-deployment-manifest.json publish/*
+     
      - name: Deploy to EB
-       run: eb deploy
+       run: |
+          eb init --region us-east-2 dota2quiz
+          n
+          eb deploy
        env:
          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
