@@ -466,7 +466,7 @@
       "Name": "Soul Ring",
       "FileName": "soul_ring.png",
       "RequiresRecipe": true,
-      "Gold": 765,
+      "Gold": 815,
       "ComponentNames": [
         "ring_of_regen",
         "gauntlet",
@@ -567,7 +567,7 @@
       "Name": "Ring of Basilius",
       "FileName": "ring_of_basilius.png",
       "RequiresRecipe": true,
-      "Gold": 375,
+      "Gold": 400,
       "ComponentNames": [
         "sages_mask"
       ]
@@ -577,7 +577,7 @@
       "Name": "Headdress",
       "FileName": "headdress.png",
       "RequiresRecipe": false,
-      "Gold": 375,
+      "Gold": 425,
       "ComponentNames": [
         "branch",
         "ring_of_regen"
@@ -606,7 +606,7 @@
       ]
     },
     {
-      "Id": "trangquil_boots",
+      "Id": "tranquil_boots",
       "Name": "Tranquil Boots",
       "FileName": "tranquil_boots.png",
       "RequiresRecipe": false,
@@ -657,7 +657,7 @@
       "Name": "Vladmir's Offering",
       "FileName": "vladmir.png",
       "RequiresRecipe": true,
-      "Gold": 2200,
+      "Gold": 2250,
       "ComponentNames": [
         "ring_of_basilius",
         "buckler",
@@ -669,7 +669,7 @@
       "Name": "Mekansm",
       "FileName": "mekansm.png",
       "RequiresRecipe": true,
-      "Gold": 1875,
+      "Gold": 1925,
       "ComponentNames": [
         "headdress",
         "chainmail"
@@ -683,8 +683,7 @@
       "Gold": 2940,
       "ComponentNames": [
         "urn_of_shadows",
-        "vitality_booster",
-        "wind_lace"
+        "vitality_booster"
       ]
     },
     {
@@ -704,7 +703,7 @@
       "Name": "Pipe of Insight",
       "FileName": "pipe.png",
       "RequiresRecipe": true,
-      "Gold": 2975,
+      "Gold": 3175,
       "ComponentNames": [
         "hood_of_defiance",
         "headdress"
