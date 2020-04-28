@@ -237,7 +237,7 @@
       "Name": "Blades of Attack",
       "FileName": "blades_of_attack.png",
       "RequiresRecipe": true,
-      "Gold": 430,
+      "Gold": 450,
       "ComponentNames": []
     },
     {
@@ -567,7 +567,7 @@
       "Name": "Ring of Basilius",
       "FileName": "ring_of_basilius.png",
       "RequiresRecipe": true,
-      "Gold": 400,
+      "Gold": 425,
       "ComponentNames": [
         "sages_mask"
       ]
@@ -895,8 +895,8 @@
       "Id": "hood_of_defiance",
       "Name": "Hood of Defiance",
       "FileName": "hood_of_defiance.png",
-      "RequiresRecipe": false,
-      "Gold": 1600,
+      "RequiresRecipe": true,
+      "Gold": 1800,
       "ComponentNames": [
         "cloak",
         "ring_of_health",
