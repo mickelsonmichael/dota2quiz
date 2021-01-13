@@ -1,845 +1,845 @@
 {
-  "Items": [
+  "items": [
     {
-      "Id": "tp_scroll",
-      "Name": "Teleportation Scroll",
-      "FileName": "tpscroll.png",
-      "RequiresRecipe": true,
-      "Gold": 90,
-      "ComponentNames": []
+      "id": "tp_scroll",
+      "name": "Teleportation Scroll",
+      "file": "tpscroll.png",
+      "recipe": true,
+      "cost": 90,
+      "components": []
     },
     {
-      "Id": "clarity",
-      "Name": "Potion of Clarity",
-      "FileName": "clarity.png",
-      "RequiresRecipe": true,
-      "Gold": 50,
-      "ComponentNames": []
+      "id": "clarity",
+      "name": "Potion of Clarity",
+      "file": "clarity.png",
+      "recipe": true,
+      "cost": 50,
+      "components": []
     },
     {
-      "Id": "faerie_fire",
-      "Name": "Faerie Fire",
-      "FileName": "faerie_fire.png",
-      "RequiresRecipe": true,
-      "Gold": 70,
-      "ComponentNames": []
+      "id": "faerie_fire",
+      "name": "Faerie Fire",
+      "file": "faerie_fire.png",
+      "recipe": true,
+      "cost": 70,
+      "components": []
     },
     {
-      "Id": "smoke",
-      "Name": "Smoke of Deceit",
-      "FileName": "smoke_of_deceit.png",
-      "RequiresRecipe": true,
-      "Gold": 80,
-      "ComponentNames": []
+      "id": "smoke",
+      "name": "Smoke of Deceit",
+      "file": "smoke_of_deceit.png",
+      "recipe": true,
+      "cost": 80,
+      "components": []
     },
     {
-      "Id": "observer_ward",
-      "Name": "Observer Ward",
-      "FileName": "ward_observer.png",
-      "RequiresRecipe": true,
-      "Gold": 0,
-      "ComponentNames": []
+      "id": "observer_ward",
+      "name": "Observer Ward",
+      "file": "ward_observer.png",
+      "recipe": true,
+      "cost": 0,
+      "components": []
     },
     {
-      "Id": "sentry_ward",
-      "Name": "Sentry Ward",
-      "FileName": "ward_sentry.png",
-      "RequiresRecipe": true,
-      "Gold": 75,
-      "ComponentNames": []
+      "id": "sentry_ward",
+      "name": "Sentry Ward",
+      "file": "ward_sentry.png",
+      "recipe": true,
+      "cost": 75,
+      "components": []
     },
     {
-      "Id": "mango",
-      "Name": "Enchanted Mango",
-      "FileName": "enchanted_mango.png",
-      "RequiresRecipe": true,
-      "Gold": 70,
-      "ComponentNames": []
+      "id": "mango",
+      "name": "Enchanted Mango",
+      "file": "enchanted_mango.png",
+      "recipe": true,
+      "cost": 70,
+      "components": []
     },
     {
-      "Id": "salve",
-      "Name": "Healing Salve",
-      "FileName": "flask.png",
-      "RequiresRecipe": true,
-      "Gold": 110,
-      "ComponentNames": []
+      "id": "salve",
+      "name": "Healing Salve",
+      "file": "flask.png",
+      "recipe": true,
+      "cost": 110,
+      "components": []
     },
     {
-      "Id": "tango",
-      "Name": "Tango",
-      "FileName": "tango.png",
-      "RequiresRecipe": true,
-      "Gold": 90,
-      "ComponentNames": []
+      "id": "tango",
+      "name": "Tango",
+      "file": "tango.png",
+      "recipe": true,
+      "cost": 90,
+      "components": []
     },
     {
-      "Id": "tome",
-      "Name": "Tome of Knowledge",
-      "FileName": "tome_of_knowledge.png",
-      "RequiresRecipe": true,
-      "Gold": 150,
-      "ComponentNames": []
+      "id": "tome",
+      "name": "Tome of Knowledge",
+      "file": "tome_of_knowledge.png",
+      "recipe": true,
+      "cost": 150,
+      "components": []
     },
     {
-      "Id": "dust",
-      "Name": "Dust of Appearance",
-      "FileName": "dust.png",
-      "RequiresRecipe": true,
-      "Gold": 80,
-      "ComponentNames": []
+      "id": "dust",
+      "name": "Dust of Appearance",
+      "file": "dust.png",
+      "recipe": true,
+      "cost": 80,
+      "components": []
     },
     {
-      "Id": "bottle",
-      "Name": "Bottle",
-      "FileName": "bottle.png",
-      "RequiresRecipe": true,
-      "Gold": 625,
-      "ComponentNames": []
+      "id": "bottle",
+      "name": "Bottle",
+      "file": "bottle.png",
+      "recipe": true,
+      "cost": 625,
+      "components": []
     },
     {
-      "Id": "branch",
-      "Name": "Iron Branch",
-      "FileName": "branches.png",
-      "RequiresRecipe": true,
-      "Gold": 50,
-      "ComponentNames": []
+      "id": "branch",
+      "name": "Iron Branch",
+      "file": "branches.png",
+      "recipe": true,
+      "cost": 50,
+      "components": []
     },
     {
-      "Id": "gauntlet",
-      "Name": "Gauntlets of Strength",
-      "FileName": "gauntlets.png",
-      "RequiresRecipe": true,
-      "Gold": 145,
-      "ComponentNames": []
+      "id": "gauntlet",
+      "name": "Gauntlets of Strength",
+      "file": "gauntlets.png",
+      "recipe": true,
+      "cost": 145,
+      "components": []
     },
     {
-      "Id": "slippers",
-      "Name": "Slippers of Agility",
-      "FileName": "slippers.png",
-      "RequiresRecipe": true,
-      "Gold": 145,
-      "ComponentNames": []
+      "id": "slippers",
+      "name": "Slippers of Agility",
+      "file": "slippers.png",
+      "recipe": true,
+      "cost": 145,
+      "components": []
     },
     {
-      "Id": "mantle",
-      "Name": "Mantle of Intelligence",
-      "FileName": "mantle.png",
-      "RequiresRecipe": true,
-      "Gold": 145,
-      "ComponentNames": []
+      "id": "mantle",
+      "name": "Mantle of Intelligence",
+      "file": "mantle.png",
+      "recipe": true,
+      "cost": 145,
+      "components": []
     },
     {
-      "Id": "circlet",
-      "Name": "Circlet",
-      "FileName": "circlet.png",
-      "RequiresRecipe": true,
-      "Gold": 155,
-      "ComponentNames": []
+      "id": "circlet",
+      "name": "Circlet",
+      "file": "circlet.png",
+      "recipe": true,
+      "cost": 155,
+      "components": []
     },
     {
-      "Id": "belt_of_strength",
-      "Name": "Belt of Strength",
-      "FileName": "belt_of_strength.png",
-      "RequiresRecipe": true,
-      "Gold": 450,
-      "ComponentNames": []
+      "id": "belt_of_strength",
+      "name": "Belt of Strength",
+      "file": "belt_of_strength.png",
+      "recipe": true,
+      "cost": 450,
+      "components": []
     },
     {
-      "Id": "band_of_elvenskin",
-      "Name": "Band of Elvenskin",
-      "FileName": "boots_of_elves.png",
-      "RequiresRecipe": true,
-      "Gold": 450,
-      "ComponentNames": []
+      "id": "band_of_elvenskin",
+      "name": "Band of Elvenskin",
+      "file": "boots_of_elves.png",
+      "recipe": true,
+      "cost": 450,
+      "components": []
     },
     {
-      "Id": "robe_of_the_magi",
-      "Name": "Robe of the Magi",
-      "FileName": "robe.png",
-      "RequiresRecipe": true,
-      "Gold": 450,
-      "ComponentNames": []
+      "id": "robe_of_the_magi",
+      "name": "Robe of the Magi",
+      "file": "robe.png",
+      "recipe": true,
+      "cost": 450,
+      "components": []
     },
     {
-      "Id": "crown",
-      "Name": "Crown",
-      "FileName": "crown.png",
-      "RequiresRecipe": true,
-      "Gold": 450,
-      "ComponentNames": []
+      "id": "crown",
+      "name": "Crown",
+      "file": "crown.png",
+      "recipe": true,
+      "cost": 450,
+      "components": []
     },
     {
-      "Id": "ogre_axe",
-      "Name": "Ogre Axe",
-      "FileName": "ogre_axe.png",
-      "RequiresRecipe": true,
-      "Gold": 1000,
-      "ComponentNames": []
+      "id": "ogre_axe",
+      "name": "Ogre Axe",
+      "file": "ogre_axe.png",
+      "recipe": true,
+      "cost": 1000,
+      "components": []
     },
     {
-      "Id": "blade_of_alacrity",
-      "Name": "Blade of Alacrity",
-      "FileName": "blade_of_alacrity.png",
-      "RequiresRecipe": true,
-      "Gold": 1000,
-      "ComponentNames": []
+      "id": "blade_of_alacrity",
+      "name": "Blade of Alacrity",
+      "file": "blade_of_alacrity.png",
+      "recipe": true,
+      "cost": 1000,
+      "components": []
     },
     {
-      "Id": "staff_of_wizardry",
-      "Name": "Staff of Wizardry",
-      "FileName": "staff_of_wizardry.png",
-      "RequiresRecipe": true,
-      "Gold": 1000,
-      "ComponentNames": []
+      "id": "staff_of_wizardry",
+      "name": "Staff of Wizardry",
+      "file": "staff_of_wizardry.png",
+      "recipe": true,
+      "cost": 1000,
+      "components": []
     },
     {
-      "Id": "ring_of_protection",
-      "Name": "Ring of Protection",
-      "FileName": "ring_of_protection.png",
-      "RequiresRecipe": true,
-      "Gold": 150,
-      "ComponentNames": []
+      "id": "ring_of_protection",
+      "name": "Ring of Protection",
+      "file": "ring_of_protection.png",
+      "recipe": true,
+      "cost": 150,
+      "components": []
     },
     {
-      "Id": "quelling_blade",
-      "Name": "Quelling Blade",
-      "FileName": "quelling_blade.png",
-      "RequiresRecipe": true,
-      "Gold": 150,
-      "ComponentNames": []
+      "id": "quelling_blade",
+      "name": "Quelling Blade",
+      "file": "quelling_blade.png",
+      "recipe": true,
+      "cost": 150,
+      "components": []
     },
     {
-      "Id": "raindrop",
-      "Name": "Infused Raindrop",
-      "FileName": "infused_raindrop.png",
-      "RequiresRecipe": true,
-      "Gold": 225,
-      "ComponentNames": []
+      "id": "raindrop",
+      "name": "Infused Raindrop",
+      "file": "infused_raindrop.png",
+      "recipe": true,
+      "cost": 225,
+      "components": []
     },
     {
-      "Id": "orb_of_venom",
-      "Name": "Orb of Venom",
-      "FileName": "orb_of_venom.png",
-      "RequiresRecipe": true,
-      "Gold": 300,
-      "ComponentNames": []
+      "id": "orb_of_venom",
+      "name": "Orb of Venom",
+      "file": "orb_of_venom.png",
+      "recipe": true,
+      "cost": 300,
+      "components": []
     },
     {
-      "Id": "blight_stone",
-      "Name": "Blight Stone",
-      "FileName": "blight_stone.png",
-      "RequiresRecipe": true,
-      "Gold": 300,
-      "ComponentNames": []
+      "id": "blight_stone",
+      "name": "Blight Stone",
+      "file": "blight_stone.png",
+      "recipe": true,
+      "cost": 300,
+      "components": []
     },
     {
-      "Id": "blades_of_attack",
-      "Name": "Blades of Attack",
-      "FileName": "blades_of_attack.png",
-      "RequiresRecipe": true,
-      "Gold": 450,
-      "ComponentNames": []
+      "id": "blades_of_attack",
+      "name": "Blades of Attack",
+      "file": "blades_of_attack.png",
+      "recipe": true,
+      "cost": 450,
+      "components": []
     },
     {
-      "Id": "chainmail",
-      "Name": "Chainmail",
-      "FileName": "chainmail.png",
-      "RequiresRecipe": true,
-      "Gold": 550,
-      "ComponentNames": []
+      "id": "chainmail",
+      "name": "Chainmail",
+      "file": "chainmail.png",
+      "recipe": true,
+      "cost": 550,
+      "components": []
     },
     {
-      "Id": "quarterstaff",
-      "Name": "Quarterstaff",
-      "FileName": "quarterstaff.png",
-      "RequiresRecipe": true,
-      "Gold": 875,
-      "ComponentNames": []
+      "id": "quarterstaff",
+      "name": "Quarterstaff",
+      "file": "quarterstaff.png",
+      "recipe": true,
+      "cost": 875,
+      "components": []
     },
     {
-      "Id": "helm_of_iron_will",
-      "Name": "Helm of Iron Will",
-      "FileName": "helm_of_iron_will.png",
-      "RequiresRecipe": true,
-      "Gold": 925,
-      "ComponentNames": []
+      "id": "helm_of_iron_will",
+      "name": "Helm of Iron Will",
+      "file": "helm_of_iron_will.png",
+      "recipe": true,
+      "cost": 925,
+      "components": []
     },
     {
-      "Id": "javelin",
-      "Name": "Javelin",
-      "FileName": "javelin.png",
-      "RequiresRecipe": true,
-      "Gold": 1100,
-      "ComponentNames": []
+      "id": "javelin",
+      "name": "Javelin",
+      "file": "javelin.png",
+      "recipe": true,
+      "cost": 1100,
+      "components": []
     },
     {
-      "Id": "broadsword",
-      "Name": "Broadsword",
-      "FileName": "broadsword.png",
-      "RequiresRecipe": true,
-      "Gold": 1000,
-      "ComponentNames": []
+      "id": "broadsword",
+      "name": "Broadsword",
+      "file": "broadsword.png",
+      "recipe": true,
+      "cost": 1000,
+      "components": []
     },
     {
-      "Id": "claymore",
-      "Name": "Claymore",
-      "FileName": "claymore.png",
-      "RequiresRecipe": true,
-      "Gold": 1400,
-      "ComponentNames": []
+      "id": "claymore",
+      "name": "Claymore",
+      "file": "claymore.png",
+      "recipe": true,
+      "cost": 1400,
+      "components": []
     },
     {
-      "Id": "mithril_hammer",
-      "Name": "Mithril Hammer",
-      "FileName": "mithril_hammer.png",
-      "RequiresRecipe": true,
-      "Gold": 1600,
-      "ComponentNames": []
+      "id": "mithril_hammer",
+      "name": "Mithril Hammer",
+      "file": "mithril_hammer.png",
+      "recipe": true,
+      "cost": 1600,
+      "components": []
     },
     {
-      "Id": "stick",
-      "Name": "Magic Stick",
-      "FileName": "magic_stick.png",
-      "RequiresRecipe": true,
-      "Gold": 200,
-      "ComponentNames": []
+      "id": "stick",
+      "name": "Magic Stick",
+      "file": "magic_stick.png",
+      "recipe": true,
+      "cost": 200,
+      "components": []
     },
     {
-      "Id": "wind_lace",
-      "Name": "Wind Lace",
-      "FileName": "wind_lace.png",
-      "RequiresRecipe": true,
-      "Gold": 250,
-      "ComponentNames": []
+      "id": "wind_lace",
+      "name": "Wind Lace",
+      "file": "wind_lace.png",
+      "recipe": true,
+      "cost": 250,
+      "components": []
     },
     {
-      "Id": "ring_of_regen",
-      "Name": "Ring of Regen",
-      "FileName": "ring_of_regen.png",
-      "RequiresRecipe": true,
-      "Gold": 225,
-      "ComponentNames": []
+      "id": "ring_of_regen",
+      "name": "Ring of Regen",
+      "file": "ring_of_regen.png",
+      "recipe": true,
+      "cost": 225,
+      "components": []
     },
     {
-      "Id": "sages_mask",
-      "Name": "Sage's Mask",
-      "FileName": "sobi_mask.png",
-      "RequiresRecipe": true,
-      "Gold": 225,
-      "ComponentNames": []
+      "id": "sages_mask",
+      "name": "Sage's Mask",
+      "file": "sobi_mask.png",
+      "recipe": true,
+      "cost": 225,
+      "components": []
     },
     {
-      "Id": "boots_of_speed",
-      "Name": "Boots of Speed",
-      "FileName": "boots.png",
-      "RequiresRecipe": true,
-      "Gold": 500,
-      "ComponentNames": []
+      "id": "boots_of_speed",
+      "name": "Boots of Speed",
+      "file": "boots.png",
+      "recipe": true,
+      "cost": 500,
+      "components": []
     },
     {
-      "Id": "gloves_of_haste",
-      "Name": "Gloves of Haste",
-      "FileName": "gloves.png",
-      "RequiresRecipe": true,
-      "Gold": 400,
-      "ComponentNames": []
+      "id": "gloves_of_haste",
+      "name": "Gloves of Haste",
+      "file": "gloves.png",
+      "recipe": true,
+      "cost": 400,
+      "components": []
     },
     {
-      "Id": "cloak",
-      "Name": "Cloak",
-      "FileName": "cloak.png",
-      "RequiresRecipe": true,
-      "Gold": 550,
-      "ComponentNames": []
+      "id": "cloak",
+      "name": "Cloak",
+      "file": "cloak.png",
+      "recipe": true,
+      "cost": 550,
+      "components": []
     },
     {
-      "Id": "ring_of_tarrasque",
-      "Name": "Ring of Tarrasque",
-      "FileName": "ring_of_tarrasque.png",
-      "RequiresRecipe": true,
-      "Gold": 650,
-      "ComponentNames": []
+      "id": "ring_of_tarrasque",
+      "name": "Ring of Tarrasque",
+      "file": "ring_of_tarrasque.png",
+      "recipe": true,
+      "cost": 650,
+      "components": []
     },
     {
-      "Id": "ring_of_health",
-      "Name": "Ring of Health",
-      "FileName": "ring_of_health.png",
-      "RequiresRecipe": true,
-      "Gold": 825,
-      "ComponentNames": []
+      "id": "ring_of_health",
+      "name": "Ring of Health",
+      "file": "ring_of_health.png",
+      "recipe": true,
+      "cost": 825,
+      "components": []
     },
     {
-      "Id": "void_stone",
-      "Name": "Void Stone",
-      "FileName": "void_stone.png",
-      "RequiresRecipe": true,
-      "Gold": 825,
-      "ComponentNames": []
+      "id": "void_stone",
+      "name": "Void Stone",
+      "file": "void_stone.png",
+      "recipe": true,
+      "cost": 825,
+      "components": []
     },
     {
-      "Id": "gem",
-      "Name": "Gem of True Sight",
-      "FileName": "gem.png",
-      "RequiresRecipe": true,
-      "Gold": 900,
-      "ComponentNames": []
+      "id": "gem",
+      "name": "Gem of True Sight",
+      "file": "gem.png",
+      "recipe": true,
+      "cost": 900,
+      "components": []
     },
     {
-      "Id": "morbid_mask",
-      "Name": "Morbid Mask",
-      "FileName": "lifesteal.png",
-      "RequiresRecipe": true,
-      "Gold": 900,
-      "ComponentNames": []
+      "id": "morbid_mask",
+      "name": "Morbid Mask",
+      "file": "lifesteal.png",
+      "recipe": true,
+      "cost": 900,
+      "components": []
     },
     {
-      "Id": "shadow_amulet",
-      "Name": "Shadow Amulet",
-      "FileName": "shadow_amulet.png",
-      "RequiresRecipe": true,
-      "Gold": 1400,
-      "ComponentNames": []
+      "id": "shadow_amulet",
+      "name": "Shadow Amulet",
+      "file": "shadow_amulet.png",
+      "recipe": true,
+      "cost": 1400,
+      "components": []
     },
     {
-      "Id": "ghost_scepter",
-      "Name": "Ghost Scepter",
-      "FileName": "ghost.png",
-      "RequiresRecipe": true,
-      "Gold": 1500,
-      "ComponentNames": []
+      "id": "ghost_scepter",
+      "name": "Ghost Scepter",
+      "file": "ghost.png",
+      "recipe": true,
+      "cost": 1500,
+      "components": []
     },
     {
-      "Id": "blink",
-      "Name": "Blink Dagger",
-      "FileName": "blink.png",
-      "RequiresRecipe": true,
-      "Gold": 2250,
-      "ComponentNames": []
+      "id": "blink",
+      "name": "Blink Dagger",
+      "file": "blink.png",
+      "recipe": true,
+      "cost": 2250,
+      "components": []
     },
     {
-      "Id": "wand",
-      "Name": "Magic Wand",
-      "FileName": "magic_wand.png",
-      "RequiresRecipe": true,
-      "Gold": 450,
-      "ComponentNames": [
+      "id": "wand",
+      "name": "Magic Wand",
+      "file": "magic_wand.png",
+      "recipe": true,
+      "cost": 450,
+      "components": [
         "branch",
         "branch",
         "stick"
       ]
     },
     {
-      "Id": "null_talisman",
-      "Name": "Null Talisman",
-      "FileName": "null_talisman.png",
-      "RequiresRecipe": true,
-      "Gold": 510,
-      "ComponentNames": [
+      "id": "null_talisman",
+      "name": "Null Talisman",
+      "file": "null_talisman.png",
+      "recipe": true,
+      "cost": 510,
+      "components": [
         "circlet",
         "mantle"
       ]
     },
     {
-      "Id": "wraith_band",
-      "Name": "Wraith Band",
-      "FileName": "wraith_band.png",
-      "RequiresRecipe": true,
-      "Gold": 510,
-      "ComponentNames": [
+      "id": "wraith_band",
+      "name": "Wraith Band",
+      "file": "wraith_band.png",
+      "recipe": true,
+      "cost": 510,
+      "components": [
         "slippers",
         "circlet"
       ]
     },
     {
-      "Id": "bracer",
-      "Name": "Bracer",
-      "FileName": "bracer.png",
-      "RequiresRecipe": true,
-      "Gold": 510,
-      "ComponentNames": [
+      "id": "bracer",
+      "name": "Bracer",
+      "file": "bracer.png",
+      "recipe": true,
+      "cost": 510,
+      "components": [
         "gauntlet",
         "circlet"
       ]
     },
     {
-      "Id": "soul_ring",
-      "Name": "Soul Ring",
-      "FileName": "soul_ring.png",
-      "RequiresRecipe": true,
-      "Gold": 815,
-      "ComponentNames": [
+      "id": "soul_ring",
+      "name": "Soul Ring",
+      "file": "soul_ring.png",
+      "recipe": true,
+      "cost": 815,
+      "components": [
         "ring_of_regen",
         "gauntlet",
         "gauntlet"
       ]
     },
     {
-      "Id": "phase_boots",
-      "Name": "Phase Boots",
-      "FileName": "phase_boots.png",
-      "RequiresRecipe": false,
-      "Gold": 1480,
-      "ComponentNames": [
+      "id": "phase_boots",
+      "name": "Phase Boots",
+      "file": "phase_boots.png",
+      "recipe": false,
+      "cost": 1480,
+      "components": [
         "boots_of_speed",
         "chainmail",
         "blades_of_attack"
       ]
     },
     {
-      "Id": "oblivion_staff",
-      "Name": "Oblivion Staff",
-      "FileName": "oblivion_staff.png",
-      "RequiresRecipe": false,
-      "Gold": 1550,
-      "ComponentNames": [
+      "id": "oblivion_staff",
+      "name": "Oblivion Staff",
+      "file": "oblivion_staff.png",
+      "recipe": false,
+      "cost": 1550,
+      "components": [
         "quarterstaff",
         "sages_mask",
         "robe_of_the_magi"
       ]
     },
     {
-      "Id": "perserverance",
-      "Name": "Perserverance",
-      "FileName": "pers.png",
-      "RequiresRecipe": false,
-      "Gold": 1650,
-      "ComponentNames": [
+      "id": "perserverance",
+      "name": "Perserverance",
+      "file": "pers.png",
+      "recipe": false,
+      "cost": 1650,
+      "components": [
         "ring_of_health",
         "void_stone"
       ]
     },
     {
-      "Id": "midas",
-      "Name": "Hand of Midas",
-      "FileName": "hand_of_midas.png",
-      "RequiresRecipe": true,
-      "Gold": 2250,
-      "ComponentNames": [
+      "id": "midas",
+      "name": "Hand of Midas",
+      "file": "hand_of_midas.png",
+      "recipe": true,
+      "cost": 2250,
+      "components": [
         "gloves_of_haste"
       ]
     },
     {
-      "Id": "mask_of_madness",
-      "Name": "Mas of Madness",
-      "FileName": "mask_of_madness.png",
-      "RequiresRecipe": false,
-      "Gold": 1775,
-      "ComponentNames": [
+      "id": "mask_of_madness",
+      "name": "Mas of Madness",
+      "file": "mask_of_madness.png",
+      "recipe": false,
+      "cost": 1775,
+      "components": [
         "morbid_mask",
         "quarterstaff"
       ]
     },
     {
-      "Id": "helm_of_the_deminator",
-      "Name": "Helm of the Dominator",
-      "FileName": "helm_of_the_dominator.png",
-      "RequiresRecipe": true,
-      "Gold": 2125,
-      "ComponentNames": [
+      "id": "helm_of_the_deminator",
+      "name": "Helm of the Dominator",
+      "file": "helm_of_the_dominator.png",
+      "recipe": true,
+      "cost": 2125,
+      "components": [
         "broadsword",
         "headdress",
         "crown"
       ]
     },
     {
-      "Id": "boots_of_travel",
-      "Name": "Boots of Travel",
-      "FileName": "travel_boots.png",
-      "RequiresRecipe": true,
-      "Gold": 2500,
-      "ComponentNames": [
+      "id": "boots_of_travel",
+      "name": "Boots of Travel",
+      "file": "travel_boots.png",
+      "recipe": true,
+      "cost": 2500,
+      "components": [
         "boots_of_speed"
       ]
     },
     {
-      "Id": "moon_shard",
-      "Name": "Moon Shard",
-      "FileName": "moon_shard.png",
-      "RequiresRecipe": false,
-      "Gold": 4000,
-      "ComponentNames": [
+      "id": "moon_shard",
+      "name": "Moon Shard",
+      "file": "moon_shard.png",
+      "recipe": false,
+      "cost": 4000,
+      "components": [
         "hyperstone",
         "hyperstone"
       ]
     },
     {
-      "Id": "ring_of_basilius",
-      "Name": "Ring of Basilius",
-      "FileName": "ring_of_basilius.png",
-      "RequiresRecipe": true,
-      "Gold": 425,
-      "ComponentNames": [
+      "id": "ring_of_basilius",
+      "name": "Ring of Basilius",
+      "file": "ring_of_basilius.png",
+      "recipe": true,
+      "cost": 425,
+      "components": [
         "sages_mask"
       ]
     },
     {
-      "Id": "headdress",
-      "Name": "Headdress",
-      "FileName": "headdress.png",
-      "RequiresRecipe": false,
-      "Gold": 425,
-      "ComponentNames": [
+      "id": "headdress",
+      "name": "Headdress",
+      "file": "headdress.png",
+      "recipe": false,
+      "cost": 425,
+      "components": [
         "branch",
         "ring_of_regen"
       ]
     },
     {
-      "Id": "buckler",
-      "Name": "Buckler",
-      "FileName": "buckler.png",
-      "RequiresRecipe": true,
-      "Gold": 375,
-      "ComponentNames": [
+      "id": "buckler",
+      "name": "Buckler",
+      "file": "buckler.png",
+      "recipe": true,
+      "cost": 375,
+      "components": [
         "ring_of_protection"
       ]
     },
     {
-      "Id": "urn_of_shadows",
-      "Name": "Urn of Shadows",
-      "FileName": "urn_of_shadows.png",
-      "RequiresRecipe": true,
-      "Gold": 840,
-      "ComponentNames": [
+      "id": "urn_of_shadows",
+      "name": "Urn of Shadows",
+      "file": "urn_of_shadows.png",
+      "recipe": true,
+      "cost": 840,
+      "components": [
         "sages_mask",
         "circlet",
         "ring_of_protection"
       ]
     },
     {
-      "Id": "tranquil_boots",
-      "Name": "Tranquil Boots",
-      "FileName": "tranquil_boots.png",
-      "RequiresRecipe": false,
-      "Gold": 975,
-      "ComponentNames": [
+      "id": "tranquil_boots",
+      "name": "Tranquil Boots",
+      "file": "tranquil_boots.png",
+      "recipe": false,
+      "cost": 975,
+      "components": [
         "boots_of_speed",
         "wind_lace",
         "ring_of_regen"
       ]
     },
     {
-      "Id": "medallion_of_courage",
-      "Name": "Medallion of Courage",
-      "FileName": "medallion_of_courage.png",
-      "RequiresRecipe": false,
-      "Gold": 1075,
-      "ComponentNames": [
+      "id": "medallion_of_courage",
+      "name": "Medallion of Courage",
+      "file": "medallion_of_courage.png",
+      "recipe": false,
+      "cost": 1075,
+      "components": [
         "chainmail",
         "sages_mask",
         "blight_stone"
       ]
     },
     {
-      "Id": "arcane_boots",
-      "Name": "Arcane Boots",
-      "FileName": "arcane_boots.png",
-      "RequiresRecipe": false,
-      "Gold": 1400,
-      "ComponentNames": [
+      "id": "arcane_boots",
+      "name": "Arcane Boots",
+      "file": "arcane_boots.png",
+      "recipe": false,
+      "cost": 1400,
+      "components": [
         "boots_of_speed",
         "energy_booster"
       ]
     },
     {
-      "Id": "drums",
-      "Name": "Drum of Endurance",
-      "FileName": "ancient_janggo.png",
-      "RequiresRecipe": true,
-      "Gold": 1900,
-      "ComponentNames": [
+      "id": "drums",
+      "name": "Drum of Endurance",
+      "file": "ancient_janggo.png",
+      "recipe": true,
+      "cost": 1900,
+      "components": [
         "gloves_of_haste",
         "crown",
         "wind_lace"
       ]
     },
     {
-      "Id": "vlads",
-      "Name": "Vladmir's Offering",
-      "FileName": "vladmir.png",
-      "RequiresRecipe": true,
-      "Gold": 2250,
-      "ComponentNames": [
+      "id": "vlads",
+      "name": "Vladmir's Offering",
+      "file": "vladmir.png",
+      "recipe": true,
+      "cost": 2250,
+      "components": [
         "ring_of_basilius",
         "buckler",
         "morbid_mask"
       ]
     },
     {
-      "Id": "mekansm",
-      "Name": "Mekansm",
-      "FileName": "mekansm.png",
-      "RequiresRecipe": true,
-      "Gold": 1925,
-      "ComponentNames": [
+      "id": "mekansm",
+      "name": "Mekansm",
+      "file": "mekansm.png",
+      "recipe": true,
+      "cost": 1925,
+      "components": [
         "headdress",
         "chainmail"
       ]
     },
     {
-      "Id": "spirit_vessel",
-      "Name": "Spirit Vessel",
-      "FileName": "spirit_vessel.png",
-      "RequiresRecipe": true,
-      "Gold": 2940,
-      "ComponentNames": [
+      "id": "spirit_vessel",
+      "name": "Spirit Vessel",
+      "file": "spirit_vessel.png",
+      "recipe": true,
+      "cost": 2940,
+      "components": [
         "urn_of_shadows",
         "vitality_booster"
       ]
     },
     {
-      "Id": "holy_locket",
-      "Name": "Holy Locket",
-      "FileName": "holy_locket.png",
-      "RequiresRecipe": true,
-      "Gold": 2500,
-      "ComponentNames": [
+      "id": "holy_locket",
+      "name": "Holy Locket",
+      "file": "holy_locket.png",
+      "recipe": true,
+      "cost": 2500,
+      "components": [
         "ring_of_tarrasque",
         "energy_booster",
         "wand"
       ]
     },
     {
-      "Id": "pipe_of_insight",
-      "Name": "Pipe of Insight",
-      "FileName": "pipe.png",
-      "RequiresRecipe": true,
-      "Gold": 3175,
-      "ComponentNames": [
+      "id": "pipe_of_insight",
+      "name": "Pipe of Insight",
+      "file": "pipe.png",
+      "recipe": true,
+      "cost": 3175,
+      "components": [
         "hood_of_defiance",
         "headdress"
       ]
     },
     {
-      "Id": "guardian_greaves",
-      "Name": "Guardian Greaves",
-      "FileName": "guardian_greaves.png",
-      "RequiresRecipe": true,
-      "Gold": 4875,
-      "ComponentNames": [
+      "id": "guardian_greaves",
+      "name": "Guardian Greaves",
+      "file": "guardian_greaves.png",
+      "recipe": true,
+      "cost": 4875,
+      "components": [
         "mekansm",
         "arcane_boots"
       ]
     },
     {
-      "Id": "glimmer_cape",
-      "Name": "Glimmer Cape",
-      "FileName": "glimmer_cape.png",
-      "RequiresRecipe": false,
-      "Gold": 1950,
-      "ComponentNames": [
+      "id": "glimmer_cape",
+      "name": "Glimmer Cape",
+      "file": "glimmer_cape.png",
+      "recipe": false,
+      "cost": 1950,
+      "components": [
         "shadow_amulet",
         "cloak"
       ]
     },
     {
-      "Id": "veil_of_discord",
-      "Name": "Veil of Discord",
-      "FileName": "veil_of_discord.png",
-      "RequiresRecipe": true,
-      "Gold": 1975,
-      "ComponentNames": [
+      "id": "veil_of_discord",
+      "name": "Veil of Discord",
+      "file": "veil_of_discord.png",
+      "recipe": true,
+      "cost": 1975,
+      "components": [
         "ring_of_basilius",
         "crown"
       ]
     },
     {
-      "Id": "aether_lens",
-      "Name": "Aether Lens",
-      "FileName": "aether_lens.png",
-      "RequiresRecipe": true,
-      "Gold": 2325,
-      "ComponentNames": [
+      "id": "aether_lens",
+      "name": "Aether Lens",
+      "file": "aether_lens.png",
+      "recipe": true,
+      "cost": 2325,
+      "components": [
         "energy_booster",
         "void_stone"
       ]
     },
     {
-      "Id": "force_staff",
-      "Name": "Force Staff",
-      "FileName": "force_staff.png",
-      "RequiresRecipe": true,
-      "Gold": 2225,
-      "ComponentNames": [
+      "id": "force_staff",
+      "name": "Force Staff",
+      "file": "force_staff.png",
+      "recipe": true,
+      "cost": 2225,
+      "components": [
         "ring_of_regen",
         "staff_of_wizardry"
       ]
     },
     {
-      "Id": "necronomicon",
-      "Name": "Necronomicon",
-      "FileName": "necronomicon.png",
-      "RequiresRecipe": true,
-      "Gold": 2150,
-      "ComponentNames": [
+      "id": "necronomicon",
+      "name": "Necronomicon",
+      "file": "necronomicon.png",
+      "recipe": true,
+      "cost": 2150,
+      "components": [
         "sages_mask",
         "sages_mask"
       ]
     },
     {
-      "Id": "solar_crest",
-      "Name": "Solar Crest",
-      "FileName": "solar_crest.png",
-      "RequiresRecipe": true,
-      "Gold": 3875,
-      "ComponentNames": [
+      "id": "solar_crest",
+      "name": "Solar Crest",
+      "file": "solar_crest.png",
+      "recipe": true,
+      "cost": 3875,
+      "components": [
         "medallion_of_courage",
         "ultimate_orb",
         "wind_lace"
       ]
     },
     {
-      "Id": "dagon",
-      "Name": "Dagon",
-      "FileName": "dagon.png",
-      "RequiresRecipe": true,
-      "Gold": 2700,
-      "ComponentNames": [
+      "id": "dagon",
+      "name": "Dagon",
+      "file": "dagon.png",
+      "recipe": true,
+      "cost": 2700,
+      "components": [
         "staff_of_wizardry",
         "crown"
       ]
     },
     {
-      "Id": "euls_scepter",
-      "Name": "Eul's Scepter of Divinity",
-      "FileName": "cyclone.png",
-      "RequiresRecipe": true,
-      "Gold": 2725,
-      "ComponentNames": [
+      "id": "euls_scepter",
+      "name": "Eul's Scepter of Divinity",
+      "file": "cyclone.png",
+      "recipe": true,
+      "cost": 2725,
+      "components": [
         "staff_of_wizardry",
         "void_stone",
         "wind_lace"
       ]
     },
     {
-      "Id": "rod_of_atos",
-      "Name": "Rod of Atos",
-      "FileName": "rod_of_atos.png",
-      "RequiresRecipe": true,
-      "Gold": 2750,
-      "ComponentNames": [
+      "id": "rod_of_atos",
+      "name": "Rod of Atos",
+      "file": "rod_of_atos.png",
+      "recipe": true,
+      "cost": 2750,
+      "components": [
         "staff_of_wizardry",
         "crown",
         "crown"
       ]
     },
     {
-      "Id": "orchid",
-      "Name": "Orchid Malevolence",
-      "FileName": "orchid.png",
-      "RequiresRecipe": true,
-      "Gold": 3875,
-      "ComponentNames": [
+      "id": "orchid",
+      "name": "Orchid Malevolence",
+      "file": "orchid.png",
+      "recipe": true,
+      "cost": 3875,
+      "components": [
         "oblivion_staff",
         "oblivion_staff"
       ]
     },
     {
-      "Id": "aghanims_scepter",
-      "Name": "Aghanim's Scepter",
-      "FileName": "ultimate_scepter.png",
-      "RequiresRecipe": false,
-      "Gold": 4200,
-      "ComponentNames": [
+      "id": "aghanims_scepter",
+      "name": "Aghanim's Scepter",
+      "file": "ultimate_scepter.png",
+      "recipe": false,
+      "cost": 4200,
+      "components": [
         "point_booster",
         "staff_of_wizardry",
         "ogre_axe",
@@ -847,251 +847,251 @@
       ]
     },
     {
-      "Id": "nullifier",
-      "Name": "Nullifier",
-      "FileName": "nullifier.png",
-      "RequiresRecipe": false,
-      "Gold": 4725,
-      "ComponentNames": [
+      "id": "nullifier",
+      "name": "Nullifier",
+      "file": "nullifier.png",
+      "recipe": false,
+      "cost": 4725,
+      "components": [
         "relic",
         "helm_of_iron_will"
       ]
     },
     {
-      "Id": "refresher",
-      "Name": "Refresher Orb",
-      "FileName": "refresher.png",
-      "RequiresRecipe": true,
-      "Gold": 5000,
-      "ComponentNames": [
+      "id": "refresher",
+      "name": "Refresher Orb",
+      "file": "refresher.png",
+      "recipe": true,
+      "cost": 5000,
+      "components": [
         "perserverance",
         "perserverance"
       ]
     },
     {
-      "Id": "scythe",
-      "Name": "Scythe of Vyse",
-      "FileName": "sheepstick.png",
-      "RequiresRecipe": false,
-      "Gold": 5675,
-      "ComponentNames": [
+      "id": "scythe",
+      "name": "Scythe of Vyse",
+      "file": "sheepstick.png",
+      "recipe": false,
+      "cost": 5675,
+      "components": [
         "mystic_staff",
         "ultimate_orb",
         "void_stone"
       ]
     },
     {
-      "Id": "octarine_core",
-      "Name": "Octarine Core",
-      "FileName": "octarine_core.png",
-      "RequiresRecipe": false,
-      "Gold": 5900,
-      "ComponentNames": [
+      "id": "octarine_core",
+      "name": "Octarine Core",
+      "file": "octarine_core.png",
+      "recipe": false,
+      "cost": 5900,
+      "components": [
         "mystic_staff",
         "soul_booster"
       ]
     },
     {
-      "Id": "hood_of_defiance",
-      "Name": "Hood of Defiance",
-      "FileName": "hood_of_defiance.png",
-      "RequiresRecipe": true,
-      "Gold": 1800,
-      "ComponentNames": [
+      "id": "hood_of_defiance",
+      "name": "Hood of Defiance",
+      "file": "hood_of_defiance.png",
+      "recipe": true,
+      "cost": 1800,
+      "components": [
         "cloak",
         "ring_of_health",
         "ring_of_regen"
       ]
     },
     {
-      "Id": "vanguard",
-      "Name": "Vanguard",
-      "FileName": "vanguard.png",
-      "RequiresRecipe": false,
-      "Gold": 1925,
-      "ComponentNames": [
+      "id": "vanguard",
+      "name": "Vanguard",
+      "file": "vanguard.png",
+      "recipe": false,
+      "cost": 1925,
+      "components": [
         "ring_of_health",
         "vitality_booster"
       ]
     },
     {
-      "Id": "blade_mail",
-      "Name": "Blade Mail",
-      "FileName": "blade_mail.png",
-      "RequiresRecipe": false,
-      "Gold": 2000,
-      "ComponentNames": [
+      "id": "blade_mail",
+      "name": "Blade Mail",
+      "file": "blade_mail.png",
+      "recipe": false,
+      "cost": 2000,
+      "components": [
         "broadsword",
         "chainmail",
         "robe_of_the_magi"
       ]
     },
     {
-      "Id": "soul_booster",
-      "Name": "Soul Booster",
-      "FileName": "soul_booster.png",
-      "RequiresRecipe": false,
-      "Gold": 3200,
-      "ComponentNames": [
+      "id": "soul_booster",
+      "name": "Soul Booster",
+      "file": "soul_booster.png",
+      "recipe": false,
+      "cost": 3200,
+      "components": [
         "point_booster",
         "energy_booster",
         "vitality_booster"
       ]
     },
     {
-      "Id": "crimson_guard",
-      "Name": "Crimson Guard",
-      "FileName": "crimson_guard.png",
-      "RequiresRecipe": true,
-      "Gold": 3800,
-      "ComponentNames": [
+      "id": "crimson_guard",
+      "name": "Crimson Guard",
+      "file": "crimson_guard.png",
+      "recipe": true,
+      "cost": 3800,
+      "components": [
         "vanguard",
         "helm_of_iron_will"
       ]
     },
     {
-      "Id": "aeon_disk",
-      "Name": "Aeon Disk",
-      "FileName": "aeon_disk.png",
-      "RequiresRecipe": true,
-      "Gold": 3100,
-      "ComponentNames": [
+      "id": "aeon_disk",
+      "name": "Aeon Disk",
+      "file": "aeon_disk.png",
+      "recipe": true,
+      "cost": 3100,
+      "components": [
         "vitality_booster",
         "energy_booster"
       ]
     },
     {
-      "Id": "black_king_bar",
-      "Name": "Black King Bar",
-      "FileName": "black_king_bar.png",
-      "RequiresRecipe": true,
-      "Gold": 4050,
-      "ComponentNames": [
+      "id": "black_king_bar",
+      "name": "Black King Bar",
+      "file": "black_king_bar.png",
+      "recipe": true,
+      "cost": 4050,
+      "components": [
         "ogre_axe",
         "mithril_hammer"
       ]
     },
     {
-      "Id": "lotus_orb",
-      "Name": "Lotus Orb",
-      "FileName": "lotus_orb.png",
-      "RequiresRecipe": false,
-      "Gold": 3950,
-      "ComponentNames": [
+      "id": "lotus_orb",
+      "name": "Lotus Orb",
+      "file": "lotus_orb.png",
+      "recipe": false,
+      "cost": 3950,
+      "components": [
         "perserverance",
         "platemail",
         "energy_booster"
       ]
     },
     {
-      "Id": "shivas",
-      "Name": "Shiva's Guard",
-      "FileName": "shivas_guard.png",
-      "RequiresRecipe": true,
-      "Gold": 4750,
-      "ComponentNames": [
+      "id": "shivas",
+      "name": "Shiva's Guard",
+      "file": "shivas_guard.png",
+      "recipe": true,
+      "cost": 4750,
+      "components": [
         "platemail",
         "mystic_staff"
       ]
     },
     {
-      "Id": "hurricane_pike",
-      "Name": "Hurricane Pike",
-      "FileName": "hurricane_pike.png",
-      "RequiresRecipe": true,
-      "Gold": 4575,
-      "ComponentNames": [
+      "id": "hurricane_pike",
+      "name": "Hurricane Pike",
+      "file": "hurricane_pike.png",
+      "recipe": true,
+      "cost": 4575,
+      "components": [
         "force_staff",
         "dragon_lance"
       ]
     },
     {
-      "Id": "linkens",
-      "Name": "Linken's Sphere",
-      "FileName": "sphere.png",
-      "RequiresRecipe": true,
-      "Gold": 5000,
-      "ComponentNames": [
+      "id": "linkens",
+      "name": "Linken's Sphere",
+      "file": "sphere.png",
+      "recipe": true,
+      "cost": 5000,
+      "components": [
         "ultimate_orb",
         "perserverance"
       ]
     },
     {
-      "Id": "bloodstone",
-      "Name": "Bloodstone",
-      "FileName": "bloodstone.png",
-      "RequiresRecipe": false,
-      "Gold": 5250,
-      "ComponentNames": [
+      "id": "bloodstone",
+      "name": "Bloodstone",
+      "file": "bloodstone.png",
+      "recipe": false,
+      "cost": 5250,
+      "components": [
         "kaya",
         "soul_booster"
       ]
     },
     {
-      "Id": "manta",
-      "Name": "Manta Style",
-      "FileName": "manta.png",
-      "RequiresRecipe": true,
-      "Gold": 4700,
-      "ComponentNames": [
+      "id": "manta",
+      "name": "Manta Style",
+      "file": "manta.png",
+      "recipe": true,
+      "cost": 4700,
+      "components": [
         "yasha",
         "ultimate_orb"
       ]
     },
     {
-      "Id": "heart",
-      "Name": "Heart of Tarrasque",
-      "FileName": "heart.png",
-      "RequiresRecipe": true,
-      "Gold": 5150,
-      "ComponentNames": [
+      "id": "heart",
+      "name": "Heart of Tarrasque",
+      "file": "heart.png",
+      "recipe": true,
+      "cost": 5150,
+      "components": [
         "ring_of_tarrasque",
         "vitality_booster",
         "reaver"
       ]
     },
     {
-      "Id": "assault_cuirass",
-      "Name": "Assault Cuirass",
-      "FileName": "assault.png",
-      "RequiresRecipe": true,
-      "Gold": 5075,
-      "ComponentNames": [
+      "id": "assault_cuirass",
+      "name": "Assault Cuirass",
+      "file": "assault.png",
+      "recipe": true,
+      "cost": 5075,
+      "components": [
         "platemail",
         "hyperstone",
         "buckler"
       ]
     },
     {
-      "Id": "crystalys",
-      "Name": "Crystalys",
-      "FileName": "lesser_crit.png",
-      "RequiresRecipe": true,
-      "Gold": 2130,
-      "ComponentNames": [
+      "id": "crystalys",
+      "name": "Crystalys",
+      "file": "lesser_crit.png",
+      "recipe": true,
+      "cost": 2130,
+      "components": [
         "broadsword",
         "blades_of_attack"
       ]
     },
     {
-      "Id": "armlet",
-      "Name": "Armlet of Mordiggian",
-      "FileName": "armlet.png",
-      "RequiresRecipe": true,
-      "Gold": 2405,
-      "ComponentNames": [
+      "id": "armlet",
+      "name": "Armlet of Mordiggian",
+      "file": "armlet.png",
+      "recipe": true,
+      "cost": 2405,
+      "components": [
         "helm_of_iron_will",
         "gloves_of_haste",
         "blades_of_attack"
       ]
     },
     {
-      "Id": "meteor_hammer",
-      "Name": "Meteor Hammer",
-      "FileName": "meteor_hammer.png",
-      "RequiresRecipe": false,
-      "Gold": 2450,
-      "ComponentNames": [
+      "id": "meteor_hammer",
+      "name": "Meteor Hammer",
+      "file": "meteor_hammer.png",
+      "recipe": false,
+      "cost": 2450,
+      "components": [
         "ogre_axe",
         "staff_of_wizardry",
         "ring_of_regen",
@@ -1099,34 +1099,34 @@
       ]
     },
     {
-      "Id": "shadow_blade",
-      "Name": "Shadow Blade",
-      "FileName": "invis_sword.png",
-      "RequiresRecipe": false,
-      "Gold": 2800,
-      "ComponentNames": [
+      "id": "shadow_blade",
+      "name": "Shadow Blade",
+      "file": "invis_sword.png",
+      "recipe": false,
+      "cost": 2800,
+      "components": [
         "shadow_amulet",
         "claymore"
       ]
     },
     {
-      "Id": "skull_basher",
-      "Name": "Skull Basher",
-      "FileName": "basher.png",
-      "RequiresRecipe": true,
-      "Gold": 2950,
-      "ComponentNames": [
+      "id": "skull_basher",
+      "name": "Skull Basher",
+      "file": "basher.png",
+      "recipe": true,
+      "cost": 2950,
+      "components": [
         "mithril_hammer",
         "belt_of_strength"
       ]
     },
     {
-      "Id": "battle_fury",
-      "Name": "Battle Fury",
-      "FileName": "bfury.png",
-      "RequiresRecipe": false,
-      "Gold": 4400,
-      "ComponentNames": [
+      "id": "battle_fury",
+      "name": "Battle Fury",
+      "file": "bfury.png",
+      "recipe": false,
+      "cost": 4400,
+      "components": [
         "broadsword",
         "mithril_hammer",
         "perserverance",
@@ -1134,370 +1134,370 @@
       ]
     },
     {
-      "Id": "monkey_king_bar",
-      "Name": "Monkey King Bar",
-      "FileName": "monkey_king_bar.png",
-      "RequiresRecipe": false,
-      "Gold": 4175,
-      "ComponentNames": [
+      "id": "monkey_king_bar",
+      "name": "Monkey King Bar",
+      "file": "monkey_king_bar.png",
+      "recipe": false,
+      "cost": 4175,
+      "components": [
         "demon_edge",
         "javelin",
         "quarterstaff"
       ]
     },
     {
-      "Id": "ethereal_blade",
-      "Name": "Ethereal Blade",
-      "FileName": "ethereal_blade.png",
-      "RequiresRecipe": false,
-      "Gold": 4500,
-      "ComponentNames": [
+      "id": "ethereal_blade",
+      "name": "Ethereal Blade",
+      "file": "ethereal_blade.png",
+      "recipe": false,
+      "cost": 4500,
+      "components": [
         "eaglesong",
         "ghost_scepter"
       ]
     },
     {
-      "Id": "radiance",
-      "Name": "Radiance",
-      "FileName": "radiance.png",
-      "RequiresRecipe": true,
-      "Gold": 5150,
-      "ComponentNames": [
+      "id": "radiance",
+      "name": "Radiance",
+      "file": "radiance.png",
+      "recipe": true,
+      "cost": 5150,
+      "components": [
         "relic"
       ]
     },
     {
-      "Id": "daedalus",
-      "Name": "Daedalus",
-      "FileName": "greater_crit.png",
-      "RequiresRecipe": true,
-      "Gold": 5330,
-      "ComponentNames": [
+      "id": "daedalus",
+      "name": "Daedalus",
+      "file": "greater_crit.png",
+      "recipe": true,
+      "cost": 5330,
+      "components": [
         "crystalys",
         "demon_edge"
       ]
     },
     {
-      "Id": "butterfly",
-      "Name": "Butterfly",
-      "FileName": "butterfly.png",
-      "RequiresRecipe": false,
-      "Gold": 5275,
-      "ComponentNames": [
+      "id": "butterfly",
+      "name": "Butterfly",
+      "file": "butterfly.png",
+      "recipe": false,
+      "cost": 5275,
+      "components": [
         "eaglesong",
         "talisman_of_evasion",
         "quarterstaff"
       ]
     },
     {
-      "Id": "silver_edge",
-      "Name": "Silver Edge",
-      "FileName": "silver_edge.png",
-      "RequiresRecipe": true,
-      "Gold": 5550,
-      "ComponentNames": [
+      "id": "silver_edge",
+      "name": "Silver Edge",
+      "file": "silver_edge.png",
+      "recipe": true,
+      "cost": 5550,
+      "components": [
         "shadow_blade",
         "ultimate_orb"
       ]
     },
     {
-      "Id": "divine_rapier",
-      "Name": "Divine Rapier",
-      "FileName": "rapier.png",
-      "RequiresRecipe": false,
-      "Gold": 6000,
-      "ComponentNames": [
+      "id": "divine_rapier",
+      "name": "Divine Rapier",
+      "file": "rapier.png",
+      "recipe": false,
+      "cost": 6000,
+      "components": [
         "relic",
         "demon_edge"
       ]
     },
     {
-      "Id": "abyssal_blade",
-      "Name": "Abyssal Blade",
-      "FileName": "abyssal_blade.png",
-      "RequiresRecipe": true,
-      "Gold": 6625,
-      "ComponentNames": [
+      "id": "abyssal_blade",
+      "name": "Abyssal Blade",
+      "file": "abyssal_blade.png",
+      "recipe": true,
+      "cost": 6625,
+      "components": [
         "skull_basher",
         "vanguard"
       ]
     },
     {
-      "Id": "bloodthorn",
-      "Name": "Bloodthorn",
-      "FileName": "bloodthorn.png",
-      "RequiresRecipe": true,
-      "Gold": 6875,
-      "ComponentNames": [
+      "id": "bloodthorn",
+      "name": "Bloodthorn",
+      "file": "bloodthorn.png",
+      "recipe": true,
+      "cost": 6875,
+      "components": [
         "orchid",
         "hyperstone"
       ]
     },
     {
-      "Id": "dragon_lance",
-      "Name": "Dragon Lance",
-      "FileName": "dragon_lance.png",
-      "RequiresRecipe": false,
-      "Gold": 1900,
-      "ComponentNames": [
+      "id": "dragon_lance",
+      "name": "Dragon Lance",
+      "file": "dragon_lance.png",
+      "recipe": false,
+      "cost": 1900,
+      "components": [
         "ogre_axe",
         "band_of_elvenskin",
         "band_of_elvenskin"
       ]
     },
     {
-      "Id": "sange",
-      "Name": "Sange",
-      "FileName": "sange.png",
-      "RequiresRecipe": true,
-      "Gold": 2050,
-      "ComponentNames": [
+      "id": "sange",
+      "name": "Sange",
+      "file": "sange.png",
+      "recipe": true,
+      "cost": 2050,
+      "components": [
         "ogre_axe",
         "belt_of_strength"
       ]
     },
     {
-      "Id": "yasha",
-      "Name": "Yasha",
-      "FileName": "yasha.png",
-      "RequiresRecipe": true,
-      "Gold": 2050,
-      "ComponentNames": [
+      "id": "yasha",
+      "name": "Yasha",
+      "file": "yasha.png",
+      "recipe": true,
+      "cost": 2050,
+      "components": [
         "blade_of_alacrity",
         "band_of_elvenskin"
       ]
     },
     {
-      "Id": "kaya",
-      "Name": "Kaya",
-      "FileName": "kaya.png",
-      "RequiresRecipe": true,
-      "Gold": 2050,
-      "ComponentNames": [
+      "id": "kaya",
+      "name": "Kaya",
+      "file": "kaya.png",
+      "recipe": true,
+      "cost": 2050,
+      "components": [
         "staff_of_wizardry",
         "robe_of_the_magi"
       ]
     },
     {
-      "Id": "echo_sabre",
-      "Name": "Echo Sabre",
-      "FileName": "echo_sabre.png",
-      "RequiresRecipe": false,
-      "Gold": 2550,
-      "ComponentNames": [
+      "id": "echo_sabre",
+      "name": "Echo Sabre",
+      "file": "echo_sabre.png",
+      "recipe": false,
+      "cost": 2550,
+      "components": [
         "ogre_axe",
         "oblivion_staff"
       ]
     },
     {
-      "Id": "maelstrom",
-      "Name": "maelstrom",
-      "FileName": "maelstrom.png",
-      "RequiresRecipe": false,
-      "Gold": 2700,
-      "ComponentNames": [
+      "id": "maelstrom",
+      "name": "maelstrom",
+      "file": "maelstrom.png",
+      "recipe": false,
+      "cost": 2700,
+      "components": [
         "mithril_hammer",
         "javelin"
       ]
     },
     {
-      "Id": "diffusal_blade",
-      "Name": "Diffusal Blade",
-      "FileName": "diffusal_blade.png",
-      "RequiresRecipe": true,
-      "Gold": 3150,
-      "ComponentNames": [
+      "id": "diffusal_blade",
+      "name": "Diffusal Blade",
+      "file": "diffusal_blade.png",
+      "recipe": true,
+      "cost": 3150,
+      "components": [
         "blade_of_alacrity",
         "blade_of_alacrity",
         "robe_of_the_magi"
       ]
     },
     {
-      "Id": "heavens_halberd",
-      "Name": "Heaven's Halberd",
-      "FileName": "heavens_halberd.png",
-      "RequiresRecipe": false,
-      "Gold": 3450,
-      "ComponentNames": [
+      "id": "heavens_halberd",
+      "name": "Heaven's Halberd",
+      "file": "heavens_halberd.png",
+      "recipe": false,
+      "cost": 3450,
+      "components": [
         "sange",
         "talisman_of_evasion"
       ]
     },
     {
-      "Id": "desolator",
-      "Name": "Desolator",
-      "FileName": "desolator.png",
-      "RequiresRecipe": false,
-      "Gold": 3500,
-      "ComponentNames": [
+      "id": "desolator",
+      "name": "Desolator",
+      "file": "desolator.png",
+      "recipe": false,
+      "cost": 3500,
+      "components": [
         "mithril_hammer",
         "mithril_hammer",
         "blight_stone"
       ]
     },
     {
-      "Id": "kaya_and_sange",
-      "Name": "Kaya and Sange",
-      "FileName": "kaya_and_sange.png",
-      "RequiresRecipe": false,
-      "Gold": 4100,
-      "ComponentNames": [
+      "id": "kaya_and_sange",
+      "name": "Kaya and Sange",
+      "file": "kaya_and_sange.png",
+      "recipe": false,
+      "cost": 4100,
+      "components": [
         "kaya",
         "sange"
       ]
     },
     {
-      "Id": "sange_and_yasha",
-      "Name": "Sange and Yasha",
-      "FileName": "sange_and_yasha.png",
-      "RequiresRecipe": false,
-      "Gold": 4100,
-      "ComponentNames": [
+      "id": "sange_and_yasha",
+      "name": "Sange and Yasha",
+      "file": "sange_and_yasha.png",
+      "recipe": false,
+      "cost": 4100,
+      "components": [
         "yasha",
         "sange"
       ]
     },
     {
-      "Id": "yasha_and_kaya",
-      "Name": "Yasha and Kaya",
-      "FileName": "yasha_and_kaya.png",
-      "RequiresRecipe": false,
-      "Gold": 4100,
-      "ComponentNames": [
+      "id": "yasha_and_kaya",
+      "name": "Yasha and Kaya",
+      "file": "yasha_and_kaya.png",
+      "recipe": false,
+      "cost": 4100,
+      "components": [
         "kaya",
         "yasha"
       ]
     },
     {
-      "Id": "eye_of_skadi",
-      "Name": "Eye of Skadi",
-      "FileName": "skadi.png",
-      "RequiresRecipe": false,
-      "Gold": 5500,
-      "ComponentNames": [
+      "id": "eye_of_skadi",
+      "name": "Eye of Skadi",
+      "file": "skadi.png",
+      "recipe": false,
+      "cost": 5500,
+      "components": [
         "ultimate_orb",
         "ultimate_orb",
         "point_booster"
       ]
     },
     {
-      "Id": "satanic",
-      "Name": "Satanic",
-      "FileName": "satanic.png",
-      "RequiresRecipe": false,
-      "Gold": 5300,
-      "ComponentNames": [
+      "id": "satanic",
+      "name": "Satanic",
+      "file": "satanic.png",
+      "recipe": false,
+      "cost": 5300,
+      "components": [
         "morbid_mask",
         "claymore",
         "reaver"
       ]
     },
     {
-      "Id": "mjollnir",
-      "Name": "Mjollnir",
-      "FileName": "mjollnir.png",
-      "RequiresRecipe": true,
-      "Gold": 5600,
-      "ComponentNames": [
+      "id": "mjollnir",
+      "name": "Mjollnir",
+      "file": "mjollnir.png",
+      "recipe": true,
+      "cost": 5600,
+      "components": [
         "maelstrom",
         "hyperstone"
       ]
     },
     {
-      "Id": "energy_booster",
-      "Name": "Energy Booster",
-      "FileName": "energy_booster.png",
-      "RequiresRecipe": false,
-      "Gold": 900,
-      "ComponentNames": []
+      "id": "energy_booster",
+      "name": "Energy Booster",
+      "file": "energy_booster.png",
+      "recipe": false,
+      "cost": 900,
+      "components": []
     },
     {
-      "Id": "vitality_booster",
-      "Name": "Vitality Booster",
-      "FileName": "vitality_booster.png",
-      "RequiresRecipe": false,
-      "Gold": 1100,
-      "ComponentNames": []
+      "id": "vitality_booster",
+      "name": "Vitality Booster",
+      "file": "vitality_booster.png",
+      "recipe": false,
+      "cost": 1100,
+      "components": []
     },
     {
-      "Id": "point_booster",
-      "Name": "Point Booster",
-      "FileName": "point_booster.png",
-      "RequiresRecipe": false,
-      "Gold": 1200,
-      "ComponentNames": []
+      "id": "point_booster",
+      "name": "Point Booster",
+      "file": "point_booster.png",
+      "recipe": false,
+      "cost": 1200,
+      "components": []
     },
     {
-      "Id": "platemail",
-      "Name": "Platemail",
-      "FileName": "platemail.png",
-      "RequiresRecipe": false,
-      "Gold": 1400,
-      "ComponentNames": []
+      "id": "platemail",
+      "name": "Platemail",
+      "file": "platemail.png",
+      "recipe": false,
+      "cost": 1400,
+      "components": []
     },
     {
-      "Id": "talisman_of_evasion",
-      "Name": "Talisman of Evasion",
-      "FileName": "talisman_of_evasion.png",
-      "RequiresRecipe": false,
-      "Gold": 1400,
-      "ComponentNames": []
+      "id": "talisman_of_evasion",
+      "name": "Talisman of Evasion",
+      "file": "talisman_of_evasion.png",
+      "recipe": false,
+      "cost": 1400,
+      "components": []
     },
     {
-      "Id": "hyperstone",
-      "Name": "Hyperstone",
-      "FileName": "hyperstone.png",
-      "RequiresRecipe": false,
-      "Gold": 2000,
-      "ComponentNames": []
+      "id": "hyperstone",
+      "name": "Hyperstone",
+      "file": "hyperstone.png",
+      "recipe": false,
+      "cost": 2000,
+      "components": []
     },
     {
-      "Id": "ultimate_orb",
-      "Name": "Ultimate Orb",
-      "FileName": "ultimate_orb.png",
-      "RequiresRecipe": false,
-      "Gold": 2150,
-      "ComponentNames": []
+      "id": "ultimate_orb",
+      "name": "Ultimate Orb",
+      "file": "ultimate_orb.png",
+      "recipe": false,
+      "cost": 2150,
+      "components": []
     },
     {
-      "Id": "demon_edge",
-      "Name": "Demon Edge",
-      "FileName": "demon_edge.png",
-      "RequiresRecipe": false,
-      "Gold": 2200,
-      "ComponentNames": []
+      "id": "demon_edge",
+      "name": "Demon Edge",
+      "file": "demon_edge.png",
+      "recipe": false,
+      "cost": 2200,
+      "components": []
     },
     {
-      "Id": "mystic_staff",
-      "Name": "Mystic Staff",
-      "FileName": "mystic_staff.png",
-      "RequiresRecipe": false,
-      "Gold": 2700,
-      "ComponentNames": []
+      "id": "mystic_staff",
+      "name": "Mystic Staff",
+      "file": "mystic_staff.png",
+      "recipe": false,
+      "cost": 2700,
+      "components": []
     },
     {
-      "Id": "reaver",
-      "Name": "Reaver",
-      "FileName": "reaver.png",
-      "RequiresRecipe": false,
-      "Gold": 3000,
-      "ComponentNames": []
+      "id": "reaver",
+      "name": "Reaver",
+      "file": "reaver.png",
+      "recipe": false,
+      "cost": 3000,
+      "components": []
     },
     {
-      "Id": "eaglesong",
-      "Name": "Eagleson",
-      "FileName": "eagle.png",
-      "RequiresRecipe": false,
-      "Gold": 3000,
-      "ComponentNames": []
+      "id": "eaglesong",
+      "name": "Eagleson",
+      "file": "eagle.png",
+      "recipe": false,
+      "cost": 3000,
+      "components": []
     },
     {
-      "Id": "relic",
-      "Name": "Sacred Relic",
-      "FileName": "relic.png",
-      "RequiresRecipe": false,
-      "Gold": 3800,
-      "ComponentNames": []
+      "id": "relic",
+      "name": "Sacred Relic",
+      "file": "relic.png",
+      "recipe": false,
+      "cost": 3800,
+      "components": []
     }
   ]
 }

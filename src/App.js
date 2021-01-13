@@ -1,14 +1,22 @@
 import './App.css';
 import Answers from "./answers";
 import Question from "./question";
+import { useState } from "react";
+import Items from "./items.json";
 
-function App() {
+const defaultAttempts = 3;
+
+const App = () => {
+  const [attempts, setAttempts] = useState(defaultAttempts); 
+
+  const firstItem = Items.items.find(i => i.id === "solar_crest");
+
   return (
     <div className="App">
       <div class="quiz-container">
-        <Question />
+        <Question item={firstItem} />
 
-        <Answers />
+        <Answers options={firstItem.components} />
       </div>
     </div>
   );
