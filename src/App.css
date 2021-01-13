@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
+:root {
+    --stage-color: #111;
+    --border-color: #aaa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none; 
+    user-drag: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -o-user-select: none; 
+    user-select: none; 
+}
+
+.quiz-container {
+    background: url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#stage {
+    background-color: var(--stage-color);
+    border: 2px solid var(--border-color);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 80%;
+    max-width: 690px;
+    box-sizing: content-box;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 1px black;
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: var(--stage-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading.hide {
+    display: none;
+}
+
+.target-item-container,
+.selected-items,
+.option-items,
+.messages {
+    margin: 1rem 2rem;
+    text-align: center;
+    user-select: none;
+}
+
+.selected-item,
+.target-item,
+.option,
+.answer-component {
+    width: 66px;
+    height: 46px;
+    background-color: #222;
+    border: 2px solid var(--border-color);
+    display: inline-block;
+    margin: 0 0.5rem;
+    position: relative;
+    box-shadow: 1px 1px 4px 0 black;
+    box-sizing: content-box;
+}
+
+.option {
+    margin-bottom: .5rem;
+}
+
+    .selected-item::after,
+    .target-item::after {
+        content: '?';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        font-size: xx-large;
+        color: var(--border-color);
+        z-index: 1;
+    }
+
+    .selected-item > img,
+    .target-item > img,
+    .option > img,
+    .answer-component > img {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .option.selected::after {
+        display: none;
+    }
+
+    .option-img.selected {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+#answer-container.show {
+    display: block;
+}
+
+.messages {
+    margin-bottom: 2em;
+    font-size: x-large;
+    text-align: center;
+}
+
+#streak-message {
+    color: var(--border-color);
+    display: none;
+}
+
+#attempts-message {
+  color: var(--border-color);
+  font-size: small;
+}
+
+#incorrect-display {
+    display: none;
+}
+
+.incorrect-message {
+    color: red;
+    text-transform: capitalize;
+}
+
+#incorrect-message-reset {
+  display: none;
+}
+
+#incorrect-display.show,
+#streak-message.show {
+    display: block;
+}
+
+#incorrect-message-reset.show {
+  display: inline;
+}
+
+#answer-container {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+}
+
+.answer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background-color: #333;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 3px 3px black;
+    max-width: 90%;
+    min-width: 155px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.answer-components {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.answer-plus,
+.answer-equals
+{
+    font-size: x-large;
+    color: var(--border-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.incorrect-answer {
+  font-size: small;
+}
+
+#next-question,
+#incorrect-answer-link {
+    display: inline-block;
+    color: #aaa;
+    cursor: pointer;
+    
+}
+
+#next-question {
+  margin-top: 1rem;
+  font-size: medium;
+}
+
+/* Loading Icon from https://loading.io/css/ */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--border-color);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
-  to {
-    transform: rotate(360deg);
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
   }
-}
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
