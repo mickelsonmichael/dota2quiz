@@ -289,7 +289,7 @@
       "components": []
     },
     {
-      "id": "blitz_knucles",
+      "id": "blitz_knuckles",
       "name": "Blitz Knuckles",
       "file": "blitz_knuckles.png",
       "recipe": false,
@@ -797,7 +797,7 @@
     {
       "id": "gleipnir",
       "name": "Gleipnir",
-      "file": "gleipnir.png",
+      "file": "gungir.png",
       "recipe": true,
       "cost": 6150,
       "components": ["maelstrom", "rod_of_atos"]
