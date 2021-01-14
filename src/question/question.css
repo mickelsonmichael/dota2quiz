@@ -1,0 +1,6 @@
+.target-item-container,
+.selected-items {
+  margin: 1rem 2rem;
+  text-align: center;
+  user-select: none;
+}

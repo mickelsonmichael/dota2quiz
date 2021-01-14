@@ -1,19 +1,14 @@
+import Item from "../item";
+import recipe from "./recipe.json";
+
 const Options = ({ options, onOptionClick }) => (
-    <div id="option-items" className="option-items">
-        {options.map(o => (
-            <span key={o.id} className="option" onClick={() => onOptionClick(o)}>
-                <img className="option-img" src={`images/${o.file}`} alt={o.name} draggable="false" />
-            </span>
-        ))}
-        <span className="option recipe">
-            <img
-                className="option-img"
-                src="./items/recipe_lg.png"
-                alt="Recipe"
-                draggable="false"
-            />
-        </span>
-    </div>
+  <div id="option-items" className="option-items">
+    {options.map((o) => (
+      <Item key={o.id} item={o} onClick={() => onOptionClick(o)} />
+    ))}
+
+    <Item item={recipe} onClick={() => onOptionClick(recipe)} />
+  </div>
 );
 
 export default Options;

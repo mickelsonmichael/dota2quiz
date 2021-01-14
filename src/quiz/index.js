@@ -2,31 +2,30 @@ import { useState } from "react";
 import getQuestion from "../question/Generator";
 import Question from "../question";
 import Options from "../options";
+import "./quiz.css";
 
 const Quiz = () => {
-    const [state, setState] = useState({
-        question: getQuestion(),
-        selection: []
-    });
+  const [question, setQuestion] = useState(getQuestion());
+  const [selection, setSelection] = useState([]);
 
-    const addSelection = (option) => {
-        setState(prev => ({
-        ...prev,
-        selection: [ ...prev.selection, option ]
-        }));
-    }
+  const newQuestion = () => {
+    setQuestion(getQuestion());
+    setSelection([]);
+  };
 
-    console.log(state);
-    return (
-        <div className="App">
-        <div className="quiz-container">
-            <div id="stage" className="box">
-            <Question item={state.question} selection={state.selection} />
-            <Options options={state.question.options} onOptionClick={addSelection} />
-            </div>
-        </div>
-        </div>
-    );
-}
+  const addSelection = (option) => {
+    setSelection((prev) => [...prev, option]);
+  };
+
+  return (
+    <div className="quiz-container">
+      <div id="stage" className="box">
+        <Question item={question} selection={selection} />
+
+        <Options options={question.options} onOptionClick={addSelection} />
+      </div>
+    </div>
+  );
+};
 
 export default Quiz;
