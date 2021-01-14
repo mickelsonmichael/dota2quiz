@@ -1,6 +1,8 @@
-.target-item-container,
-.selected-items {
-  margin: 1rem 2rem;
+.question-target {
   text-align: center;
-  user-select: none;
+  margin: 1rem auto;
+}
+
+.question-selection {
+  margin: 1rem auto;
 }

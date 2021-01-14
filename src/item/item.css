@@ -1,33 +1,41 @@
 .item {
-    width: 66px;
-    height: 46px;
-    background-color: #222;
-    border: 2px solid var(--border-color);
-    display: inline-block;
-    margin: 0 0.5rem;
-    position: relative;
-    box-shadow: 1px 1px 4px 0 black;
-    box-sizing: content-box;
+  width: 66px;
+  height: 46px;
+  background-color: #222;
+  border: 2px solid var(--border-color);
+  display: inline-block;
+  margin: 0 0.5rem;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.item:hover {
+  box-shadow: 0 0 5px 0 gray;
+}
+
+.item.item--large {
+  width: 86px;
+  height: 59.94px;
 }
 
 .item.blank::after {
-    content: '?';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    font-size: xx-large;
-    color: var(--border-color);
-    z-index: 1;
+  content: "?";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: xx-large;
+  color: var(--border-color);
+  z-index: 1;
 }
 
 .item-img {
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    position: relative;
-    cursor: pointer;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
 }

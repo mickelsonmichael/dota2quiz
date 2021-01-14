@@ -1,21 +1,23 @@
-const Answers = ({ options }) => (
-    <div id="answer-container">
-        <div id="option-items" className="option-items">
-            {options.map(o => (
-                <span key={o.id} className="option">
-                    <img className="option-img" src={`images/${o.file}`} alt={o.name} draggable="false" />
-                </span>
-            ))}
-            <span className="option recipe">
-                <img
-                    className="option-img"
-                    src="./items/recipe_lg.png"
-                    alt="Recipe"
-                    draggable="false"
-                />
-            </span>
-        </div>
+import Item from "../item";
+import "./answers.css";
+import { items } from "../items.json";
+
+const Answers = ({ item }) => {
+  const answers = items.filter((it) => item.components.includes(it.id));
+
+  return (
+    <div className="answer">
+      <div className="answer-target">
+        <Item item={item} />
+      </div>
+      <div className="answer-components">
+        {answers.map((comp) => (
+          <Item item={comp} />
+        ))}
+        {item.recipe && <Item recipe />}
+      </div>
     </div>
-);
+  );
+};
 
 export default Answers;

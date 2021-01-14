@@ -18,12 +18,12 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quiz-container">
-      <div id="stage" className="box">
-        <Question item={question} selection={selection} />
+    <div className="quiz">
+      <Question item={question} selection={selection} />
 
-        <Options options={question.options} onOptionClick={addSelection} />
-      </div>
+      <hr />
+
+      <Options options={question.options} onOptionClick={addSelection} />
     </div>
   );
 };
