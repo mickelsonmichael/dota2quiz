@@ -4,7 +4,7 @@
       "id": "tp_scroll",
       "name": "Teleportation Scroll",
       "file": "tpscroll.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 90,
       "components": []
     },
@@ -12,7 +12,7 @@
       "id": "clarity",
       "name": "Potion of Clarity",
       "file": "clarity.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 50,
       "components": []
     },
@@ -20,7 +20,7 @@
       "id": "faerie_fire",
       "name": "Faerie Fire",
       "file": "faerie_fire.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 70,
       "components": []
     },
@@ -28,15 +28,15 @@
       "id": "smoke",
       "name": "Smoke of Deceit",
       "file": "smoke_of_deceit.png",
-      "recipe": true,
-      "cost": 80,
+      "recipe": false,
+      "cost": 50,
       "components": []
     },
     {
       "id": "observer_ward",
       "name": "Observer Ward",
       "file": "ward_observer.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 0,
       "components": []
     },
@@ -44,7 +44,7 @@
       "id": "sentry_ward",
       "name": "Sentry Ward",
       "file": "ward_sentry.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 75,
       "components": []
     },
@@ -52,7 +52,7 @@
       "id": "mango",
       "name": "Enchanted Mango",
       "file": "enchanted_mango.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 70,
       "components": []
     },
@@ -60,7 +60,7 @@
       "id": "salve",
       "name": "Healing Salve",
       "file": "flask.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 110,
       "components": []
     },
@@ -68,7 +68,7 @@
       "id": "tango",
       "name": "Tango",
       "file": "tango.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 90,
       "components": []
     },
@@ -76,15 +76,15 @@
       "id": "tome",
       "name": "Tome of Knowledge",
       "file": "tome_of_knowledge.png",
-      "recipe": true,
-      "cost": 150,
+      "recipe": false,
+      "cost": 75,
       "components": []
     },
     {
       "id": "dust",
       "name": "Dust of Appearance",
       "file": "dust.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 80,
       "components": []
     },
@@ -92,15 +92,23 @@
       "id": "bottle",
       "name": "Bottle",
       "file": "bottle.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 625,
+      "components": []
+    },
+    {
+      "id": "shard",
+      "name": "Aghanim's Shard",
+      "file": "aghanims_shard.png",
+      "recipe": false,
+      "cost": 1400,
       "components": []
     },
     {
       "id": "branch",
       "name": "Iron Branch",
       "file": "branches.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 50,
       "components": []
     },
@@ -108,7 +116,7 @@
       "id": "gauntlet",
       "name": "Gauntlets of Strength",
       "file": "gauntlets.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 145,
       "components": []
     },
@@ -116,7 +124,7 @@
       "id": "slippers",
       "name": "Slippers of Agility",
       "file": "slippers.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 145,
       "components": []
     },
@@ -124,7 +132,7 @@
       "id": "mantle",
       "name": "Mantle of Intelligence",
       "file": "mantle.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 145,
       "components": []
     },
@@ -132,7 +140,7 @@
       "id": "circlet",
       "name": "Circlet",
       "file": "circlet.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 155,
       "components": []
     },
@@ -140,7 +148,7 @@
       "id": "belt_of_strength",
       "name": "Belt of Strength",
       "file": "belt_of_strength.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 450,
       "components": []
     },
@@ -148,7 +156,7 @@
       "id": "band_of_elvenskin",
       "name": "Band of Elvenskin",
       "file": "boots_of_elves.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 450,
       "components": []
     },
@@ -156,7 +164,7 @@
       "id": "robe_of_the_magi",
       "name": "Robe of the Magi",
       "file": "robe.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 450,
       "components": []
     },
@@ -164,7 +172,7 @@
       "id": "crown",
       "name": "Crown",
       "file": "crown.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 450,
       "components": []
     },
@@ -172,7 +180,7 @@
       "id": "ogre_axe",
       "name": "Ogre Axe",
       "file": "ogre_axe.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 1000,
       "components": []
     },
@@ -180,7 +188,7 @@
       "id": "blade_of_alacrity",
       "name": "Blade of Alacrity",
       "file": "blade_of_alacrity.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 1000,
       "components": []
     },
@@ -188,31 +196,31 @@
       "id": "staff_of_wizardry",
       "name": "Staff of Wizardry",
       "file": "staff_of_wizardry.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 1000,
-      "components": []
-    },
-    {
-      "id": "ring_of_protection",
-      "name": "Ring of Protection",
-      "file": "ring_of_protection.png",
-      "recipe": true,
-      "cost": 150,
       "components": []
     },
     {
       "id": "quelling_blade",
       "name": "Quelling Blade",
       "file": "quelling_blade.png",
-      "recipe": true,
-      "cost": 150,
+      "recipe": false,
+      "cost": 130,
+      "components": []
+    },
+    {
+      "id": "ring_of_protection",
+      "name": "Ring of Protection",
+      "file": "ring_of_protection.png",
+      "recipe": false,
+      "cost": 175,
       "components": []
     },
     {
       "id": "raindrop",
       "name": "Infused Raindrop",
       "file": "infused_raindrop.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 225,
       "components": []
     },
@@ -220,15 +228,15 @@
       "id": "orb_of_venom",
       "name": "Orb of Venom",
       "file": "orb_of_venom.png",
-      "recipe": true,
-      "cost": 300,
+      "recipe": false,
+      "cost": 275,
       "components": []
     },
     {
       "id": "blight_stone",
       "name": "Blight Stone",
       "file": "blight_stone.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 300,
       "components": []
     },
@@ -236,7 +244,15 @@
       "id": "blades_of_attack",
       "name": "Blades of Attack",
       "file": "blades_of_attack.png",
-      "recipe": true,
+      "recipe": false,
+      "cost": 450,
+      "components": []
+    },
+    {
+      "id": "gloves_of_haste",
+      "name": "Gloves of Haste",
+      "file": "gloves.png",
+      "recipe": false,
       "cost": 450,
       "components": []
     },
@@ -244,7 +260,7 @@
       "id": "chainmail",
       "name": "Chainmail",
       "file": "chainmail.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 550,
       "components": []
     },
@@ -252,7 +268,7 @@
       "id": "quarterstaff",
       "name": "Quarterstaff",
       "file": "quarterstaff.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 875,
       "components": []
     },
@@ -260,127 +276,111 @@
       "id": "helm_of_iron_will",
       "name": "Helm of Iron Will",
       "file": "helm_of_iron_will.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 925,
-      "components": []
-    },
-    {
-      "id": "javelin",
-      "name": "Javelin",
-      "file": "javelin.png",
-      "recipe": true,
-      "cost": 1100,
       "components": []
     },
     {
       "id": "broadsword",
       "name": "Broadsword",
       "file": "broadsword.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 1000,
+      "components": []
+    },
+    {
+      "id": "blitz_knucles",
+      "name": "Blitz Knuckles",
+      "file": "blitz_knuckles.png",
+      "recipe": false,
+      "cost": 1000,
+      "components": []
+    },
+    {
+      "id": "javelin",
+      "name": "Javelin",
+      "file": "javelin.png",
+      "recipe": false,
+      "cost": 1100,
       "components": []
     },
     {
       "id": "claymore",
       "name": "Claymore",
       "file": "claymore.png",
-      "recipe": true,
-      "cost": 1400,
+      "recipe": false,
+      "cost": 1350,
       "components": []
     },
     {
       "id": "mithril_hammer",
       "name": "Mithril Hammer",
       "file": "mithril_hammer.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 1600,
-      "components": []
-    },
-    {
-      "id": "stick",
-      "name": "Magic Stick",
-      "file": "magic_stick.png",
-      "recipe": true,
-      "cost": 200,
-      "components": []
-    },
-    {
-      "id": "wind_lace",
-      "name": "Wind Lace",
-      "file": "wind_lace.png",
-      "recipe": true,
-      "cost": 250,
       "components": []
     },
     {
       "id": "ring_of_regen",
       "name": "Ring of Regen",
       "file": "ring_of_regen.png",
-      "recipe": true,
-      "cost": 225,
+      "recipe": false,
+      "cost": 175,
       "components": []
     },
     {
       "id": "sages_mask",
       "name": "Sage's Mask",
       "file": "sobi_mask.png",
-      "recipe": true,
-      "cost": 225,
+      "recipe": false,
+      "cost": 175,
       "components": []
     },
     {
-      "id": "boots_of_speed",
-      "name": "Boots of Speed",
-      "file": "boots.png",
-      "recipe": true,
-      "cost": 500,
+      "id": "stick",
+      "name": "Magic Stick",
+      "file": "magic_stick.png",
+      "recipe": false,
+      "cost": 200,
       "components": []
     },
     {
-      "id": "gloves_of_haste",
-      "name": "Gloves of Haste",
-      "file": "gloves.png",
-      "recipe": true,
-      "cost": 400,
+      "id": "fluffy_hat",
+      "name": "Fluffy Hat",
+      "file": "fluffy_hat.png",
+      "recipe": false,
+      "cost": 250,
+      "components": []
+    },
+    {
+      "id": "wind_lace",
+      "name": "Wind Lace",
+      "file": "wind_lace.png",
+      "recipe": false,
+      "cost": 250,
       "components": []
     },
     {
       "id": "cloak",
       "name": "Cloak",
       "file": "cloak.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 550,
       "components": []
     },
     {
-      "id": "ring_of_tarrasque",
-      "name": "Ring of Tarrasque",
-      "file": "ring_of_tarrasque.png",
-      "recipe": true,
-      "cost": 650,
-      "components": []
-    },
-    {
-      "id": "ring_of_health",
-      "name": "Ring of Health",
-      "file": "ring_of_health.png",
-      "recipe": true,
-      "cost": 825,
-      "components": []
-    },
-    {
-      "id": "void_stone",
-      "name": "Void Stone",
-      "file": "void_stone.png",
-      "recipe": true,
-      "cost": 825,
+      "id": "boots_of_speed",
+      "name": "Boots of Speed",
+      "file": "boots.png",
+      "recipe": false,
+      "cost": 500,
       "components": []
     },
     {
       "id": "gem",
       "name": "Gem of True Sight",
       "file": "gem.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 900,
       "components": []
     },
@@ -388,23 +388,31 @@
       "id": "morbid_mask",
       "name": "Morbid Mask",
       "file": "lifesteal.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 900,
+      "components": []
+    },
+    {
+      "id": "voodoo_mask",
+      "name": "Voodoo Mask",
+      "file": "voodoo_mask.png",
+      "recipe": false,
+      "cost": 700,
       "components": []
     },
     {
       "id": "shadow_amulet",
       "name": "Shadow Amulet",
       "file": "shadow_amulet.png",
-      "recipe": true,
-      "cost": 1400,
+      "recipe": false,
+      "cost": 1000,
       "components": []
     },
     {
       "id": "ghost_scepter",
       "name": "Ghost Scepter",
       "file": "ghost.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 1500,
       "components": []
     },
@@ -412,7 +420,7 @@
       "id": "blink",
       "name": "Blink Dagger",
       "file": "blink.png",
-      "recipe": true,
+      "recipe": false,
       "cost": 2250,
       "components": []
     },
@@ -422,11 +430,7 @@
       "file": "magic_wand.png",
       "recipe": true,
       "cost": 450,
-      "components": [
-        "branch",
-        "branch",
-        "stick"
-      ]
+      "components": ["branch", "branch", "stick"]
     },
     {
       "id": "null_talisman",
@@ -434,10 +438,7 @@
       "file": "null_talisman.png",
       "recipe": true,
       "cost": 510,
-      "components": [
-        "circlet",
-        "mantle"
-      ]
+      "components": ["circlet", "mantle"]
     },
     {
       "id": "wraith_band",
@@ -445,10 +446,7 @@
       "file": "wraith_band.png",
       "recipe": true,
       "cost": 510,
-      "components": [
-        "slippers",
-        "circlet"
-      ]
+      "components": ["slippers", "circlet"]
     },
     {
       "id": "bracer",
@@ -456,46 +454,55 @@
       "file": "bracer.png",
       "recipe": true,
       "cost": 510,
-      "components": [
-        "gauntlet",
-        "circlet"
-      ]
+      "components": ["gauntlet", "circlet"]
     },
     {
       "id": "soul_ring",
       "name": "Soul Ring",
       "file": "soul_ring.png",
       "recipe": true,
-      "cost": 815,
-      "components": [
-        "ring_of_regen",
-        "gauntlet",
-        "gauntlet"
-      ]
+      "cost": 740,
+      "components": ["ring_of_protection", "gauntlet", "gauntlet"]
+    },
+    {
+      "id": "orb_of_corrosion",
+      "name": "Orb of Corrosion",
+      "file": "orb_of_corrosion.png",
+      "recipe": true,
+      "cost": 925,
+      "components": ["orb_of_venom", "blight_stone", "fluffy_hat"]
+    },
+    {
+      "id": "falcon_blade",
+      "name": "Falcon Blade",
+      "file": "falcon_blade.png",
+      "recipe": true,
+      "cost": 1100,
+      "components": ["fluffy_hat", "sages_mask", "blades_of_attack"]
+    },
+    {
+      "id": "power_treads",
+      "name": "Power Treads (strength)",
+      "file": "power_treads.png",
+      "recipe": false,
+      "cost": 1400,
+      "components": ["boots_of_speed", "gloves_of_haste", "belt_of_strength"]
     },
     {
       "id": "phase_boots",
       "name": "Phase Boots",
       "file": "phase_boots.png",
       "recipe": false,
-      "cost": 1480,
-      "components": [
-        "boots_of_speed",
-        "chainmail",
-        "blades_of_attack"
-      ]
+      "cost": 1500,
+      "components": ["boots_of_speed", "chainmail", "blades_of_attack"]
     },
     {
       "id": "oblivion_staff",
       "name": "Oblivion Staff",
       "file": "oblivion_staff.png",
       "recipe": false,
-      "cost": 1550,
-      "components": [
-        "quarterstaff",
-        "sages_mask",
-        "robe_of_the_magi"
-      ]
+      "cost": 1500,
+      "components": ["quarterstaff", "sages_mask", "robe_of_the_magi"]
     },
     {
       "id": "perserverance",
@@ -503,43 +510,31 @@
       "file": "pers.png",
       "recipe": false,
       "cost": 1650,
-      "components": [
-        "ring_of_health",
-        "void_stone"
-      ]
+      "components": ["ring_of_health", "void_stone"]
+    },
+    {
+      "id": "mask_of_madness",
+      "name": "Mask of Madness",
+      "file": "mask_of_madness.png",
+      "recipe": false,
+      "cost": 1775,
+      "components": ["morbid_mask", "quarterstaff"]
     },
     {
       "id": "midas",
       "name": "Hand of Midas",
       "file": "hand_of_midas.png",
       "recipe": true,
-      "cost": 2250,
-      "components": [
-        "gloves_of_haste"
-      ]
+      "cost": 2200,
+      "components": ["gloves_of_haste"]
     },
     {
-      "id": "mask_of_madness",
-      "name": "Mas of Madness",
-      "file": "mask_of_madness.png",
-      "recipe": false,
-      "cost": 1775,
-      "components": [
-        "morbid_mask",
-        "quarterstaff"
-      ]
-    },
-    {
-      "id": "helm_of_the_deminator",
+      "id": "helm_of_the_dominator",
       "name": "Helm of the Dominator",
       "file": "helm_of_the_dominator.png",
       "recipe": true,
-      "cost": 2125,
-      "components": [
-        "broadsword",
-        "headdress",
-        "crown"
-      ]
+      "cost": 2350,
+      "components": ["helm_of_iron_will", "crown"]
     },
     {
       "id": "boots_of_travel",
@@ -547,9 +542,7 @@
       "file": "travel_boots.png",
       "recipe": true,
       "cost": 2500,
-      "components": [
-        "boots_of_speed"
-      ]
+      "components": ["boots_of_speed"]
     },
     {
       "id": "moon_shard",
@@ -557,31 +550,7 @@
       "file": "moon_shard.png",
       "recipe": false,
       "cost": 4000,
-      "components": [
-        "hyperstone",
-        "hyperstone"
-      ]
-    },
-    {
-      "id": "ring_of_basilius",
-      "name": "Ring of Basilius",
-      "file": "ring_of_basilius.png",
-      "recipe": true,
-      "cost": 425,
-      "components": [
-        "sages_mask"
-      ]
-    },
-    {
-      "id": "headdress",
-      "name": "Headdress",
-      "file": "headdress.png",
-      "recipe": false,
-      "cost": 425,
-      "components": [
-        "branch",
-        "ring_of_regen"
-      ]
+      "components": ["hyperstone", "hyperstone"]
     },
     {
       "id": "buckler",
@@ -589,9 +558,23 @@
       "file": "buckler.png",
       "recipe": true,
       "cost": 375,
-      "components": [
-        "ring_of_protection"
-      ]
+      "components": ["ring_of_protection"]
+    },
+    {
+      "id": "ring_of_basilius",
+      "name": "Ring of Basilius",
+      "file": "ring_of_basilius.png",
+      "recipe": true,
+      "cost": 425,
+      "components": ["sages_mask"]
+    },
+    {
+      "id": "headdress",
+      "name": "Headdress",
+      "file": "headdress.png",
+      "recipe": true,
+      "cost": 425,
+      "components": ["ring_of_regen"]
     },
     {
       "id": "urn_of_shadows",
@@ -599,35 +582,23 @@
       "file": "urn_of_shadows.png",
       "recipe": true,
       "cost": 840,
-      "components": [
-        "sages_mask",
-        "circlet",
-        "ring_of_protection"
-      ]
+      "components": ["sages_mask", "circlet", "ring_of_protection"]
     },
     {
       "id": "tranquil_boots",
       "name": "Tranquil Boots",
       "file": "tranquil_boots.png",
       "recipe": false,
-      "cost": 975,
-      "components": [
-        "boots_of_speed",
-        "wind_lace",
-        "ring_of_regen"
-      ]
+      "cost": 925,
+      "components": ["boots_of_speed", "wind_lace", "ring_of_regen"]
     },
     {
       "id": "medallion_of_courage",
       "name": "Medallion of Courage",
       "file": "medallion_of_courage.png",
       "recipe": false,
-      "cost": 1075,
-      "components": [
-        "chainmail",
-        "sages_mask",
-        "blight_stone"
-      ]
+      "cost": 1025,
+      "components": ["chainmail", "sages_mask", "blight_stone"]
     },
     {
       "id": "arcane_boots",
@@ -635,34 +606,15 @@
       "file": "arcane_boots.png",
       "recipe": false,
       "cost": 1400,
-      "components": [
-        "boots_of_speed",
-        "energy_booster"
-      ]
+      "components": ["boots_of_speed", "energy_booster"]
     },
     {
       "id": "drums",
       "name": "Drum of Endurance",
       "file": "ancient_janggo.png",
       "recipe": true,
-      "cost": 1900,
-      "components": [
-        "gloves_of_haste",
-        "crown",
-        "wind_lace"
-      ]
-    },
-    {
-      "id": "vlads",
-      "name": "Vladmir's Offering",
-      "file": "vladmir.png",
-      "recipe": true,
-      "cost": 2250,
-      "components": [
-        "ring_of_basilius",
-        "buckler",
-        "morbid_mask"
-      ]
+      "cost": 1700,
+      "components": ["belt_of_strength", "robe_of_the_magi", "wind_lace"]
     },
     {
       "id": "mekansm",
@@ -670,9 +622,27 @@
       "file": "mekansm.png",
       "recipe": true,
       "cost": 1925,
+      "components": ["headdress", "chainmail"]
+    },
+    {
+      "id": "holy_locket",
+      "name": "Holy Locket",
+      "file": "holy_locket.png",
+      "recipe": true,
+      "cost": 2500,
+      "components": ["headdress", "energy_booster", "wand", "fluffy_hat"]
+    },
+    {
+      "id": "vlads",
+      "name": "Vladmir's Offering",
+      "file": "vladmir.png",
+      "recipe": true,
+      "cost": 2750,
       "components": [
-        "headdress",
-        "chainmail"
+        "ring_of_basilius",
+        "buckler",
+        "morbid_mask",
+        "blades_of_attack"
       ]
     },
     {
@@ -681,122 +651,71 @@
       "file": "spirit_vessel.png",
       "recipe": true,
       "cost": 2940,
-      "components": [
-        "urn_of_shadows",
-        "vitality_booster"
-      ]
-    },
-    {
-      "id": "holy_locket",
-      "name": "Holy Locket",
-      "file": "holy_locket.png",
-      "recipe": true,
-      "cost": 2500,
-      "components": [
-        "ring_of_tarrasque",
-        "energy_booster",
-        "wand"
-      ]
+      "components": ["urn_of_shadows", "vitality_booster"]
     },
     {
       "id": "pipe_of_insight",
       "name": "Pipe of Insight",
       "file": "pipe.png",
       "recipe": true,
-      "cost": 3175,
-      "components": [
-        "hood_of_defiance",
-        "headdress"
-      ]
+      "cost": 3475,
+      "components": ["hood_of_defiance", "headdress"]
     },
     {
       "id": "guardian_greaves",
       "name": "Guardian Greaves",
       "file": "guardian_greaves.png",
       "recipe": true,
-      "cost": 4875,
-      "components": [
-        "mekansm",
-        "arcane_boots"
-      ]
-    },
-    {
-      "id": "glimmer_cape",
-      "name": "Glimmer Cape",
-      "file": "glimmer_cape.png",
-      "recipe": false,
-      "cost": 1950,
-      "components": [
-        "shadow_amulet",
-        "cloak"
-      ]
+      "cost": 5250,
+      "components": ["mekansm", "arcane_boots", "buckler"]
     },
     {
       "id": "veil_of_discord",
       "name": "Veil of Discord",
       "file": "veil_of_discord.png",
       "recipe": true,
-      "cost": 1975,
-      "components": [
-        "ring_of_basilius",
-        "crown"
-      ]
+      "cost": 1525,
+      "components": ["ring_of_basilius", "crown"]
     },
     {
-      "id": "aether_lens",
-      "name": "Aether Lens",
-      "file": "aether_lens.png",
+      "id": "glimmer_cape",
+      "name": "Glimmer Cape",
+      "file": "glimmer_cape.png",
       "recipe": true,
-      "cost": 2325,
-      "components": [
-        "energy_booster",
-        "void_stone"
-      ]
-    },
-    {
-      "id": "force_staff",
-      "name": "Force Staff",
-      "file": "force_staff.png",
-      "recipe": true,
-      "cost": 2225,
-      "components": [
-        "ring_of_regen",
-        "staff_of_wizardry"
-      ]
+      "cost": 1950,
+      "components": ["shadow_amulet", "cloak"]
     },
     {
       "id": "necronomicon",
       "name": "Necronomicon",
       "file": "necronomicon.png",
       "recipe": true,
-      "cost": 2150,
-      "components": [
-        "sages_mask",
-        "sages_mask"
-      ]
+      "cost": 2050,
+      "components": ["sages_mask", "sages_mask", "belt_of_strength"]
     },
     {
-      "id": "solar_crest",
-      "name": "Solar Crest",
-      "file": "solar_crest.png",
+      "id": "force_staff",
+      "name": "Force Staff",
+      "file": "force_staff.png",
       "recipe": true,
-      "cost": 3875,
-      "components": [
-        "medallion_of_courage",
-        "ultimate_orb",
-        "wind_lace"
-      ]
+      "cost": 2175,
+      "components": ["ring_of_regen", "staff_of_wizardry"]
     },
     {
-      "id": "dagon",
-      "name": "Dagon",
-      "file": "dagon.png",
+      "id": "aether_lens",
+      "name": "Aether Lens",
+      "file": "aether_lens.png",
       "recipe": true,
-      "cost": 2700,
-      "components": [
-        "staff_of_wizardry",
-        "crown"
-      ]
+      "cost": 2275,
+      "components": ["energy_booster", "void_stone"]
+    },
+    {
+      "id": "witch_blade",
+      "name": "Witch Blade",
+      "file": "witch_blade.png",
+      "recipe": true,
+      "cost": 2600,
+      "components": ["blitz_knuckles", "robe_of_the_magi", "chainmail"]
     },
     {
       "id": "euls_scepter",
@@ -804,11 +723,7 @@
       "file": "cyclone.png",
       "recipe": true,
       "cost": 2725,
-      "components": [
-        "staff_of_wizardry",
-        "void_stone",
-        "wind_lace"
-      ]
+      "components": ["staff_of_wizardry", "void_stone", "wind_lace"]
     },
     {
       "id": "rod_of_atos",
@@ -816,22 +731,31 @@
       "file": "rod_of_atos.png",
       "recipe": true,
       "cost": 2750,
-      "components": [
-        "staff_of_wizardry",
-        "crown",
-        "crown"
-      ]
+      "components": ["staff_of_wizardry", "crown", "crown"]
+    },
+    {
+      "id": "dagon",
+      "name": "Dagon",
+      "file": "dagon.png",
+      "recipe": true,
+      "cost": 2750,
+      "components": ["staff_of_wizardry", "crown"]
     },
     {
       "id": "orchid",
       "name": "Orchid Malevolence",
       "file": "orchid.png",
       "recipe": true,
-      "cost": 3875,
-      "components": [
-        "oblivion_staff",
-        "oblivion_staff"
-      ]
+      "cost": 3475,
+      "components": ["oblivion_staff", "oblivion_staff"]
+    },
+    {
+      "id": "solar_crest",
+      "name": "Solar Crest",
+      "file": "solar_crest.png",
+      "recipe": true,
+      "cost": 3775,
+      "components": ["medallion_of_courage", "ultimate_orb", "wind_lace"]
     },
     {
       "id": "aghanims_scepter",
@@ -847,26 +771,20 @@
       ]
     },
     {
-      "id": "nullifier",
-      "name": "Nullifier",
-      "file": "nullifier.png",
-      "recipe": false,
-      "cost": 4725,
-      "components": [
-        "relic",
-        "helm_of_iron_will"
-      ]
-    },
-    {
       "id": "refresher",
       "name": "Refresher Orb",
       "file": "refresher.png",
       "recipe": true,
       "cost": 5000,
-      "components": [
-        "perserverance",
-        "perserverance"
-      ]
+      "components": ["perserverance", "perserverance"]
+    },
+    {
+      "id": "octarine_core",
+      "name": "Octarine Core",
+      "file": "octarine_core.png",
+      "recipe": false,
+      "cost": 5475,
+      "components": ["aether_lens", "soul_booster"]
     },
     {
       "id": "scythe",
@@ -874,34 +792,30 @@
       "file": "sheepstick.png",
       "recipe": false,
       "cost": 5675,
-      "components": [
-        "mystic_staff",
-        "ultimate_orb",
-        "void_stone"
-      ]
+      "components": ["mystic_staff", "ultimate_orb", "void_stone"]
     },
     {
-      "id": "octarine_core",
-      "name": "Octarine Core",
-      "file": "octarine_core.png",
-      "recipe": false,
-      "cost": 5900,
-      "components": [
-        "mystic_staff",
-        "soul_booster"
-      ]
+      "id": "gleipnir",
+      "name": "Gleipnir",
+      "file": "gleipnir.png",
+      "recipe": true,
+      "cost": 6150,
+      "components": ["maelstrom", "rod_of_atos"]
+    },
+    {
+      "id": "wind_waker",
+      "name": "Wind Waker",
+      "file": "wind_waker.png",
+      "cost": 7125,
+      "components": ["euls_scepter", "mystic_staff"]
     },
     {
       "id": "hood_of_defiance",
       "name": "Hood of Defiance",
       "file": "hood_of_defiance.png",
-      "recipe": true,
-      "cost": 1800,
-      "components": [
-        "cloak",
-        "ring_of_health",
-        "ring_of_regen"
-      ]
+      "recipe": false,
+      "cost": 1500,
+      "components": ["cloak", "ring_of_health", "ring_of_regen"]
     },
     {
       "id": "vanguard",
@@ -909,45 +823,15 @@
       "file": "vanguard.png",
       "recipe": false,
       "cost": 1925,
-      "components": [
-        "ring_of_health",
-        "vitality_booster"
-      ]
+      "components": ["ring_of_health", "vitality_booster"]
     },
     {
       "id": "blade_mail",
       "name": "Blade Mail",
       "file": "blade_mail.png",
-      "recipe": false,
-      "cost": 2000,
-      "components": [
-        "broadsword",
-        "chainmail",
-        "robe_of_the_magi"
-      ]
-    },
-    {
-      "id": "soul_booster",
-      "name": "Soul Booster",
-      "file": "soul_booster.png",
-      "recipe": false,
-      "cost": 3200,
-      "components": [
-        "point_booster",
-        "energy_booster",
-        "vitality_booster"
-      ]
-    },
-    {
-      "id": "crimson_guard",
-      "name": "Crimson Guard",
-      "file": "crimson_guard.png",
       "recipe": true,
-      "cost": 3800,
-      "components": [
-        "vanguard",
-        "helm_of_iron_will"
-      ]
+      "cost": 2225,
+      "components": ["broadsword", "chainmail"]
     },
     {
       "id": "aeon_disk",
@@ -955,21 +839,31 @@
       "file": "aeon_disk.png",
       "recipe": true,
       "cost": 3100,
-      "components": [
-        "vitality_booster",
-        "energy_booster"
-      ]
+      "components": ["vitality_booster", "energy_booster"]
     },
     {
-      "id": "black_king_bar",
-      "name": "Black King Bar",
-      "file": "black_king_bar.png",
+      "id": "soul_booster",
+      "name": "Soul Booster",
+      "file": "soul_booster.png",
+      "recipe": false,
+      "cost": 3200,
+      "components": ["point_booster", "energy_booster", "vitality_booster"]
+    },
+    {
+      "id": "eternal_shroud",
+      "name": "Eternal Shroud",
+      "file": "eternal_shroud.png",
       "recipe": true,
-      "cost": 4050,
-      "components": [
-        "ogre_axe",
-        "mithril_hammer"
-      ]
+      "cost": 3300,
+      "components": ["voodoo_mask", "hood_of_defiance"]
+    },
+    {
+      "id": "crimson_guard",
+      "name": "Crimson Guard",
+      "file": "crimson_guard.png",
+      "recipe": true,
+      "cost": 3800,
+      "components": ["vanguard", "helm_of_iron_will"]
     },
     {
       "id": "lotus_orb",
@@ -977,78 +871,55 @@
       "file": "lotus_orb.png",
       "recipe": false,
       "cost": 3950,
-      "components": [
-        "perserverance",
-        "platemail",
-        "energy_booster"
-      ]
+      "components": ["perserverance", "platemail", "energy_booster"]
     },
     {
-      "id": "shivas",
-      "name": "Shiva's Guard",
-      "file": "shivas_guard.png",
+      "id": "black_king_bar",
+      "name": "Black King Bar",
+      "file": "black_king_bar.png",
       "recipe": true,
-      "cost": 4750,
-      "components": [
-        "platemail",
-        "mystic_staff"
-      ]
+      "cost": 4050,
+      "components": ["ogre_axe", "mithril_hammer"]
     },
     {
       "id": "hurricane_pike",
       "name": "Hurricane Pike",
       "file": "hurricane_pike.png",
       "recipe": true,
-      "cost": 4575,
-      "components": [
-        "force_staff",
-        "dragon_lance"
-      ]
-    },
-    {
-      "id": "linkens",
-      "name": "Linken's Sphere",
-      "file": "sphere.png",
-      "recipe": true,
-      "cost": 5000,
-      "components": [
-        "ultimate_orb",
-        "perserverance"
-      ]
-    },
-    {
-      "id": "bloodstone",
-      "name": "Bloodstone",
-      "file": "bloodstone.png",
-      "recipe": false,
-      "cost": 5250,
-      "components": [
-        "kaya",
-        "soul_booster"
-      ]
+      "cost": 4525,
+      "components": ["force_staff", "dragon_lance"]
     },
     {
       "id": "manta",
       "name": "Manta Style",
       "file": "manta.png",
       "recipe": true,
-      "cost": 4700,
-      "components": [
-        "yasha",
-        "ultimate_orb"
-      ]
+      "cost": 4600,
+      "components": ["yasha", "ultimate_orb"]
+    },
+    {
+      "id": "linkens",
+      "name": "Linken's Sphere",
+      "file": "sphere.png",
+      "recipe": true,
+      "cost": 4600,
+      "components": ["ultimate_orb", "perserverance"]
+    },
+    {
+      "id": "shivas",
+      "name": "Shiva's Guard",
+      "file": "shivas_guard.png",
+      "recipe": true,
+      "cost": 4850,
+      "components": ["platemail", "mystic_staff"]
     },
     {
       "id": "heart",
       "name": "Heart of Tarrasque",
       "file": "heart.png",
       "recipe": true,
-      "cost": 5150,
-      "components": [
-        "ring_of_tarrasque",
-        "vitality_booster",
-        "reaver"
-      ]
+      "cost": 4800,
+      "components": ["vitality_booster", "reaver"]
     },
     {
       "id": "assault_cuirass",
@@ -1056,58 +927,39 @@
       "file": "assault.png",
       "recipe": true,
       "cost": 5075,
-      "components": [
-        "platemail",
-        "hyperstone",
-        "buckler"
-      ]
+      "components": ["platemail", "hyperstone", "buckler"]
+    },
+    {
+      "id": "bloodstone",
+      "name": "Bloodstone",
+      "file": "bloodstone.png",
+      "recipe": false,
+      "cost": 5950,
+      "components": ["kaya", "soul_booster", "voodoo_mask"]
     },
     {
       "id": "crystalys",
       "name": "Crystalys",
       "file": "lesser_crit.png",
       "recipe": true,
-      "cost": 2130,
-      "components": [
-        "broadsword",
-        "blades_of_attack"
-      ]
+      "cost": 1950,
+      "components": ["broadsword", "blades_of_attack"]
+    },
+    {
+      "id": "meteor_hammer",
+      "name": "Meteor Hammer",
+      "file": "meteor_hammer.png",
+      "recipe": true,
+      "cost": 2350,
+      "components": ["perserverance", "crown"]
     },
     {
       "id": "armlet",
       "name": "Armlet of Mordiggian",
       "file": "armlet.png",
       "recipe": true,
-      "cost": 2405,
-      "components": [
-        "helm_of_iron_will",
-        "gloves_of_haste",
-        "blades_of_attack"
-      ]
-    },
-    {
-      "id": "meteor_hammer",
-      "name": "Meteor Hammer",
-      "file": "meteor_hammer.png",
-      "recipe": false,
-      "cost": 2450,
-      "components": [
-        "ogre_axe",
-        "staff_of_wizardry",
-        "ring_of_regen",
-        "sages_mask"
-      ]
-    },
-    {
-      "id": "shadow_blade",
-      "name": "Shadow Blade",
-      "file": "invis_sword.png",
-      "recipe": false,
-      "cost": 2800,
-      "components": [
-        "shadow_amulet",
-        "claymore"
-      ]
+      "cost": 2475,
+      "components": ["helm_of_iron_will", "gloves_of_haste", "blades_of_attack"]
     },
     {
       "id": "skull_basher",
@@ -1115,34 +967,35 @@
       "file": "basher.png",
       "recipe": true,
       "cost": 2950,
-      "components": [
-        "mithril_hammer",
-        "belt_of_strength"
-      ]
+      "components": ["mithril_hammer", "belt_of_strength"]
+    },
+    {
+      "id": "shadow_blade",
+      "name": "Shadow Blade",
+      "file": "invis_sword.png",
+      "recipe": false,
+      "cost": 3000,
+      "components": ["shadow_amulet", "claymore", "blitz_knuckles"]
+    },
+    {
+      "id": "desolator",
+      "name": "Desolator",
+      "file": "desolator.png",
+      "recipe": false,
+      "cost": 3500,
+      "components": ["mithril_hammer", "mithril_hammer", "blight_stone"]
     },
     {
       "id": "battle_fury",
       "name": "Battle Fury",
       "file": "bfury.png",
       "recipe": false,
-      "cost": 4400,
+      "cost": 4130,
       "components": [
         "broadsword",
-        "mithril_hammer",
+        "claymore",
         "perserverance",
         "quelling_blade"
-      ]
-    },
-    {
-      "id": "monkey_king_bar",
-      "name": "Monkey King Bar",
-      "file": "monkey_king_bar.png",
-      "recipe": false,
-      "cost": 4175,
-      "components": [
-        "demon_edge",
-        "javelin",
-        "quarterstaff"
       ]
     },
     {
@@ -1150,11 +1003,32 @@
       "name": "Ethereal Blade",
       "file": "ethereal_blade.png",
       "recipe": false,
-      "cost": 4500,
-      "components": [
-        "eaglesong",
-        "ghost_scepter"
-      ]
+      "cost": 4300,
+      "components": ["eaglesong", "ghost_scepter"]
+    },
+    {
+      "id": "nullifier",
+      "name": "Nullifier",
+      "file": "nullifier.png",
+      "recipe": false,
+      "cost": 4725,
+      "components": ["relic", "helm_of_iron_will"]
+    },
+    {
+      "id": "monkey_king_bar",
+      "name": "Monkey King Bar",
+      "file": "monkey_king_bar.png",
+      "recipe": true,
+      "cost": 4975,
+      "components": ["demon_edge", "javelin", "blitz_knuckles"]
+    },
+    {
+      "id": "butterfly",
+      "name": "Butterfly",
+      "file": "butterfly.png",
+      "recipe": false,
+      "cost": 5075,
+      "components": ["eaglesong", "talisman_of_evasion", "quarterstaff"]
     },
     {
       "id": "radiance",
@@ -1162,43 +1036,23 @@
       "file": "radiance.png",
       "recipe": true,
       "cost": 5150,
-      "components": [
-        "relic"
-      ]
+      "components": ["relic"]
     },
     {
       "id": "daedalus",
       "name": "Daedalus",
       "file": "greater_crit.png",
       "recipe": true,
-      "cost": 5330,
-      "components": [
-        "crystalys",
-        "demon_edge"
-      ]
-    },
-    {
-      "id": "butterfly",
-      "name": "Butterfly",
-      "file": "butterfly.png",
-      "recipe": false,
-      "cost": 5275,
-      "components": [
-        "eaglesong",
-        "talisman_of_evasion",
-        "quarterstaff"
-      ]
+      "cost": 5150,
+      "components": ["crystalys", "demon_edge"]
     },
     {
       "id": "silver_edge",
       "name": "Silver Edge",
       "file": "silver_edge.png",
       "recipe": true,
-      "cost": 5550,
-      "components": [
-        "shadow_blade",
-        "ultimate_orb"
-      ]
+      "cost": 5600,
+      "components": ["shadow_blade", "oblivion_staff"]
     },
     {
       "id": "divine_rapier",
@@ -1206,10 +1060,15 @@
       "file": "rapier.png",
       "recipe": false,
       "cost": 6000,
-      "components": [
-        "relic",
-        "demon_edge"
-      ]
+      "components": ["relic", "demon_edge"]
+    },
+    {
+      "id": "bloodthorn",
+      "name": "Bloodthorn",
+      "file": "bloodthorn.png",
+      "recipe": true,
+      "cost": 6475,
+      "components": ["orchid", "hyperstone"]
     },
     {
       "id": "abyssal_blade",
@@ -1217,21 +1076,7 @@
       "file": "abyssal_blade.png",
       "recipe": true,
       "cost": 6625,
-      "components": [
-        "skull_basher",
-        "vanguard"
-      ]
-    },
-    {
-      "id": "bloodthorn",
-      "name": "Bloodthorn",
-      "file": "bloodthorn.png",
-      "recipe": true,
-      "cost": 6875,
-      "components": [
-        "orchid",
-        "hyperstone"
-      ]
+      "components": ["skull_basher", "vanguard"]
     },
     {
       "id": "dragon_lance",
@@ -1239,11 +1084,7 @@
       "file": "dragon_lance.png",
       "recipe": false,
       "cost": 1900,
-      "components": [
-        "ogre_axe",
-        "band_of_elvenskin",
-        "band_of_elvenskin"
-      ]
+      "components": ["ogre_axe", "band_of_elvenskin", "band_of_elvenskin"]
     },
     {
       "id": "sange",
@@ -1251,10 +1092,7 @@
       "file": "sange.png",
       "recipe": true,
       "cost": 2050,
-      "components": [
-        "ogre_axe",
-        "belt_of_strength"
-      ]
+      "components": ["ogre_axe", "belt_of_strength"]
     },
     {
       "id": "yasha",
@@ -1262,10 +1100,7 @@
       "file": "yasha.png",
       "recipe": true,
       "cost": 2050,
-      "components": [
-        "blade_of_alacrity",
-        "band_of_elvenskin"
-      ]
+      "components": ["blade_of_alacrity", "band_of_elvenskin"]
     },
     {
       "id": "kaya",
@@ -1273,21 +1108,15 @@
       "file": "kaya.png",
       "recipe": true,
       "cost": 2050,
-      "components": [
-        "staff_of_wizardry",
-        "robe_of_the_magi"
-      ]
+      "components": ["staff_of_wizardry", "robe_of_the_magi"]
     },
     {
       "id": "echo_sabre",
       "name": "Echo Sabre",
       "file": "echo_sabre.png",
       "recipe": false,
-      "cost": 2550,
-      "components": [
-        "ogre_axe",
-        "oblivion_staff"
-      ]
+      "cost": 2500,
+      "components": ["ogre_axe", "oblivion_staff"]
     },
     {
       "id": "maelstrom",
@@ -1295,10 +1124,7 @@
       "file": "maelstrom.png",
       "recipe": false,
       "cost": 2700,
-      "components": [
-        "mithril_hammer",
-        "javelin"
-      ]
+      "components": ["mithril_hammer", "javelin"]
     },
     {
       "id": "diffusal_blade",
@@ -1313,27 +1139,20 @@
       ]
     },
     {
+      "id": "mage_slayer",
+      "name": "Mage Slayer",
+      "file": "mage_slayer.png",
+      "recipe": true,
+      "cost": 3450,
+      "components": ["cloak", "blade_of_alacrity", "claymore"]
+    },
+    {
       "id": "heavens_halberd",
       "name": "Heaven's Halberd",
       "file": "heavens_halberd.png",
       "recipe": false,
-      "cost": 3450,
-      "components": [
-        "sange",
-        "talisman_of_evasion"
-      ]
-    },
-    {
-      "id": "desolator",
-      "name": "Desolator",
-      "file": "desolator.png",
-      "recipe": false,
-      "cost": 3500,
-      "components": [
-        "mithril_hammer",
-        "mithril_hammer",
-        "blight_stone"
-      ]
+      "cost": 3650,
+      "components": ["sange", "talisman_of_evasion"]
     },
     {
       "id": "kaya_and_sange",
@@ -1341,10 +1160,7 @@
       "file": "kaya_and_sange.png",
       "recipe": false,
       "cost": 4100,
-      "components": [
-        "kaya",
-        "sange"
-      ]
+      "components": ["kaya", "sange"]
     },
     {
       "id": "sange_and_yasha",
@@ -1352,10 +1168,7 @@
       "file": "sange_and_yasha.png",
       "recipe": false,
       "cost": 4100,
-      "components": [
-        "yasha",
-        "sange"
-      ]
+      "components": ["yasha", "sange"]
     },
     {
       "id": "yasha_and_kaya",
@@ -1363,34 +1176,23 @@
       "file": "yasha_and_kaya.png",
       "recipe": false,
       "cost": 4100,
-      "components": [
-        "kaya",
-        "yasha"
-      ]
-    },
-    {
-      "id": "eye_of_skadi",
-      "name": "Eye of Skadi",
-      "file": "skadi.png",
-      "recipe": false,
-      "cost": 5500,
-      "components": [
-        "ultimate_orb",
-        "ultimate_orb",
-        "point_booster"
-      ]
+      "components": ["kaya", "yasha"]
     },
     {
       "id": "satanic",
       "name": "Satanic",
       "file": "satanic.png",
       "recipe": false,
+      "cost": 5050,
+      "components": ["morbid_mask", "claymore", "reaver"]
+    },
+    {
+      "id": "eye_of_skadi",
+      "name": "Eye of Skadi",
+      "file": "skadi.png",
+      "recipe": false,
       "cost": 5300,
-      "components": [
-        "morbid_mask",
-        "claymore",
-        "reaver"
-      ]
+      "components": ["ultimate_orb", "ultimate_orb", "point_booster"]
     },
     {
       "id": "mjollnir",
@@ -1398,10 +1200,47 @@
       "file": "mjollnir.png",
       "recipe": true,
       "cost": 5600,
-      "components": [
-        "maelstrom",
-        "hyperstone"
-      ]
+      "components": ["maelstrom", "hyperstone"]
+    },
+    {
+      "id": "overwhelming_blink",
+      "name": "Overwhelming Blink",
+      "file": "overwhelming_blink.png",
+      "recipe": true,
+      "cost": 6800,
+      "components": ["blink", "reaver"]
+    },
+    {
+      "id": "swift_blink",
+      "name": "Swift Blink",
+      "file": "swift_blink.png",
+      "recipe": true,
+      "cost": 6800,
+      "components": ["eaglesong", "blink"]
+    },
+    {
+      "id": "arcane_blink",
+      "name": "arcane Blink",
+      "file": "arcane_blink.png",
+      "recipe": true,
+      "cost": 6800,
+      "components": ["mystic_staff", "blink"]
+    },
+    {
+      "id": "ring_of_health",
+      "name": "Ring of Health",
+      "file": "ring_of_health.png",
+      "recipe": false,
+      "cost": 825,
+      "components": []
+    },
+    {
+      "id": "void_stone",
+      "name": "Void Stone",
+      "file": "void_stone.png",
+      "recipe": false,
+      "cost": 825,
+      "components": []
     },
     {
       "id": "energy_booster",
@@ -1456,7 +1295,7 @@
       "name": "Ultimate Orb",
       "file": "ultimate_orb.png",
       "recipe": false,
-      "cost": 2150,
+      "cost": 2500,
       "components": []
     },
     {
@@ -1472,7 +1311,7 @@
       "name": "Mystic Staff",
       "file": "mystic_staff.png",
       "recipe": false,
-      "cost": 2700,
+      "cost": 2800,
       "components": []
     },
     {
@@ -1480,7 +1319,7 @@
       "name": "Reaver",
       "file": "reaver.png",
       "recipe": false,
-      "cost": 3000,
+      "cost": 2800,
       "components": []
     },
     {
@@ -1488,7 +1327,7 @@
       "name": "Eagleson",
       "file": "eagle.png",
       "recipe": false,
-      "cost": 3000,
+      "cost": 2800,
       "components": []
     },
     {
