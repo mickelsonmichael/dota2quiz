@@ -1,7 +1,10 @@
-# Script will download a new copy of all the images from valve's website
-cd ../Shopkeeper/Shopkeeper/wwwroot/images/items
+#!/bin/bash
 
-curl -s http://www.dota2.com/items/ | grep -o -e "http://.*/items/.*_lg.png" | xargs curl -s --remote-name-all
+# Script will download a new copy of all the images from valve's website
+cd src/items/images
+
+curl --silent http://www.dota2.com/items | grep -o -e "https://.*/items/.*_lg.png" | xargs curl --silent --remote-name-all
 
 # remove the "_lg" that is at the end of every filename
 for file in *.png; do mv "$file" "${file%_lg.png}.png"; done
+

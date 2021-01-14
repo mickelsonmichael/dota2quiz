@@ -1,21 +1,8 @@
-*.swp
-*.*~
-project.lock.json
-.DS_Store
-*.pyc
 nupkg/
 
-# Visual Studio Code
 .vscode
-
-# Rider
-.idea
-
-# User-specific files
-*.suo
+.vs/
 *.user
-*.userosscache
-*.sln.docstates
 
 # Build results
 [Dd]ebug/
@@ -33,7 +20,5 @@ msbuild.log
 msbuild.err
 msbuild.wrn
 
-# Visual Studio 2015
-.vs/
-
+#nodejs
 node_modules/
