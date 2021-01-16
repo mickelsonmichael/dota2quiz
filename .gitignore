@@ -3,6 +3,7 @@ nupkg/
 .vscode
 .vs/
 *.user
+.eslintcache
 
 # Build results
 [Dd]ebug/
