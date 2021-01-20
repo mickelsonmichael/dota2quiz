@@ -18,16 +18,10 @@ const Quiz = () => {
   const [selection, setSelection] = useState([]);
   // whether or not the user's answer is correct
   const [checkWin, setcheckWin] = useState(quizStateEnum.noAnswer);
-  // variables used to check is incorrect message should display
-  let visible = false;
-  let isCorrect = false;
 
-  if (checkWin !== 0) {
-    visible = true;
-  }
-  if (checkWin === 2) {
-    isCorrect = true;
-  }
+  // variables used to check is incorrect message should display
+  let visible = checkWin > 0;
+  let isCorrect = checkWin === 2;
 
   const newQuestion = () => {
     setQuestion(getQuestion());
@@ -116,14 +110,8 @@ const Quiz = () => {
         selection={selection}
         onSelectionRemove={removeSelection}
       />
-      <Messages
-        newQuestion={newQuestion}
-        visible={visible}
-        isCorrect={isCorrect}
-      />
-
+      <Messages visible={visible} isCorrect={isCorrect} />
       <hr />
-
       <Options options={question.options} onOptionClick={addSelection} />
     </div>
   );
