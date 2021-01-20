@@ -5,7 +5,7 @@ const Messages = ({ visible, isCorrect }) => {
 
   if (visible) return <div className="incorrect-message">incorrect</div>;
 
-  if (!visible) return null;
+  return null;
 };
 
 export default Messages;
