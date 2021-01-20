@@ -3,6 +3,7 @@ import getQuestion from "../question/Generator";
 import Question from "../question";
 import Options from "../options";
 import "./quiz.css";
+import Messages from "../messages";
 
 const quizStateEnum = {
   noAnswer: 0,
@@ -105,6 +106,7 @@ const Quiz = () => {
         selection={selection}
         onSelectionRemove={removeSelection}
       />
+      <Messages checkWin={checkWin} />
 
       <hr />
 
