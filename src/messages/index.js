@@ -1,13 +1,6 @@
 import "./messages.css";
 
-const Messages = ({ checkWin, visible, isCorrect }) => {
-  if (checkWin !== 0) {
-    visible = true;
-  }
-  if (checkWin === 2) {
-    isCorrect = true;
-  }
-
+const Messages = ({ visible, isCorrect, newQuestion }) => {
   if (visible) {
     if (isCorrect) {
       return null;
