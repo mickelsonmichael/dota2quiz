@@ -29,13 +29,11 @@ jobs:
           ${{ runner.OS }}-
     - name: Build with npm
       run: |
-        cd ./halo-collectibles
         npm ci
         npm run build --if-present
     - name: Deploy using gh-pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/mickelsonmichael/dota2quiz.git
-        cd ./halo-collectibles
         npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
