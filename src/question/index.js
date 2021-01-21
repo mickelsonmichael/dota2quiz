@@ -1,19 +1,24 @@
 import Item from "../item";
+import "./question.css";
 
-// create an array of numbers from 0 to n
+// create an array of numbers from 0 to (n-1)
 const range = (n) => [...Array(n).keys()];
 
-const Question = ({ item, selection = [] }) => {
+const Question = ({ item, selection = [], onSelectionRemove = undefined }) => {
   const numberOfAnswers = item.components.length + (item.recipe ? 1 : 0);
 
   return (
     <div className="question">
-      <div key="targets" className="question-target">
-        <Item item={item} />
+      <div className="question-target">
+        <Item item={item} size="lg" />
       </div>
-      <div key="selection" className="question-selection">
+      <div className="question-selection">
         {range(numberOfAnswers).map((i) => (
-          <Item key={i} item={selection[i]} />
+          <Item
+            key={i}
+            item={selection[i]}
+            onClick={() => onSelectionRemove(i)}
+          />
         ))}
       </div>
     </div>
