@@ -110,9 +110,9 @@ const Quiz = () => {
         selection={selection}
         onSelectionRemove={removeSelection}
       />
-      <Messages visible={visible} isCorrect={isCorrect} />
       <hr />
       <Options options={question.options} onOptionClick={addSelection} />
+      <Messages visible={visible} isCorrect={isCorrect} />
     </div>
   );
 };

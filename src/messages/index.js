@@ -1,11 +1,17 @@
 import "./messages.css";
 
 const Messages = ({ visible, isCorrect }) => {
-  if (isCorrect) return null;
+  if (!visible) return null;
 
-  if (visible) return <div className="incorrect-message">incorrect</div>;
-
-  return null;
+  return (
+    <div className="message">
+      {isCorrect ? (
+        <div className="correct-message">correct</div>
+      ) : (
+        <div className="incorrect-message">incorrect</div>
+      )}
+    </div>
+  );
 };
 
 export default Messages;
