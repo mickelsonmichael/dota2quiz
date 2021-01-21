@@ -2,6 +2,7 @@
   "name": "dota-2-shopkeeper-quiz",
   "version": "2.0.0",
   "private": true,
+  "homepage": "https://michaelmickelson.com/dota2quiz",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
