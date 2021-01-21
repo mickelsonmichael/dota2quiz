@@ -72,7 +72,7 @@ const Quiz = () => {
     );
   };
 
-  useEffect(checkAnswer, [selection]);
+  useEffect(checkAnswer, [selection, numberOfAnswers, question.components, question.recipe]);
 
   const addSelection = (option) => {
     // if they have picked the right number of selections already
