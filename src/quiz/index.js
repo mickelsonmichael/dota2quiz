@@ -13,7 +13,7 @@ const quizStateEnum = {
 
 const Quiz = () => {
   // current item/question
-  const [question] = useState(getQuestion());
+  const [question, setQuestion] = useState(getQuestion());
   // the user's submitted answer array
   const [selection, setSelection] = useState([]);
   // whether or not the user's answer is correct
@@ -22,6 +22,11 @@ const Quiz = () => {
   // variables used to check is incorrect message should display
   let visible = checkWin > 0;
   let isCorrect = checkWin === 2;
+
+  const newQuestion = () => {
+    setQuestion(getQuestion());
+    setSelection([]);
+  };
 
   // the number of components that make up the answer, plus 1 if the recipe is required
   const numberOfAnswers =
@@ -62,9 +67,18 @@ const Quiz = () => {
     setcheckWin(
       answerIds.length === 0 ? quizStateEnum.correct : quizStateEnum.incorrect
     );
+    if (answerIds.length === 0)
+      setTimeout(() => {
+        newQuestion();
+      }, 3000);
   };
 
-  useEffect(checkAnswer, [selection, numberOfAnswers, question.components, question.recipe]);
+  useEffect(checkAnswer, [
+    selection,
+    numberOfAnswers,
+    question.components,
+    question.recipe,
+  ]);
 
   const addSelection = (option) => {
     // if they have picked the right number of selections already
@@ -78,12 +92,10 @@ const Quiz = () => {
             option,
             ...prev.slice(i + 1),
           ]);
-
           // exit the addSelection function
           return;
         }
       }
-
       // none were undefined, don't let them add the new item
       return;
     }

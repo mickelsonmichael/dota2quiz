@@ -1,4 +1,5 @@
 import "./messages.css";
+import Loading from "../loading/index.js";
 
 const Messages = ({ visible, isCorrect }) => {
   if (!visible) return null;
@@ -6,7 +7,10 @@ const Messages = ({ visible, isCorrect }) => {
   return (
     <div className="message">
       {isCorrect ? (
-        <div className="correct-message">correct</div>
+        <div>
+          <div className="correct-message">correct</div>
+          <Loading />
+        </div>
       ) : (
         <div className="incorrect-message">incorrect</div>
       )}
