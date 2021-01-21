@@ -24,8 +24,11 @@ const Quiz = () => {
   let isCorrect = checkWin === 2;
 
   const newQuestion = () => {
-    setQuestion(getQuestion());
-    setSelection([]);
+    setTimeout(() => {
+      setcheckWin(quizStateEnum.noAnswer);
+      setQuestion(getQuestion());
+      setSelection([]);
+    }, 3000);
   };
 
   // the number of components that make up the answer, plus 1 if the recipe is required
@@ -112,7 +115,11 @@ const Quiz = () => {
       />
       <hr />
       <Options options={question.options} onOptionClick={addSelection} />
-      <Messages visible={visible} isCorrect={isCorrect} />
+      <Messages
+        visible={visible}
+        isCorrect={isCorrect}
+        newQuestion={newQuestion}
+      />
     </div>
   );
 };

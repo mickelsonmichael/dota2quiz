@@ -5,3 +5,7 @@
 .correct-message {
   color: green;
 }
+
+.message {
+  padding: 15px;
+}
