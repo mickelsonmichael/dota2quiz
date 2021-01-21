@@ -3,6 +3,7 @@ import getQuestion from "../question/Generator";
 import Question from "../question";
 import Options from "../options";
 import "./quiz.css";
+import Messages from "../messages";
 
 const quizStateEnum = {
   noAnswer: 0,
@@ -17,6 +18,10 @@ const Quiz = () => {
   const [selection, setSelection] = useState([]);
   // whether or not the user's answer is correct
   const [checkWin, setcheckWin] = useState(quizStateEnum.noAnswer);
+
+  // variables used to check is incorrect message should display
+  let visible = checkWin > 0;
+  let isCorrect = checkWin === 2;
 
   const newQuestion = () => {
     setQuestion(getQuestion());
@@ -105,10 +110,9 @@ const Quiz = () => {
         selection={selection}
         onSelectionRemove={removeSelection}
       />
-
       <hr />
-
       <Options options={question.options} onOptionClick={addSelection} />
+      <Messages visible={visible} isCorrect={isCorrect} />
     </div>
   );
 };
