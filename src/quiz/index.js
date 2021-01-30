@@ -4,6 +4,7 @@ import Question from "../question";
 import Options from "../options";
 import "./quiz.css";
 import Messages from "../messages";
+import Streak from "../streak/streak";
 
 const quizStateEnum = {
   noAnswer: 0,
@@ -18,6 +19,8 @@ const Quiz = () => {
   const [selection, setSelection] = useState([]);
   // whether or not the user's answer is correct
   const [checkWin, setcheckWin] = useState(quizStateEnum.noAnswer);
+
+  const [count, setCount] = useState(0);
 
   // variables used to check is incorrect message should display
   let visible = checkWin > 0;
@@ -55,6 +58,7 @@ const Quiz = () => {
       // if the item is not a correct answer, set state to incorrect
       if (index === -1) {
         setcheckWin(quizStateEnum.incorrect);
+        setCount(0);
         return;
       }
 
@@ -67,10 +71,10 @@ const Quiz = () => {
     setcheckWin(
       answerIds.length === 0 ? quizStateEnum.correct : quizStateEnum.incorrect
     );
-    if (answerIds.length === 0)
-      setTimeout(() => {
-        newQuestion();
-      }, 3000);
+    if (answerIds.length === 0) setCount(count + 1);
+    setTimeout(() => {
+      newQuestion();
+    }, 3000);
   };
 
   useEffect(checkAnswer, [
@@ -120,6 +124,7 @@ const Quiz = () => {
       <hr />
       <Options options={question.options} onOptionClick={addSelection} />
       <Messages visible={visible} isCorrect={isCorrect} />
+      <Streak count={count} />
     </div>
   );
 };
