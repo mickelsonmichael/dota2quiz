@@ -1,7 +1,7 @@
 import "./streak.css";
 
-const Streak = ({ count }) => {
-  return <div className="streak">streak counter: {count}</div>;
+const Streak = ({ streakCounter }) => {
+  return <div className="streak">streak counter: {streakCounter}</div>;
 };
 
 export default Streak;

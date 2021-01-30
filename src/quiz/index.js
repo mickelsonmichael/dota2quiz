@@ -16,14 +16,15 @@ const intialQuiz = {
   question: getQuestion(),
   selection: [],
   checkWin: quizStateEnum.noAnswer,
-  count: 0
+  streakCount: 0
 }
 
 const Quiz = () => {
   // current item/question
   const [quiz, setQuiz] = useState(intialQuiz);
 
-  const { question, selection, checkWin, count } = quiz;
+  const { question, selection, checkWin, streakCount } = quiz;
+
 
   // variables used to check is incorrect message should display
   let visible = checkWin > 0;
@@ -67,7 +68,7 @@ const Quiz = () => {
         setQuiz(prev => ({
           ...prev,
           checkWin: quizStateEnum.incorrect,
-          count: 0
+          streakCount: 0
         }));
         return;
       }
@@ -83,7 +84,7 @@ const Quiz = () => {
     setQuiz(prev => ({
       ...prev,
       checkWin: isCorrect ? quizStateEnum.correct : quizStateEnum.incorrect,
-      count: isCorrect ? prev.count + 1 : 0
+      streakCount: isCorrect ? prev.count + 1 : 0
     }));
     
     setTimeout(() => {
@@ -146,7 +147,7 @@ const Quiz = () => {
       <hr />
       <Options options={question.options} onOptionClick={addSelection} />
       <Messages visible={visible} isCorrect={isCorrect} />
-      <Streak count={count} />
+      <Streak streakCounter={streakCount} />
     </div>
   );
 };
