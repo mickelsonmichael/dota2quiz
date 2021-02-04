@@ -16,8 +16,8 @@ const intialQuiz = {
   question: getQuestion(),
   selection: [],
   checkWin: quizStateEnum.noAnswer,
-  streakCount: 0
-}
+  streakCount: 0,
+};
 
 const Quiz = () => {
   // current item/question
@@ -25,16 +25,16 @@ const Quiz = () => {
 
   const { question, selection, checkWin, streakCount } = quiz;
 
-
   // variables used to check is incorrect message should display
   let visible = checkWin > 0;
   let isCorrect = checkWin === 2;
 
-  const newQuestion = () => setQuiz(prev => ({
-    ...prev,
-    question: getQuestion(),
-    selection: []
-  }));
+  const newQuestion = () =>
+    setQuiz((prev) => ({
+      ...prev,
+      question: getQuestion(),
+      selection: [],
+    }));
 
   // the number of components that make up the answer, plus 1 if the recipe is required
   const numberOfAnswers =
@@ -43,10 +43,10 @@ const Quiz = () => {
   const checkAnswer = () => {
     // if they aren't done answering the question, reset state
     if (selection.length !== numberOfAnswers || selection.includes(undefined)) {
-      setQuiz(prev => ({
+      setQuiz((prev) => ({
         ...prev,
-        checkWin: quizStateEnum.noAnswer
-      }))
+        checkWin: quizStateEnum.noAnswer,
+      }));
       return;
     }
 
@@ -65,10 +65,11 @@ const Quiz = () => {
 
       // if the item is not a correct answer, set state to incorrect
       if (index === -1) {
-        setQuiz(prev => ({
+        console.log(1);
+        setQuiz((prev) => ({
           ...prev,
           checkWin: quizStateEnum.incorrect,
-          streakCount: 0
+          streakCount: 0,
         }));
         return;
       }
@@ -81,12 +82,12 @@ const Quiz = () => {
     // otherwise, they missed one
     const isCorrect = answerIds.length === 0;
 
-    setQuiz(prev => ({
+    setQuiz((prev) => ({
       ...prev,
       checkWin: isCorrect ? quizStateEnum.correct : quizStateEnum.incorrect,
-      streakCount: isCorrect ? prev.count + 1 : 0
+      streakCount: isCorrect ? +1 : 0,
     }));
-    
+
     setTimeout(() => {
       newQuestion();
     }, 3000);
@@ -102,9 +103,9 @@ const Quiz = () => {
   const addSelection = (option) => {
     if (selection.length === 0) {
       // otherwise they still have empty spaces in the selection to add
-      setQuiz(prev => ({
+      setQuiz((prev) => ({
         ...prev,
-        selection: [...prev.selection, option]
+        selection: [...prev.selection, option],
       }));
     }
 
@@ -118,8 +119,8 @@ const Quiz = () => {
             ...prev.selection.slice(0, i),
             option,
             ...prev.selection.slice(i + 1),
-          ]}
-        ));
+          ],
+        }));
         // exit the addSelection function
         return;
       }
@@ -132,8 +133,8 @@ const Quiz = () => {
       selection: [
         ...prev.selection.slice(0, i),
         undefined,
-        ...prev.selection.slice(i + 1)
-      ]
+        ...prev.selection.slice(i + 1),
+      ],
     }));
   };
 
