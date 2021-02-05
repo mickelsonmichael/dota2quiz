@@ -65,7 +65,6 @@ const Quiz = () => {
 
       // if the item is not a correct answer, set state to incorrect
       if (index === -1) {
-        console.log(1);
         setQuiz((prev) => ({
           ...prev,
           checkWin: quizStateEnum.incorrect,
