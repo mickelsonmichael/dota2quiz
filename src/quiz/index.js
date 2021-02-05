@@ -4,6 +4,7 @@ import Question from "../question";
 import Options from "../options";
 import "./quiz.css";
 import Messages from "../messages";
+import Streak from "../streak/streak";
 
 const quizStateEnum = {
   noAnswer: 0,
@@ -11,22 +12,29 @@ const quizStateEnum = {
   correct: 2,
 };
 
+const intialQuiz = {
+  question: getQuestion(),
+  selection: [],
+  checkWin: quizStateEnum.noAnswer,
+  streakCount: 0,
+};
+
 const Quiz = () => {
   // current item/question
-  const [question, setQuestion] = useState(getQuestion());
-  // the user's submitted answer array
-  const [selection, setSelection] = useState([]);
-  // whether or not the user's answer is correct
-  const [checkWin, setcheckWin] = useState(quizStateEnum.noAnswer);
+  const [quiz, setQuiz] = useState(intialQuiz);
+
+  const { question, selection, checkWin, streakCount } = quiz;
 
   // variables used to check is incorrect message should display
   let visible = checkWin > 0;
   let isCorrect = checkWin === 2;
 
-  const newQuestion = () => {
-    setQuestion(getQuestion());
-    setSelection([]);
-  };
+  const newQuestion = () =>
+    setQuiz((prev) => ({
+      ...prev,
+      question: getQuestion(),
+      selection: [],
+    }));
 
   // the number of components that make up the answer, plus 1 if the recipe is required
   const numberOfAnswers =
@@ -35,7 +43,10 @@ const Quiz = () => {
   const checkAnswer = () => {
     // if they aren't done answering the question, reset state
     if (selection.length !== numberOfAnswers || selection.includes(undefined)) {
-      setcheckWin(quizStateEnum.noAnswer);
+      setQuiz((prev) => ({
+        ...prev,
+        checkWin: quizStateEnum.noAnswer,
+      }));
       return;
     }
 
@@ -54,7 +65,11 @@ const Quiz = () => {
 
       // if the item is not a correct answer, set state to incorrect
       if (index === -1) {
-        setcheckWin(quizStateEnum.incorrect);
+        setQuiz((prev) => ({
+          ...prev,
+          checkWin: quizStateEnum.incorrect,
+          streakCount: 0,
+        }));
         return;
       }
 
@@ -64,13 +79,17 @@ const Quiz = () => {
 
     // if no correct answers left in the list, then correct
     // otherwise, they missed one
-    setcheckWin(
-      answerIds.length === 0 ? quizStateEnum.correct : quizStateEnum.incorrect
-    );
-    if (answerIds.length === 0)
-      setTimeout(() => {
-        newQuestion();
-      }, 3000);
+    const isCorrect = answerIds.length === 0;
+
+    setQuiz((prev) => ({
+      ...prev,
+      checkWin: isCorrect ? quizStateEnum.correct : quizStateEnum.incorrect,
+      streakCount: isCorrect ? +1 : 0,
+    }));
+
+    setTimeout(() => {
+      newQuestion();
+    }, 3000);
   };
 
   useEffect(checkAnswer, [
@@ -81,33 +100,41 @@ const Quiz = () => {
   ]);
 
   const addSelection = (option) => {
-    // if they have picked the right number of selections already
-    if (selection.length === numberOfAnswers) {
-      // loop through the selections and ensure none are undefined
-      for (let i = 0; i < selection.length; i++) {
-        // replace the first undefined selection with the new selection
-        if (selection[i] === undefined) {
-          setSelection((prev) => [
-            ...prev.slice(0, i),
-            option,
-            ...prev.slice(i + 1),
-          ]);
-          // exit the addSelection function
-          return;
-        }
-      }
-      // none were undefined, don't let them add the new item
-      return;
+    if (selection.length === 0) {
+      // otherwise they still have empty spaces in the selection to add
+      setQuiz((prev) => ({
+        ...prev,
+        selection: [...prev.selection, option],
+      }));
     }
 
-    // otherwise they still have empty spaces in the selection to add
-    setSelection((prev) => [...prev, option]);
+    // loop through the selections and ensure none are undefined
+    for (let i = 0; i < numberOfAnswers; i++) {
+      // replace the first undefined selection with the new selection
+      if (selection[i] === undefined) {
+        setQuiz((prev) => ({
+          ...prev,
+          selection: [
+            ...prev.selection.slice(0, i),
+            option,
+            ...prev.selection.slice(i + 1),
+          ],
+        }));
+        // exit the addSelection function
+        return;
+      }
+    }
   };
 
   const removeSelection = (i) => {
-    setSelection((prev) => {
-      return [...prev.slice(0, i), undefined, ...prev.slice(i + 1)];
-    });
+    setQuiz((prev) => ({
+      ...prev,
+      selection: [
+        ...prev.selection.slice(0, i),
+        undefined,
+        ...prev.selection.slice(i + 1),
+      ],
+    }));
   };
 
   return (
@@ -120,6 +147,7 @@ const Quiz = () => {
       <hr />
       <Options options={question.options} onOptionClick={addSelection} />
       <Messages visible={visible} isCorrect={isCorrect} />
+      <Streak streakCounter={streakCount} />
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import "./loading.css";
 
 const Loading = () => (
-  <div class="loading">
-    <div class="lds-ellipsis">
+  <div className="loading">
+    <div className="lds-ellipsis">
       <div />
       <div />
       <div />
