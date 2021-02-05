@@ -17,13 +17,20 @@ const intialQuiz = {
   selection: [],
   checkWin: quizStateEnum.noAnswer,
   streakCount: 0,
+  attemptsRemaining: 3,
 };
 
 const Quiz = () => {
   // current item/question
   const [quiz, setQuiz] = useState(intialQuiz);
 
-  const { question, selection, checkWin, streakCount } = quiz;
+  const {
+    question,
+    selection,
+    checkWin,
+    streakCount,
+    attemptsRemaining,
+  } = quiz;
 
   // variables used to check is incorrect message should display
   let visible = checkWin > 0;
@@ -68,8 +75,19 @@ const Quiz = () => {
         setQuiz((prev) => ({
           ...prev,
           checkWin: quizStateEnum.incorrect,
-          streakCount: 0,
+          attemptsRemaining: attemptsRemaining - 1,
+          // streakCount: 0,
         }));
+
+        if (attemptsRemaining === 1) {
+          console.log("here");
+          setQuiz((prev) => ({
+            ...prev,
+            attemptsRemaining: 3,
+            streakCount: 0,
+          }));
+        }
+
         return;
       }
 
@@ -81,10 +99,12 @@ const Quiz = () => {
     // otherwise, they missed one
     const isCorrect = answerIds.length === 0;
 
+    if (isCorrect) quiz.attemptsRemaining = 3;
+
     setQuiz((prev) => ({
       ...prev,
       checkWin: isCorrect ? quizStateEnum.correct : quizStateEnum.incorrect,
-      streakCount: isCorrect ? +1 : 0,
+      streakCount: isCorrect ? streakCount + 1 : 0,
     }));
 
     setTimeout(() => {
@@ -147,7 +167,10 @@ const Quiz = () => {
       <hr />
       <Options options={question.options} onOptionClick={addSelection} />
       <Messages visible={visible} isCorrect={isCorrect} />
-      <Streak streakCounter={streakCount} />
+      <Streak
+        streakCounter={streakCount}
+        attemptsRemaining={attemptsRemaining}
+      />
     </div>
   );
 };
