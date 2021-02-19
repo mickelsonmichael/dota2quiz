@@ -1,6 +1,7 @@
 import "./item.css";
+import classnames from "classnames";
 
-const sizeClass = {
+export const sizeClass = {
   md: "",
   sm: "item--small",
   lg: "item--large",
@@ -11,20 +12,26 @@ const Item = ({
   onClick = undefined,
   size = "md",
   className = undefined,
-}) => (
-  <span
-    className={
-      "item" +
-      (item ? "" : " blank") +
-      (size ? " " + sizeClass[size] : "") +
-      (className ? " " + className : "")
+}) => {
+
+  const classes = classnames([
+    "item",
+    {
+      "blank": !item,
+      [`${sizeClass[size]}`]: size,
+      [className]: className
     }
-    onClick={onClick}
-  >
-    {item && (
-      <img className="item-img" src={`images/${item.file}`} alt={item.name} />
-    )}
-  </span>
-);
+  ]);
+
+  const renderImage = () => (
+    <img className="item-img" src={`images/${item.file}`} alt={item.name} />
+  );
+
+  return (
+    <span className={classes} onClick={onClick}>
+      { item && renderImage()}
+    </span>
+  )
+};
 
 export default Item;
