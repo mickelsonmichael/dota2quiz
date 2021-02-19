@@ -1,6 +1,6 @@
+import React from "react";
 import { shallow } from "enzyme";
-import Item from ".";
-import { sizeClass } from "./index";
+import Item, { sizeClass } from ".";
 
 describe("item", () => {
 
