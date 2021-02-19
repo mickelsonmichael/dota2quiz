@@ -4,8 +4,7 @@ import Answers from ".";
 
 describe("Answer", () => {
     it("includes recipe when required", () => {
-        const item = { components: [], recipe: true };
-        const answerComponent = shallow(<Answers item={item} />);
+        const answerComponent = getItemByRecipe(true);
 
         const expectedChildrenCount = 1;
         const actualChildrenCount = answerComponent.find(".answer-components").children().length;
@@ -14,14 +13,18 @@ describe("Answer", () => {
     });
 
     it("excludes recipe when not required", () => {
-        const item = { components: [], recipe: false };
-        const answerComponent = shallow(<Answers item={item} />);
+        const answerComponent = getItemByRecipe(false);
 
         const expectedChildrenCount = 0;
         const actualChildrenCount = answerComponent.find(".answer-components").children().length;
 
         expect(actualChildrenCount).toEqual(expectedChildrenCount);
     });
+
+    function getItemByRecipe(hasRecipe) {
+        const item = { components: [], recipe: hasRecipe };
+        return shallow(<Answers item={item} />);
+    }
     
     it("renders required components", () => {
         const components = [

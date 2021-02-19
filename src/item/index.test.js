@@ -28,32 +28,34 @@ describe("item", () => {
     })
 
     it("adds small item className when sm", () => {
-        const component = shallow(<Item size="sm" />);
-        const classes = component.find(".item").prop("className");
+        const classes = getItemClassesWithSize("sm");
 
         expect(classes.includes(sizeClass.sm,)).toBe(true);
     })
 
     it("does not add small item className when not sm", () => {
-        const component = shallow(<Item />);
-        const classes = component.find(".item").prop("className");
+        const classes = getItemClassesWithSize();
 
         expect(classes.includes(sizeClass.sm)).toBe(false);
     })
 
     it("adds large item className when lg", () => {
-        const component = shallow(<Item size="lg" />);
-        const classes = component.find(".item").prop("className");
+        const classes = getItemClassesWithSize("lg");
 
         expect(classes.includes(sizeClass.lg)).toBe(true);
     })
 
     it("does not add large item className when not lg", () => {
-        const component = shallow(<Item />);
-        const classes = component.find(".item").prop("className");
+        const classes = getItemClassesWithSize();
 
         expect(classes.includes(sizeClass.lg)).toBe(false);
     })
+
+    function getItemClassesWithSize(size) {
+        const component = shallow(<Item size={size} />);
+
+        return component.find(".item").prop("className");
+    }
 
     it("applies provided className to span", () => {
         const expected = "my-class my-other-class";
