@@ -11,8 +11,8 @@ const Answers = ({ item }) => {
         <Item item={item} />
       </div>
       <div className="answer-components">
-        {answers.map((comp) => (
-          <Item item={comp} />
+        {answers.map((comp, index) => (
+          <Item key={`${comp.id}-${index}`} item={comp} />
         ))}
         {item.recipe && <Item recipe />}
       </div>
